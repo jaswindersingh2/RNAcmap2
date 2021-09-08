@@ -2,6 +2,10 @@
 An improved fully automatic pipeline for predicting contact maps of RNAs by evolutionary coupling analysis
 
 
+|![](../docs/figure_1.png)
+|----|
+| <p align="center"> <b>Figure 1:</b> The architecture of the RNAcmap2 pipeline. CSS: Consensus Secondary Structure. CM: Covariance Model. L: Length of the input RNA sequence.|
+
 1. `conda activate venv_rnacmap2`
 
 2. `./run.py --neff low --dca_method gremlin`
