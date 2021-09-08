@@ -1,0 +1,27 @@
+#Name: 6dtd_C
+#Length: ,37,
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+UGUUGCAUCUGCCUUCUUUUUGAAAGGUAAAAACAAC
+..[..[.[{(...((.]]...]).)....}.....).
+EEEEEEEEESIIISSHHHHHHHSBSIIIIIIIIIISE
+NNKNNKNKKNNNNNNNKKNNNKNNNNNNNKNNNNNNN
+S1 10..10 "U" 36..36 "A"
+S2 14..14 "U" 25..25 "A"
+S3 15..15 "U" 23..23 "A"
+H1 16..22 "CUUUUUG" (15,23) U:A PK{1}
+B1 24..24 "A" (23,15) A:U (25,14) A:U 
+I1.1 11..13 "GCC" (10,36) U:A 
+I1.2 26..35 "GGUAAAAACA" (25,14) A:U PK{2}
+E1 1..9 "UGUUGCAUC" PK{1,2}
+E2 37..37 "C" 
+PK1 3bp 3..8 17..22 E1 1..9 H1 16..22
+PK2 1bp 9..9 30..30 E1 1..9 I1.2 26..35
+PK1.1 3 U 22 G
+PK1.2 6 C 18 U
+PK1.3 8 U 17 U
+PK2.1 9 C 30 A
+NCBP1 6 C 18 U PK1.2
+NCBP2 8 U 17 U PK1.3
+NCBP3 9 C 30 A PK2.1
+segment1 3bp 10..15 UGCCUU 23..36 AAAGGUAAAAACAA

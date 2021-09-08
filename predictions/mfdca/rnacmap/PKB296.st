@@ -1,0 +1,19 @@
+#Name: PKB296
+#Length:  26 
+#PageNumber: 2
+AGGGCGGGUCCUGCCGAAAGUGCCAA
+(.[..).(.]..).............
+SHHHHSXSHHHHSEEEEEEEEEEEEE
+NNKNNNNNNKNNNNNNNNNNNNNNNN
+S1 1..1 "A" 6..6 "G"
+S2 8..8 "G" 13..13 "G"
+H1 2..5 "GGGC" (1,6) A:G PK{1}
+H2 9..12 "UCCU" (8,13) G:G PK{1}
+X1 7..7 "G" (6,1) G:A (8,13) G:G 
+E1 14..26 "CCGAAAGUGCCAA" 
+PK1 1bp 3..3 10..10 H1 2..5 H2 9..12
+PK1.1 3 G 10 C
+NCBP1 1 A 6 G S1
+NCBP2 8 G 13 G S2
+segment1 1bp 1..1 A 6..6 G
+segment2 1bp 8..8 G 13..13 G

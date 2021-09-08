@@ -1,0 +1,117 @@
+[0;32mINFO[0;0m 2021-08-01 19:08:24,161 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 52
+            total number of (unweighted) sequences: 888
+            sequence identity: 0.8
+            lambda_h: 10.200000000000001
+            lambda_J: 10.200000000000001
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-08-01 19:08:24,161 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 10858.375977, xnorm = 23.145752, gnorm = 1161.332520, step = 0.001209
+
+Iteration 2:
+fx = 10359.960938, xnorm = 22.615496, gnorm = 991.921204, step = 1.000000
+
+Iteration 3:
+fx = 8650.108398, xnorm = 19.437508, gnorm = 1602.859375, step = 1.000000
+
+Iteration 4:
+fx = 6246.437988, xnorm = 16.038546, gnorm = 816.881531, step = 1.000000
+
+Iteration 5:
+fx = 5523.652832, xnorm = 15.201454, gnorm = 536.533325, step = 1.000000
+
+Iteration 6:
+fx = 5211.525879, xnorm = 14.769871, gnorm = 463.311737, step = 1.000000
+
+Iteration 7:
+fx = 4798.597656, xnorm = 13.997500, gnorm = 391.252686, step = 1.000000
+
+Iteration 8:
+fx = 4390.873535, xnorm = 12.217936, gnorm = 519.834900, step = 1.000000
+
+Iteration 9:
+fx = 4126.461426, xnorm = 11.252965, gnorm = 320.351868, step = 1.000000
+
+Iteration 10:
+fx = 4017.340576, xnorm = 10.258014, gnorm = 301.607941, step = 1.000000
+
+Iteration 11:
+fx = 3969.782227, xnorm = 9.922517, gnorm = 232.138138, step = 1.000000
+
+Iteration 12:
+fx = 3944.736572, xnorm = 9.977121, gnorm = 149.017151, step = 1.000000
+
+Iteration 13:
+fx = 3915.749023, xnorm = 9.830143, gnorm = 134.924500, step = 1.000000
+
+Iteration 14:
+fx = 3894.169678, xnorm = 9.630347, gnorm = 139.110275, step = 1.000000
+
+Iteration 15:
+fx = 3887.027344, xnorm = 9.453748, gnorm = 215.857361, step = 1.000000
+
+Iteration 16:
+fx = 3868.591064, xnorm = 9.445531, gnorm = 82.594696, step = 1.000000
+
+Iteration 17:
+fx = 3863.048584, xnorm = 9.432925, gnorm = 64.407616, step = 1.000000
+
+Iteration 18:
+fx = 3858.230713, xnorm = 9.393909, gnorm = 62.704277, step = 1.000000
+
+Iteration 19:
+fx = 3854.596436, xnorm = 9.311436, gnorm = 75.322624, step = 1.000000
+
+Iteration 20:
+fx = 3851.808838, xnorm = 9.260629, gnorm = 57.385735, step = 1.000000
+
+Iteration 21:
+fx = 3850.644531, xnorm = 9.266048, gnorm = 26.922180, step = 1.000000
+
+Iteration 22:
+fx = 3849.686279, xnorm = 9.249313, gnorm = 22.380518, step = 1.000000
+
+Iteration 23:
+fx = 3848.176514, xnorm = 9.203817, gnorm = 26.093040, step = 1.000000
+
+Iteration 24:
+fx = 3847.094971, xnorm = 9.146343, gnorm = 42.913311, step = 1.000000
+
+Iteration 25:
+fx = 3846.179932, xnorm = 9.132520, gnorm = 12.243874, step = 1.000000
+
+Iteration 26:
+fx = 3846.079590, xnorm = 9.132086, gnorm = 10.618709, step = 1.000000
+
+Iteration 27:
+fx = 3845.893555, xnorm = 9.119821, gnorm = 8.180511, step = 1.000000
+
+Iteration 28:
+fx = 3845.718018, xnorm = 9.110474, gnorm = 15.854797, step = 1.000000
+
+Iteration 29:
+fx = 3845.694580, xnorm = 9.105525, gnorm = 5.649601, step = 1.000000
+
+Iteration 30:
+fx = 3845.687744, xnorm = 9.105211, gnorm = 5.314348, step = 1.000000
+
+Iteration 31:
+fx = 3845.674072, xnorm = 9.104763, gnorm = 5.468206, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 3845.674316
+[0;32mINFO[0;0m 2021-08-01 19:08:24,551 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 33410
+[0;32mINFO[0;0m 2021-08-01 19:08:24,551 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 33410
+[0;32mINFO[0;0m 2021-08-01 19:08:24,587 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-08-01 19:08:24,684 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-08-01 19:08:24,699 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_4ena_A/PLMDCA_apc_fn_scores_4ena_A.txt

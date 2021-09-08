@@ -1,0 +1,17 @@
+#Name: PKB42
+#Length: ,39,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+UUUAAAUGGGCGAGCGGCACCGCCCGCCAAAACAAACGG
+......[.....(...................]..)...
+EEEEEEEEEEEESHHHHHHHHHHHHHHHHHHHHHHSEEE
+NNNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNKNNNNNN
+S1 13..13 "A" 36..36 "A"
+H1 14..35 "GCGGCACCGCCCGCCAAAACAA" (13,36) A:A PK{1}
+E1 1..12 "UUUAAAUGGGCG" PK{1}
+E2 37..39 "CGG" 
+PK1 1bp 7..7 33..33 E1 1..12 H1 14..35
+PK1.1 7 U 33 C
+NCBP1 13 A 36 A S1
+NCBP2 7 U 33 C PK1.1
+segment1 1bp 13..13 A 36..36 A

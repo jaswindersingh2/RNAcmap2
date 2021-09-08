@@ -1,0 +1,15 @@
+#Name: PKB216
+#Length: ,45,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+CUUCUUAUAUGAUUAGGUUGUCAUUUAGAAUAAGAAAAUAACCUG
+............[......(.............]....)......
+EEEEEEEEEEEEEEEEEEESHHHHHHHHHHHHHHHHHHSEEEEEE
+NNNNNNNNNNNNKNNNNNNNNNNNNNNNNNNNNKNNNNNNNNNNN
+S1 20..20 "G" 39..39 "U"
+H1 21..38 "UCAUUUAGAAUAAGAAAA" (20,39) G:U PK{1}
+E1 1..19 "CUUCUUAUAUGAUUAGGUU" PK{1}
+E2 40..45 "AACCUG" 
+PK1 1bp 13..13 34..34 E1 1..19 H1 21..38
+PK1.1 13 U 34 G
+segment1 1bp 20..20 G 39..39 U

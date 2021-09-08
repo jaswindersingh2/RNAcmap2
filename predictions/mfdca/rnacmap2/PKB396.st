@@ -1,0 +1,57 @@
+#Name: PKB396
+#Length:  100 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+UAGAUUUCUGAAAGUCGCUUCCCGGCUUUCAUGCUUGGAAAUCUUACCUGCGUUAGCAGAUGCCCACAACGUGAAGUUGUGGAUGCCCCGUUAGGGAAGC
+..((.(((.((([(...(...{).]).)))}......))).))......((....)).......(.([(..]....).).).....[......(.]..).
+EESSISSSISSSISIIISHHHHSIISISSSIIIIIIISSSISSXXXXXXSSHHHHSSXXXXXXXSISISHHHHHHHSISISXXXXXXXXXXXXSHHHHSE
+NNNNNNNNNNNNKNNNNNNNNKNNKNNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKNNNKNNNNNNNNNNNNNNKNNNNNNNNKNNNN
+S1 3..4 "GA" 42..43 "UC"
+S2 6..8 "UUC" 38..40 "GAA"
+S3 10..12 "GAA" 28..30 "UUC"
+S4 14..14 "G" 26..26 "C"
+S5 18..18 "C" 23..23 "C"
+S6 50..51 "GC" 56..57 "GC"
+S7 65..65 "C" 81..81 "G"
+S8 67..67 "C" 79..79 "G"
+S9 69..69 "A" 77..77 "U"
+S10 94..94 "G" 99..99 "G"
+H1 19..22 "UUCC" (18,23) C:C PK{2}
+H2 52..55 "GUUA" (51,56) C:G 
+H3 70..76 "CGUGAAG" (69,77) A:U PK{3}
+H4 95..98 "GGAA" (94,99) G:G PK{4}
+I1.1 5..5 "U" (4,42) A:U 
+I1.2 41..41 "A" (40,6) A:U 
+I2.1 9..9 "U" (8,38) C:G 
+I2.2 31..37 "AUGCUUG" (30,10) C:G PK{2}
+I3.1 13..13 "A" (12,28) A:U PK{1}
+I3.2 27..27 "U" (26,14) C:G 
+I4.1 15..17 "UCG" (14,26) G:C 
+I4.2 24..25 "GG" (23,18) C:C PK{1}
+I5.1 66..66 "A" (65,81) C:G 
+I5.2 80..80 "U" (79,67) G:C 
+I6.1 68..68 "A" (67,79) C:G PK{3}
+I6.2 78..78 "U" (77,69) U:A 
+X1 44..49 "UUACCU" (43,3) C:G (50,57) G:C 
+X2 58..64 "AGAUGCC" (57,50) C:G (65,81) C:G 
+X3 82..93 "GAUGCCCCGUUA" (81,65) G:C (94,99) G:G PK{4}
+E1 1..2 "UA" 
+E2 100..100 "C" 
+PK1 1bp 13..13 25..25 I3.1 13..13 I4.2 24..25
+PK2 1bp 22..22 31..31 H1 19..22 I2.2 31..37
+PK3 1bp 68..68 72..72 I6.1 68..68 H3 70..76
+PK4 1bp 87..87 96..96 X3 82..93 H4 95..98
+PK1.1 13 A 25 G
+PK2.1 22 C 31 A
+PK3.1 68 A 72 U
+PK4.1 87 C 96 G
+NCBP1 18 C 23 C S5
+NCBP2 94 G 99 G S10
+NCBP3 13 A 25 G PK1.1
+NCBP4 22 C 31 A PK2.1
+segment1 10bp 3..18 GAUUUCUGAAAGUCGC 23..43 CGGCUUUCAUGCUUGGAAAUC
+segment2 2bp 50..51 GC 56..57 GC
+segment3 3bp 65..69 CACAA 77..81 UUGUG
+segment4 1bp 94..94 G 99..99 G

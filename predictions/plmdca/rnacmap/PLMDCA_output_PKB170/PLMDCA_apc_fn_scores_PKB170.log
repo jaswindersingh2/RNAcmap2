@@ -1,0 +1,117 @@
+[0;32mINFO[0;0m 2021-06-10 15:01:53,745 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 76
+            total number of (unweighted) sequences: 437
+            sequence identity: 0.8
+            lambda_h: 15.0
+            lambda_J: 15.0
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-06-10 15:01:53,745 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 15257.380859, xnorm = 19.822025, gnorm = 1188.046509, step = 0.000650
+
+Iteration 2:
+fx = 12807.208984, xnorm = 18.530495, gnorm = 1203.267212, step = 1.000000
+
+Iteration 3:
+fx = 10272.471680, xnorm = 17.092325, gnorm = 943.803650, step = 1.000000
+
+Iteration 4:
+fx = 8828.952148, xnorm = 16.504391, gnorm = 741.908325, step = 1.000000
+
+Iteration 5:
+fx = 7985.473145, xnorm = 16.320803, gnorm = 642.742676, step = 1.000000
+
+Iteration 6:
+fx = 7284.357910, xnorm = 15.683989, gnorm = 543.310974, step = 1.000000
+
+Iteration 7:
+fx = 6443.318848, xnorm = 13.869755, gnorm = 592.517944, step = 1.000000
+
+Iteration 8:
+fx = 6187.866211, xnorm = 12.791481, gnorm = 645.276550, step = 1.000000
+
+Iteration 9:
+fx = 5924.898438, xnorm = 12.639282, gnorm = 292.718567, step = 1.000000
+
+Iteration 10:
+fx = 5787.085938, xnorm = 12.097935, gnorm = 196.835526, step = 1.000000
+
+Iteration 11:
+fx = 5705.731934, xnorm = 11.516071, gnorm = 177.164963, step = 1.000000
+
+Iteration 12:
+fx = 5685.063965, xnorm = 11.150077, gnorm = 264.571198, step = 1.000000
+
+Iteration 13:
+fx = 5644.353516, xnorm = 11.201434, gnorm = 89.572723, step = 1.000000
+
+Iteration 14:
+fx = 5634.579102, xnorm = 11.209989, gnorm = 79.040306, step = 1.000000
+
+Iteration 15:
+fx = 5621.805176, xnorm = 11.177693, gnorm = 69.642776, step = 1.000000
+
+Iteration 16:
+fx = 5619.062012, xnorm = 11.164557, gnorm = 94.161804, step = 1.000000
+
+Iteration 17:
+fx = 5614.182129, xnorm = 11.142648, gnorm = 40.329056, step = 1.000000
+
+Iteration 18:
+fx = 5613.289062, xnorm = 11.143766, gnorm = 20.269033, step = 1.000000
+
+Iteration 19:
+fx = 5612.780762, xnorm = 11.139337, gnorm = 13.907200, step = 1.000000
+
+Iteration 20:
+fx = 5612.208984, xnorm = 11.128605, gnorm = 14.593516, step = 1.000000
+
+Iteration 21:
+fx = 5612.051270, xnorm = 11.123773, gnorm = 14.281251, step = 0.336329
+
+Iteration 22:
+fx = 5611.663574, xnorm = 11.114007, gnorm = 7.130140, step = 1.000000
+
+Iteration 23:
+fx = 5611.420898, xnorm = 11.108514, gnorm = 5.460958, step = 1.000000
+
+Iteration 24:
+fx = 5611.182617, xnorm = 11.104385, gnorm = 9.175139, step = 1.000000
+
+Iteration 25:
+fx = 5611.180664, xnorm = 11.104543, gnorm = 7.479399, step = 0.228361
+
+Iteration 26:
+fx = 5611.178223, xnorm = 11.104748, gnorm = 5.560492, step = 0.264217
+
+Iteration 27:
+fx = 5611.168945, xnorm = 11.105188, gnorm = 1.996257, step = 1.000000
+
+Iteration 28:
+fx = 5611.150391, xnorm = 11.105140, gnorm = 1.992714, step = 1.000000
+
+Iteration 29:
+fx = 5611.145508, xnorm = 11.105183, gnorm = 1.393600, step = 1.000000
+
+Iteration 30:
+fx = 5611.123535, xnorm = 11.105289, gnorm = 0.964880, step = 0.225084
+
+Iteration 31:
+fx = 5611.120605, xnorm = 11.105379, gnorm = 0.595094, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 5611.120605
+[0;32mINFO[0;0m 2021-06-10 15:01:54,126 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 71630
+[0;32mINFO[0;0m 2021-06-10 15:01:54,126 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 71630
+[0;32mINFO[0;0m 2021-06-10 15:01:54,173 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-06-10 15:01:54,309 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-06-10 15:01:54,334 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_PKB170/PLMDCA_apc_fn_scores_PKB170.txt

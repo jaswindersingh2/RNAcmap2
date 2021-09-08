@@ -1,0 +1,21 @@
+#Name: 4pmi_A
+#Length: ,40,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGGAGUAUAUGGGCGCACUUCGGUGACGGUACAGGCUCCU
+..........[.((.......(.....).).].......)
+EEEEEEEEEEEESSIIIIIIISHHHHHSISBBBBBBBBBS
+NNNNNNNNNNKNNNNNNNNNNNNNNNNNNNNKNNNNNNNN
+S1 13..13 "G" 40..40 "U"
+S2 14..14 "C" 30..30 "U"
+S3 22..22 "G" 28..28 "G"
+H1 23..27 "GUGAC" (22,28) G:G 
+B1 31..39 "ACAGGCUCC" (30,14) U:C (40,13) U:G PK{1}
+I1.1 15..21 "GCACUUC" (14,30) C:U 
+I1.2 29..29 "G" (28,22) G:G 
+E1 1..12 "GGGAGUAUAUGG" PK{1}
+PK1 1bp 11..11 32..32 E1 1..12 B1 31..39
+PK1.1 11 G 32 C
+NCBP1 14 C 30 U S2
+NCBP2 22 G 28 G S3
+segment1 3bp 13..22 GCGCACUUCG 28..40 GGUACAGGCUCCU

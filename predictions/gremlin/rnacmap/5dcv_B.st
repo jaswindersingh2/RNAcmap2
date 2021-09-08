@@ -1,0 +1,20 @@
+#Name: 5dcv_B
+#Length:  51 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGUAUGGUGGAUGAAAGCGGUGAAGGGAAACCGAGUUAACCCGCCUAAGCC
+..[...............(...........).............(]..)..
+EEEEEEEEEEEEEEEEEESHHHHHHHHHHHSXXXXXXXXXXXXXSHHHSEE
+NNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKNNNNN
+S1 19..19 "G" 31..31 "C"
+S2 45..45 "C" 49..49 "G"
+H1 20..30 "GUGAAGGGAAA" (19,31) G:C 
+H2 46..48 "UAA" (45,49) C:G PK{1}
+X1 32..44 "CGAGUUAACCCGC" (31,19) C:G (45,49) C:G 
+E1 1..18 "GGUAUGGUGGAUGAAAGC" PK{1}
+E2 50..51 "CC" 
+PK1 1bp 3..3 46..46 E1 1..18 H2 46..48
+PK1.1 3 U 46 U
+NCBP1 3 U 46 U PK1.1
+segment1 1bp 19..19 G 31..31 C
+segment2 1bp 45..45 C 49..49 G

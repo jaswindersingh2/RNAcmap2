@@ -1,0 +1,64 @@
+#Name: 6mj0_A
+#Length:  104 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+UAAGUUCUCGAUCUUUAAAAUCGUUAGCUCGCCAGUUAGCGAGGUCUGCGAAAGCAGAUAAUCGGGUGCAACUCCCGCCCUUUCUCCGAGGGUCAUCGGAACCA
+.[[...{...{(.]]}..[{.((..(........{])..))[...(}.(..}])..).[.....(.......].)..[((.].......))...)..(}...).
+EEEEEEEEEEESMMMMMMMMMSSIISHHHHHHHHHHSIISSMMMMSIISHHHHSIISMMMMMMMSHHHHHHHHHSMMMSSHHHHHHHHHSSMMMSXXSHHHHSE
+NKKNNNKNNNKNNKKKNNKKNNNNNNNNNNNNNNKKNNNNNKNNNNKNNNNKKNNNNNKNNNNNNNNNNNNNKNNNNKNNNKNNNNNNNNNNNNNNNNKNNNNN
+S1 12..12 "U" 95..95 "A"
+S2 22..23 "CG" 40..41 "CG"
+S3 26..26 "A" 37..37 "U"
+S4 46..46 "C" 57..57 "G"
+S5 49..49 "C" 54..54 "G"
+S6 65..65 "G" 75..75 "C"
+S7 79..80 "CC" 90..91 "GG"
+S8 98..98 "G" 103..103 "C"
+H1 27..36 "GCUCGCCAGU" (26,37) A:U PK{4,6}
+H2 50..53 "GAAA" (49,54) C:G PK{5,7}
+H3 66..74 "GUGCAACUC" (65,75) G:C PK{8}
+H4 81..89 "UUUCUCCGA" (80,90) C:G PK{9}
+H5 99..102 "GAAC" (98,103) G:C PK{2}
+I1.1 24..25 "UU" (23,40) G:C 
+I1.2 38..39 "AG" (37,26) U:A 
+I2.1 47..48 "UG" (46,57) C:G PK{6}
+I2.2 55..56 "CA" (54,49) G:C 
+M1.1 13..21 "CUUUAAAAU" (12,95) U:A (22,41) C:G PK{1,3,4,5}
+M1.2 42..45 "AGGU" (41,22) G:C (46,57) C:G PK{7}
+M1.3 58..64 "AUAAUCG" (57,46) G:C (65,75) G:C PK{8}
+M1.4 76..78 "CGC" (75,65) C:G (79,91) C:G PK{9}
+M1.5 92..94 "GUC" (91,79) G:C (95,12) A:U 
+X1 96..97 "UC" (95,12) A:U (98,103) G:C 
+E1 1..11 "UAAGUUCUCGA" PK{1,2,3}
+E2 104..104 "A" 
+PK1 2bp 2..3 14..15 E1 1..11 M1.1 13..21
+PK2 1bp 7..7 99..99 E1 1..11 H5 99..102
+PK3 1bp 11..11 16..16 E1 1..11 M1.1 13..21
+PK4 1bp 19..19 36..36 M1.1 13..21 H1 27..36
+PK5 1bp 20..20 52..52 M1.1 13..21 H2 50..53
+PK6 1bp 35..35 47..47 H1 27..36 I2.1 47..48
+PK7 1bp 42..42 53..53 M1.2 42..45 H2 50..53
+PK8 1bp 59..59 73..73 M1.3 58..64 H3 66..74
+PK9 1bp 78..78 82..82 M1.4 76..78 H4 81..89
+PK1.1 2 A 15 U
+PK1.2 3 A 14 U
+PK2.1 7 C 99 G
+PK3.1 11 A 16 U
+PK4.1 19 A 36 U
+PK5.1 20 A 52 A
+PK6.1 35 G 47 U
+PK7.1 42 A 53 A
+PK8.1 59 U 73 U
+PK9.1 78 C 82 U
+NCBP1 20 A 52 A PK5.1
+NCBP2 42 A 53 A PK7.1
+NCBP3 59 U 73 U PK8.1
+NCBP4 78 C 82 U PK9.1
+segment1 1bp 12..12 U 95..95 A
+segment2 3bp 22..26 CGUUA 37..41 UAGCG
+segment3 2bp 46..49 CUGC 54..57 GCAG
+segment4 1bp 65..65 G 75..75 C
+segment5 2bp 79..80 CC 90..91 GG
+segment6 1bp 98..98 G 103..103 C

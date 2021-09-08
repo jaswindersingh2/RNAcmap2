@@ -1,0 +1,35 @@
+#Name: PKB367
+#Length:  64 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGCCUAAAAGAUGAUCUUCUUGAAAAUUUGCAGGCCUACCAGAAACGGAUGGGAGUGCAGAUGC
+.[.(..].........[(....].)..[..).......(..........{.].)..(.}....)
+EEESIIIIIIIIIIIIISHHHHHHSIIIIISMMMMMMMSHHHHHHHHHHHHHHSMMSHHHHHHS
+NKNNNNKNNNNNNNNNKNNNNNKNNNNKNNNNNNNNNNNNNNNNNNNNNKNKNNNNNNKNNNNN
+S1 4..4 "C" 31..31 "C"
+S2 18..18 "U" 25..25 "A"
+S3 39..39 "C" 54..54 "A"
+S4 57..57 "G" 64..64 "C"
+H1 19..24 "CUUGAA" (18,25) U:A PK{2}
+H2 40..53 "CAGAAACGGAUGGG" (39,54) C:A PK{3,4}
+H3 58..63 "CAGAUG" (57,64) G:C PK{4}
+I1.1 5..17 "UAAAAGAUGAUCU" (4,31) C:C PK{1,2}
+I1.2 26..30 "AUUUG" (25,18) A:U PK{3}
+M1.1 32..38 "AGGCCUA" (31,4) C:C (39,54) C:A 
+M1.2 55..56 "GU" (54,39) A:C (57,64) G:C 
+E1 1..3 "GGC" PK{1}
+PK1 1bp 2..2 7..7 E1 1..3 I1.1 5..17
+PK2 1bp 17..17 23..23 I1.1 5..17 H1 19..24
+PK3 1bp 28..28 52..52 I1.2 26..30 H2 40..53
+PK4 1bp 50..50 59..59 H2 40..53 H3 58..63
+PK1.1 2 G 7 A
+PK2.1 17 U 23 A
+PK3.1 28 U 52 G
+PK4.1 50 U 59 A
+NCBP1 39 C 54 A S3
+NCBP2 4 C 31 C S1
+NCBP3 2 G 7 A PK1.1
+segment1 2bp 4..18 CUAAAAGAUGAUCUU 25..31 AAUUUGC
+segment2 1bp 39..39 C 54..54 A
+segment3 1bp 57..57 G 64..64 C

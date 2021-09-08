@@ -1,0 +1,17 @@
+#Name: PKB104
+#Length:  26 
+#PageNumber: 1
+UCGUUGACAAGUACGAAAUCUUGUUA
+....((.....)....).......()
+EEEESSHHHHHSBBBBSXXXXXXXSS
+NNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 5..5 "U" 17..17 "A"
+S2 6..6 "G" 12..12 "U"
+S3 25..25 "U" 26..26 "A"
+H1 7..11 "ACAAG" (6,12) G:U 
+H2 26..25 "" (25,26) U:A 
+B1 13..16 "ACGA" (12,6) U:G (17,5) A:U 
+X1 18..24 "AUCUUGU" (17,5) A:U (25,26) U:A 
+E1 1..4 "UCGU" 
+segment1 2bp 5..6 UG 12..17 UACGAA
+segment2 1bp 25..25 U 26..26 A

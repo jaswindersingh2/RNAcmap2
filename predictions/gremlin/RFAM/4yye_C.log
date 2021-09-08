@@ -1,0 +1,224 @@
+# ---------------------------------------------------------------------------------------------
+#                                GREMLIN_CPP v1.0                                              
+# ---------------------------------------------------------------------------------------------
+#   -i           gremlin_input_50k/4yye_C.a2m
+#   -o           gremlin_output_50k/4yye_C.dca
+# ---------------------------------------------------------------------------------------------
+#   -only_neff   0
+#   -only_v      0
+#   -gap_cutoff  0.5
+#   -alphabet    rna
+#   -eff_cutoff  0.8
+#   -lambda      0.01
+# ---------------------------------------------------------------------------------------------
+#   -min_type    lbfgs
+#   -max_iter    100
+# ---------------------------------------------------------------------------------------------
+# removing 4 out of 76 positions with >= 50% gaps!
+# SEQ GUUAUAUUAGCUUAAUUGGUAGAGCAUUCGUUUUGUAAUCGAAAGGUUUGGGGUUCAAAUCCCUAAUAUAACACCA
+# CUT GUUAUAUUAGCUUAAU-GGUAGAGCAUUCGUUUUGUAAUCGAAAGGUUUGGGGUUCAAAUCCCUAAUAUAACA---
+# NC 72
+# NEFF 2278.5
+# learning MRF ...
+# lbfgs::iter S_S fx: 264032 gnorm: 9776.24
+# lbfgs::iter 0_1 fx: 263056 gnorm: 9730.48
+# lbfgs::iter 1_1 fx: 180235 gnorm: 2296.53
+# lbfgs::iter 2_1 fx: 175399 gnorm: 895.265
+# lbfgs::iter 3_1 fx: 174502 gnorm: 570.871
+# lbfgs::iter 4_1 fx: 173703 gnorm: 368.019
+# lbfgs::iter 5_1 fx: 173486 gnorm: 457.975
+# lbfgs::iter 6_1 fx: 173325 gnorm: 190.853
+# lbfgs::iter 7_1 fx: 173279 gnorm: 138.065
+# lbfgs::iter 8_1 fx: 173215 gnorm: 111.923
+# lbfgs::iter 9_1 fx: 173197 gnorm: 232.466
+# lbfgs::iter 10_1 fx: 173167 gnorm: 79.6145
+# lbfgs::iter 11_1 fx: 173157 gnorm: 51.9679
+# lbfgs::iter 12_1 fx: 173149 gnorm: 53.2054
+# lbfgs::iter 13_1 fx: 173140 gnorm: 53.7332
+# lbfgs::iter 14_2 fx: 173139 gnorm: 44.1114
+# lbfgs::iter 15_1 fx: 173134 gnorm: 29.5049
+# lbfgs::iter 16_1 fx: 173132 gnorm: 25.2275
+# lbfgs::iter 17_1 fx: 173130 gnorm: 52.7048
+# lbfgs::iter 18_1 fx: 173128 gnorm: 21.3567
+# lbfgs::iter 19_1 fx: 173128 gnorm: 14.6463
+# lbfgs::iter 20_1 fx: 173127 gnorm: 12.7789
+# lbfgs::iter 21_1 fx: 173126 gnorm: 29.5304
+# lbfgs::iter 22_1 fx: 173126 gnorm: 11.3202
+# lbfgs::iter 23_1 fx: 173125 gnorm: 8.17442
+# lbfgs::iter 24_1 fx: 173125 gnorm: 8.65811
+# lbfgs::iter 25_1 fx: 173125 gnorm: 13.6315
+# lbfgs::iter 26_1 fx: 173125 gnorm: 7.40915
+# lbfgs::iter 27_1 fx: 173125 gnorm: 6.91931
+# lbfgs::iter 28_1 fx: 173124 gnorm: 6.98716
+# lbfgs::iter 29_2 fx: 173124 gnorm: 5.51503
+# lbfgs::iter 30_1 fx: 173124 gnorm: 4.80013
+# lbfgs::iter 31_1 fx: 173124 gnorm: 5.10592
+# lbfgs::iter 32_1 fx: 173124 gnorm: 10.539
+# lbfgs::iter 33_1 fx: 173124 gnorm: 2.84573
+# lbfgs::iter 34_1 fx: 173124 gnorm: 2.36244
+# lbfgs::iter 35_1 fx: 173124 gnorm: 2.45428
+# lbfgs::iter 36_2 fx: 173124 gnorm: 2.02413
+# lbfgs::iter 37_1 fx: 173124 gnorm: 1.86292
+# lbfgs::iter 38_1 fx: 173124 gnorm: 1.8513
+# lbfgs::iter 39_1 fx: 173124 gnorm: 3.9967
+# lbfgs::iter 40_1 fx: 173124 gnorm: 1.20958
+# lbfgs::iter 41_1 fx: 173124 gnorm: 1.04653
+# lbfgs::iter 42_1 fx: 173124 gnorm: 1.16096
+# lbfgs::iter 43_1 fx: 173124 gnorm: 3.2671
+# lbfgs::iter 44_1 fx: 173124 gnorm: 0.893881
+# lbfgs::iter 45_1 fx: 173124 gnorm: 0.647515
+# lbfgs::iter 46_1 fx: 173124 gnorm: 0.733533
+# lbfgs::iter 47_1 fx: 173124 gnorm: 1.48097
+# lbfgs::iter 48_1 fx: 173124 gnorm: 0.508786
+# lbfgs::iter 49_1 fx: 173124 gnorm: 0.505242
+# lbfgs::iter 50_1 fx: 173124 gnorm: 0.656877
+# lbfgs::iter 51_1 fx: 173124 gnorm: 1.54277
+# lbfgs::iter 52_1 fx: 173124 gnorm: 0.476968
+# lbfgs::iter 53_1 fx: 173124 gnorm: 0.283509
+# lbfgs::iter 54_1 fx: 173124 gnorm: 0.244773
+# lbfgs::iter 55_1 fx: 173124 gnorm: 0.285549
+# lbfgs::iter 56_1 fx: 173124 gnorm: 0.458533
+# lbfgs::iter 57_1 fx: 173124 gnorm: 0.175378
+# lbfgs::iter 58_1 fx: 173124 gnorm: 0.152541
+# lbfgs::iter 59_1 fx: 173124 gnorm: 0.180968
+# lbfgs::iter 60_1 fx: 173124 gnorm: 0.270076
+# lbfgs::iter 61_1 fx: 173124 gnorm: 0.146671
+# lbfgs::iter 62_1 fx: 173124 gnorm: 0.0845986
+# lbfgs::iter 63_1 fx: 173124 gnorm: 0.0758623
+# lbfgs::iter 64_1 fx: 173124 gnorm: 0.109652
+# lbfgs::iter 65_1 fx: 173124 gnorm: 0.124197
+# lbfgs::iter 66_1 fx: 173124 gnorm: 0.0666808
+# lbfgs::iter 67_1 fx: 173124 gnorm: 0.0679807
+# lbfgs::iter 68_1 fx: 173124 gnorm: 0.0728492
+# lbfgs::iter 69_1 fx: 173124 gnorm: 0.161146
+# lbfgs::iter 70_1 fx: 173124 gnorm: 0.0494469
+# lbfgs::iter 71_1 fx: 173124 gnorm: 0.0424009
+# lbfgs::iter 72_1 fx: 173124 gnorm: 0.0469887
+# lbfgs::iter 73_1 fx: 173124 gnorm: 0.116145
+# lbfgs::iter 74_1 fx: 173124 gnorm: 0.0417524
+# lbfgs::iter 75_1 fx: 173124 gnorm: 0.0324201
+# lbfgs::iter 76_1 fx: 173124 gnorm: 0.0344055
+# lbfgs::iter 77_1 fx: 173124 gnorm: 0.0595331
+# lbfgs::iter 78_1 fx: 173124 gnorm: 0.034771
+# lbfgs::iter 79_1 fx: 173124 gnorm: 0.0193258
+# lbfgs::iter 80_1 fx: 173124 gnorm: 0.0187501
+# lbfgs::iter 81_1 fx: 173124 gnorm: 0.0230979
+# lbfgs::iter 82_1 fx: 173124 gnorm: 0.0551737
+# lbfgs::iter 83_1 fx: 173124 gnorm: 0.018767
+# lbfgs::iter 84_1 fx: 173124 gnorm: 0.0130907
+# lbfgs::iter 85_1 fx: 173124 gnorm: 0.0138261
+# lbfgs::iter 86_1 fx: 173124 gnorm: 0.0124246
+# lbfgs::iter 87_1 fx: 173124 gnorm: 0.0542423
+# lbfgs::iter 88_1 fx: 173124 gnorm: 0.00926421
+# lbfgs::iter 89_1 fx: 173124 gnorm: 0.00710968
+# lbfgs::iter 90_1 fx: 173124 gnorm: 0.00707793
+# lbfgs::iter 91_1 fx: 173124 gnorm: 0.020402
+# lbfgs::iter 92_1 fx: 173124 gnorm: 0.00643363
+# lbfgs::iter 93_1 fx: 173124 gnorm: 0.00394899
+# lbfgs::iter 94_1 fx: 173124 gnorm: 0.00424334
+# lbfgs::iter 95_1 fx: 173124 gnorm: 0.00406042
+# lbfgs::iter 96_1 fx: 173124 gnorm: 0.0211924
+# lbfgs::iter 97_1 fx: 173124 gnorm: 0.00273516
+# lbfgs::iter 98_1 fx: 173124 gnorm: 0.00210099
+# lbfgs::iter 99_1 fx: 173124 gnorm: 0.0018791
+# lbfgs::iter S_S fx: 173124 gnorm: 10477.4
+# lbfgs::iter 0_1 fx: 172083 gnorm: 10346.4
+# lbfgs::iter 1_1 fx: 136813 gnorm: 30186
+# lbfgs::iter 2_1 fx: 112111 gnorm: 14715.2
+# lbfgs::iter 3_1 fx: 102929 gnorm: 7063.58
+# lbfgs::iter 4_1 fx: 99633 gnorm: 6391.14
+# lbfgs::iter 5_1 fx: 97605.3 gnorm: 4929.25
+# lbfgs::iter 6_1 fx: 93867.2 gnorm: 6070.4
+# lbfgs::iter 7_1 fx: 87981.1 gnorm: 6575.08
+# lbfgs::iter 8_1 fx: 87227.3 gnorm: 11402
+# lbfgs::iter 9_1 fx: 82792.9 gnorm: 5457.21
+# lbfgs::iter 10_1 fx: 81810.8 gnorm: 3270.5
+# lbfgs::iter 11_1 fx: 81103.4 gnorm: 2607.17
+# lbfgs::iter 12_1 fx: 79969.2 gnorm: 3841.45
+# lbfgs::iter 13_1 fx: 78410 gnorm: 3738.09
+# lbfgs::iter 14_2 fx: 77987.4 gnorm: 3783.03
+# lbfgs::iter 15_1 fx: 75998 gnorm: 2735.93
+# lbfgs::iter 16_1 fx: 75922.2 gnorm: 7371.87
+# lbfgs::iter 17_1 fx: 74619.1 gnorm: 2899
+# lbfgs::iter 18_1 fx: 74001.3 gnorm: 1647.37
+# lbfgs::iter 19_1 fx: 73382 gnorm: 1974.1
+# lbfgs::iter 20_1 fx: 72740.8 gnorm: 3417.81
+# lbfgs::iter 21_1 fx: 72039.3 gnorm: 1926.51
+# lbfgs::iter 22_1 fx: 71657.3 gnorm: 1647.27
+# lbfgs::iter 23_1 fx: 71207.9 gnorm: 1485.94
+# lbfgs::iter 24_1 fx: 70864.1 gnorm: 2820.27
+# lbfgs::iter 25_1 fx: 70525.9 gnorm: 1523.16
+# lbfgs::iter 26_1 fx: 70202 gnorm: 1478.63
+# lbfgs::iter 27_1 fx: 69762.6 gnorm: 1970.89
+# lbfgs::iter 28_1 fx: 69721.9 gnorm: 4289.36
+# lbfgs::iter 29_1 fx: 69303.5 gnorm: 1446.48
+# lbfgs::iter 30_1 fx: 69145.9 gnorm: 993.21
+# lbfgs::iter 31_1 fx: 68929.1 gnorm: 1348.51
+# lbfgs::iter 32_1 fx: 68659.6 gnorm: 1782.53
+# lbfgs::iter 33_1 fx: 68482.1 gnorm: 2497.02
+# lbfgs::iter 34_1 fx: 68265.9 gnorm: 1147.47
+# lbfgs::iter 35_1 fx: 68120.7 gnorm: 1203.29
+# lbfgs::iter 36_1 fx: 67980.3 gnorm: 1236.9
+# lbfgs::iter 37_1 fx: 67905.9 gnorm: 3242.21
+# lbfgs::iter 38_1 fx: 67678.9 gnorm: 1122.72
+# lbfgs::iter 39_1 fx: 67573.7 gnorm: 895.408
+# lbfgs::iter 40_1 fx: 67453.1 gnorm: 1127.02
+# lbfgs::iter 41_1 fx: 67267.6 gnorm: 1233
+# lbfgs::iter 42_2 fx: 67220 gnorm: 1147.96
+# lbfgs::iter 43_1 fx: 67009.6 gnorm: 882.551
+# lbfgs::iter 44_1 fx: 66892.6 gnorm: 1382.27
+# lbfgs::iter 45_1 fx: 66755.8 gnorm: 739.029
+# lbfgs::iter 46_1 fx: 66686.9 gnorm: 904.881
+# lbfgs::iter 47_1 fx: 66607.3 gnorm: 918.448
+# lbfgs::iter 48_1 fx: 66503.8 gnorm: 805.113
+# lbfgs::iter 49_1 fx: 66403.7 gnorm: 1831.94
+# lbfgs::iter 50_1 fx: 66307.9 gnorm: 737.514
+# lbfgs::iter 51_1 fx: 66279.4 gnorm: 541.183
+# lbfgs::iter 52_1 fx: 66229.1 gnorm: 523.738
+# lbfgs::iter 53_1 fx: 66190.3 gnorm: 1586.43
+# lbfgs::iter 54_1 fx: 66120.2 gnorm: 713.281
+# lbfgs::iter 55_1 fx: 66071 gnorm: 543.716
+# lbfgs::iter 56_1 fx: 66027.2 gnorm: 606.589
+# lbfgs::iter 57_1 fx: 65989.3 gnorm: 1458.54
+# lbfgs::iter 58_1 fx: 65927.5 gnorm: 511.825
+# lbfgs::iter 59_1 fx: 65897.6 gnorm: 477.439
+# lbfgs::iter 60_1 fx: 65855.8 gnorm: 675.441
+# lbfgs::iter 61_1 fx: 65798.2 gnorm: 1064.96
+# lbfgs::iter 62_1 fx: 65745.8 gnorm: 767.089
+# lbfgs::iter 63_1 fx: 65714.9 gnorm: 484.496
+# lbfgs::iter 64_1 fx: 65684 gnorm: 562.864
+# lbfgs::iter 65_1 fx: 65662.8 gnorm: 558.997
+# lbfgs::iter 66_1 fx: 65641.1 gnorm: 368.381
+# lbfgs::iter 67_1 fx: 65617.9 gnorm: 424.151
+# lbfgs::iter 68_1 fx: 65593.4 gnorm: 515.475
+# lbfgs::iter 69_1 fx: 65570.1 gnorm: 718.743
+# lbfgs::iter 70_1 fx: 65548.2 gnorm: 341.48
+# lbfgs::iter 71_1 fx: 65529.7 gnorm: 394.517
+# lbfgs::iter 72_1 fx: 65512.3 gnorm: 453.326
+# lbfgs::iter 73_1 fx: 65495.5 gnorm: 982.434
+# lbfgs::iter 74_1 fx: 65468.3 gnorm: 363.532
+# lbfgs::iter 75_1 fx: 65457.2 gnorm: 334.226
+# lbfgs::iter 76_1 fx: 65442 gnorm: 363.714
+# lbfgs::iter 77_1 fx: 65431.9 gnorm: 1100.63
+# lbfgs::iter 78_1 fx: 65408.7 gnorm: 366.45
+# lbfgs::iter 79_1 fx: 65400.9 gnorm: 242.904
+# lbfgs::iter 80_1 fx: 65393.2 gnorm: 286.442
+# lbfgs::iter 81_1 fx: 65380.1 gnorm: 323.318
+# lbfgs::iter 82_1 fx: 65365.7 gnorm: 559.933
+# lbfgs::iter 83_1 fx: 65352.2 gnorm: 330.891
+# lbfgs::iter 84_1 fx: 65344.6 gnorm: 217.381
+# lbfgs::iter 85_1 fx: 65335.7 gnorm: 251.16
+# lbfgs::iter 86_1 fx: 65327.3 gnorm: 473.453
+# lbfgs::iter 87_1 fx: 65318 gnorm: 310.101
+# lbfgs::iter 88_1 fx: 65306.7 gnorm: 258.466
+# lbfgs::iter 89_1 fx: 65301.6 gnorm: 302.127
+# lbfgs::iter 90_1 fx: 65295.3 gnorm: 253.691
+# lbfgs::iter 91_1 fx: 65291 gnorm: 618.192
+# lbfgs::iter 92_1 fx: 65281.6 gnorm: 206.363
+# lbfgs::iter 93_1 fx: 65278.7 gnorm: 183.398
+# lbfgs::iter 94_1 fx: 65270 gnorm: 214.015
+# lbfgs::iter 95_1 fx: 65265.6 gnorm: 561.778
+# lbfgs::iter 96_1 fx: 65258 gnorm: 236.566
+# lbfgs::iter 97_1 fx: 65253.8 gnorm: 149.342
+# lbfgs::iter 98_1 fx: 65250.4 gnorm: 175.153
+# lbfgs::iter 99_1 fx: 65244.4 gnorm: 268.515

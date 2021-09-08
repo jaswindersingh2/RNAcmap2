@@ -1,0 +1,15 @@
+#Name: PKB159
+#Length:  25 
+#PageNumber: 1
+GGGCGGGUGUCGCCAGAAAUCACCG
+....(........).........()
+EEEESHHHHHHHHSXXXXXXXXXSS
+NNNNNNNNNNNNNNNNNNNNNNNNN
+S1 5..5 "G" 14..14 "C"
+S2 24..24 "C" 25..25 "G"
+H1 6..13 "GGUGUCGC" (5,14) G:C 
+H2 25..24 "" (24,25) C:G 
+X1 15..23 "AGAAAUCAC" (14,5) C:G (24,25) C:G 
+E1 1..4 "GGGC" 
+segment1 1bp 5..5 G 14..14 C
+segment2 1bp 24..24 C 25..25 G

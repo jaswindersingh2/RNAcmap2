@@ -1,0 +1,23 @@
+#Name: PKB89
+#Length:  33 
+#PageNumber: 1
+ACCUCGAAAGCUUAGUUUCGAGGGUCUUCUGAU
+.....(..(.(......))......(....).)
+EEEEESMMSBSHHHHHHSSMMMMMMSHHHHSMS
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 6..6 "G" 33..33 "U"
+S2 9..9 "A" 19..19 "C"
+S3 11..11 "C" 18..18 "U"
+S4 26..26 "C" 31..31 "G"
+H1 12..17 "UUAGUU" (11,18) C:U 
+H2 27..30 "UUCU" (26,31) C:G 
+B1 10..10 "G" (9,19) A:C (11,18) C:U 
+M1.1 7..8 "AA" (6,33) G:U (9,19) A:C 
+M1.2 20..25 "GAGGGU" (19,9) C:A (26,31) C:G 
+M1.3 32..32 "A" (31,26) G:C (33,6) U:G 
+E1 1..5 "ACCUC" 
+NCBP1 11 C 18 U S3
+NCBP2 9 A 19 C S2
+segment1 1bp 6..6 G 33..33 U
+segment2 2bp 9..11 AGC 18..19 UC
+segment3 1bp 26..26 C 31..31 G

@@ -1,0 +1,51 @@
+[0;32mINFO[0;0m 2021-08-03 01:10:15,440 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 55
+            total number of (unweighted) sequences: 3
+            sequence identity: 0.8
+            lambda_h: 10.8
+            lambda_J: 10.8
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-08-03 01:10:15,440 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 450.853027, xnorm = 5.916562, gnorm = 130.006729, step = 0.006364
+
+Iteration 2:
+fx = 98.656815, xnorm = 1.565022, gnorm = 48.788879, step = 1.000000
+
+Iteration 3:
+fx = 80.602539, xnorm = 2.127086, gnorm = 27.748585, step = 1.000000
+
+Iteration 4:
+fx = 73.543793, xnorm = 1.768016, gnorm = 5.890261, step = 1.000000
+
+Iteration 5:
+fx = 73.526741, xnorm = 1.674407, gnorm = 1.404906, step = 1.000000
+
+Iteration 6:
+fx = 73.472565, xnorm = 1.689830, gnorm = 0.155540, step = 1.000000
+
+Iteration 7:
+fx = 73.471840, xnorm = 1.688947, gnorm = 0.069985, step = 1.000000
+
+Iteration 8:
+fx = 73.471367, xnorm = 1.688770, gnorm = 0.053681, step = 0.229285
+
+Iteration 9:
+fx = 73.470741, xnorm = 1.688267, gnorm = 0.006067, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1000
+fx = 73.470757
+[0;32mINFO[0;0m 2021-08-03 01:10:15,667 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 37400
+[0;32mINFO[0;0m 2021-08-03 01:10:15,668 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 37400
+[0;32mINFO[0;0m 2021-08-03 01:10:15,721 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-08-03 01:10:15,861 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-08-03 01:10:15,881 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_5ztm_C/PLMDCA_apc_fn_scores_5ztm_C.txt

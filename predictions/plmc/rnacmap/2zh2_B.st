@@ -1,0 +1,22 @@
+#Name: 2zh2_B
+#Length:  34 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGCCCGGGGCGGUUCGAUUCCGCCCUGGGCCAAC
+.......(...[)(...{(]...........}))
+EEEEEEESHHHHSSBBBBSHHHHHHHHHHHHHSS
+NNNNNNNNNNNKNNNNNKNKNNNNNNNNNNNKNN
+S1 8..8 "G" 13..13 "U"
+S2 14..14 "U" 34..34 "C"
+S3 19..19 "U" 33..33 "A"
+H1 9..12 "GCGG" (8,13) G:U PK{1}
+H2 20..32 "CCGCCCUGGGCCA" (19,33) U:A PK{1,2}
+B1 15..18 "CGAU" (14,34) U:C (19,33) U:A PK{2}
+E1 1..7 "GGCCCGG" 
+PK1 1bp 12..12 20..20 H1 9..12 H2 20..32
+PK2 1bp 18..18 32..32 B1 15..18 H2 20..32
+PK1.1 12 G 20 C
+PK2.1 18 U 32 A
+NCBP1 14 U 34 C S2
+segment1 1bp 8..8 G 13..13 U
+segment2 2bp 14..19 UCGAUU 33..34 AC

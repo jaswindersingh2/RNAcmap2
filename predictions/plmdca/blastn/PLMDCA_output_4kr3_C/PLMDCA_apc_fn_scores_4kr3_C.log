@@ -1,0 +1,48 @@
+[0;32mINFO[0;0m 2021-08-03 01:08:39,634 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 74
+            total number of (unweighted) sequences: 83
+            sequence identity: 0.8
+            lambda_h: 14.600000000000001
+            lambda_J: 14.600000000000001
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-08-03 01:08:39,635 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 1728.533569, xnorm = 10.068687, gnorm = 301.580292, step = 0.002986
+
+Iteration 2:
+fx = 724.707581, xnorm = 3.090258, gnorm = 273.910950, step = 1.000000
+
+Iteration 3:
+fx = 374.185394, xnorm = 3.652680, gnorm = 140.720917, step = 1.000000
+
+Iteration 4:
+fx = 225.113083, xnorm = 2.534257, gnorm = 30.425304, step = 1.000000
+
+Iteration 5:
+fx = 222.850250, xnorm = 2.260623, gnorm = 17.449022, step = 1.000000
+
+Iteration 6:
+fx = 220.304031, xnorm = 2.316025, gnorm = 3.759763, step = 1.000000
+
+Iteration 7:
+fx = 220.173889, xnorm = 2.307323, gnorm = 1.895771, step = 1.000000
+
+Iteration 8:
+fx = 220.122772, xnorm = 2.296741, gnorm = 0.591356, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 220.122864
+[0;32mINFO[0;0m 2021-08-03 01:08:39,860 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 67895
+[0;32mINFO[0;0m 2021-08-03 01:08:39,861 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 67895
+[0;32mINFO[0;0m 2021-08-03 01:08:39,961 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-08-03 01:08:40,200 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-08-03 01:08:40,235 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_4kr3_C/PLMDCA_apc_fn_scores_4kr3_C.txt

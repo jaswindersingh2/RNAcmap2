@@ -1,0 +1,48 @@
+[0;32mINFO[0;0m 2021-08-03 01:03:45,535 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 118
+            total number of (unweighted) sequences: 31
+            sequence identity: 0.8
+            lambda_h: 23.400000000000002
+            lambda_J: 23.400000000000002
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-08-03 01:03:45,535 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 2436.692627, xnorm = 9.666281, gnorm = 462.966614, step = 0.001939
+
+Iteration 2:
+fx = 566.294312, xnorm = 1.935314, gnorm = 257.407440, step = 1.000000
+
+Iteration 3:
+fx = 357.897675, xnorm = 3.189632, gnorm = 156.614304, step = 1.000000
+
+Iteration 4:
+fx = 215.625473, xnorm = 2.163489, gnorm = 45.057602, step = 1.000000
+
+Iteration 5:
+fx = 209.780396, xnorm = 1.991179, gnorm = 20.325907, step = 0.378123
+
+Iteration 6:
+fx = 209.398438, xnorm = 1.956329, gnorm = 14.493583, step = 0.258342
+
+Iteration 7:
+fx = 209.350708, xnorm = 1.940076, gnorm = 11.669164, step = 0.188576
+
+Iteration 8:
+fx = 209.349762, xnorm = 1.932791, gnorm = 10.338296, step = 0.112057
+
+L-BFGS optimization terminated with status code = -1001
+fx = 209.349487
+[0;32mINFO[0;0m 2021-08-03 01:03:45,898 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 173165
+[0;32mINFO[0;0m 2021-08-03 01:03:45,898 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 173165
+[0;32mINFO[0;0m 2021-08-03 01:03:46,135 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-08-03 01:03:46,670 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-08-03 01:03:46,792 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_5f9r_A/PLMDCA_apc_fn_scores_5f9r_A.txt

@@ -1,0 +1,19 @@
+#Name: 1f1t_A
+#Length: ,38,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGAUCCCGACUGGCGAGAGCCAGGUAACGAAUGGAUCC
+(..(......[.................(...]))..)
+SIISBBBBBBBBBBBBBBBBBBBBBBBBSHHHHSSIIS
+NNNNNNNNNNKNNNNNNNNNNNNNNNNNNNNNKNNNNN
+S1 1..1 "G" 38..38 "C"
+S2 4..4 "U" 35..35 "A"
+S3 29..29 "G" 34..34 "G"
+H1 30..33 "AAUG" (29,34) G:G PK{1}
+B1 5..28 "CCCGACUGGCGAGAGCCAGGUAAC" (4,35) U:A (29,34) G:G PK{1}
+I1.1 2..3 "GA" (1,38) G:C 
+I1.2 36..37 "UC" (35,4) A:U 
+PK1 1bp 11..11 33..33 B1 5..28 H1 30..33
+PK1.1 11 U 33 G
+NCBP1 29 G 34 G S3
+segment1 3bp 1..29 GGAUCCCGACUGGCGAGAGCCAGGUAACG 34..38 GAUCC

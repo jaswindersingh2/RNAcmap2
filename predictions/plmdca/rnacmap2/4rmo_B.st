@@ -1,0 +1,21 @@
+#Name: 4rmo_B
+#Length: ,45,
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+AAGUUUACCACUGACCGAUAUGUGGUAUAUAAAUGGUCGGGUUGA
+......(..[....(.{.....]............)......).}
+EEEEEESIIIIIIISHHHHHHHHHHHHHHHHHHHHSIIIIIISEE
+NNNNNNNNNKNNNNNNKNNNNNKNNNNNNNNNNNNNNNNNNNNNK
+S1 7..7 "A" 43..43 "U"
+S2 15..15 "C" 36..36 "G"
+H1 16..35 "CGAUAUGUGGUAUAUAAAUG" (15,36) C:G PK{1,2}
+I1.1 8..14 "CCACUGA" (7,43) A:U PK{1}
+I1.2 37..42 "UCGGGU" (36,15) G:C 
+E1 1..6 "AAGUUU" 
+E2 44..45 "GA" PK{2}
+PK1 1bp 10..10 23..23 I1.1 8..14 H1 16..35
+PK2 1bp 17..17 45..45 H1 16..35 E2 44..45
+PK1.1 10 A 23 U
+PK2.1 17 G 45 A
+NCBP1 17 G 45 A PK2.1
+segment1 2bp 7..15 ACCACUGAC 36..43 GUCGGGUU

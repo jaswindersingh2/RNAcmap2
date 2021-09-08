@@ -1,0 +1,36 @@
+#Name: 3lwo_D
+#Length: ,58,
+#PageNumber: 4
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGGCCACGGAAACCGCGCGCGGUGAUCAAUGAGCCGCGUUCGCUCCCGUGGCCCACAA
+.(...[..(......{<[.((......(...)..)..].........)])..)}.>..
+ESIIIIIISIIIIIIIIIISSIIIIIISHHHSIISBBBBBBBBBBBBSISIISEEEEE
+NNNNNKNNNNNNNNNKKKNNNNNNNNNNNNNNNNNNNKNNNNNNNNNNKNNNNKNKNN
+S1 2..2 "G" 53..53 "C"
+S2 9..9 "G" 50..50 "G"
+S3 20..20 "C" 48..48 "G"
+S4 21..21 "G" 35..35 "C"
+S5 28..28 "A" 32..32 "A"
+H1 29..31 "AUG" (28,32) A:A 
+B1 36..47 "GCGUUCGCUCCC" (35,21) C:G (48,20) G:C PK{4}
+I1.1 3..8 "GCCACG" (2,53) G:C PK{1}
+I1.2 51..52 "GC" (50,9) G:G 
+I2.1 10..19 "AAACCGCGCG" (9,50) G:G PK{2,3,4}
+I2.2 49..49 "U" (48,20) G:C PK{1}
+I3.1 22..27 "GUGAUC" (21,35) G:C 
+I3.2 33..34 "GC" (32,28) A:A 
+E1 1..1 "G" 
+E2 54..58 "CACAA" PK{2,3}
+PK1 1bp 6..6 49..49 I1.1 3..8 I2.2 49..49
+PK2 1bp 16..16 54..54 I2.1 10..19 E2 54..58
+PK3 1bp 17..17 56..56 I2.1 10..19 E2 54..58
+PK4 1bp 18..18 38..38 I2.1 10..19 B1 36..47
+PK1.1 6 A 49 U
+PK2.1 16 C 54 C
+PK3.1 17 G 56 C
+PK4.1 18 C 38 G
+NCBP1 28 A 32 A S5
+NCBP2 9 G 50 G S2
+NCBP3 16 C 54 C PK2.1
+segment1 5bp 2..28 GGCCACGGAAACCGCGCGCGGUGAUCA 32..53 AGCCGCGUUCGCUCCCGUGGCC

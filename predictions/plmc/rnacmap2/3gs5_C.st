@@ -1,0 +1,17 @@
+#Name: 3gs5_C
+#Length: ,36,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGCAGAGAAACACACGAUCGUGGUACAUUACCUGCC
+(.......[...(......].).............)
+SIIIIIIIIIIISHHHHHHHHSIIIIIIIIIIIIIS
+NNNNNNNNKNNNNNNNNNNKNNNNNNNNNNNNNNNN
+S1 1..1 "G" 36..36 "C"
+S2 13..13 "C" 22..22 "G"
+H1 14..21 "ACGAUCGU" (13,22) C:G PK{1}
+I1.1 2..12 "GCAGAGAAACA" (1,36) G:C PK{1}
+I1.2 23..35 "GUACAUUACCUGC" (22,13) G:C 
+PK1 1bp 9..9 20..20 I1.1 2..12 H1 14..21
+PK1.1 9 A 20 G
+NCBP1 9 A 20 G PK1.1
+segment1 2bp 1..13 GGCAGAGAAACAC 22..36 GGUACAUUACCUGCC

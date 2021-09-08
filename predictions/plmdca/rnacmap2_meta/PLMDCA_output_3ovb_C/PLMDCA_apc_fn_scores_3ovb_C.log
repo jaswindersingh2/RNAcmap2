@@ -1,0 +1,117 @@
+[0;32mINFO[0;0m 2021-08-19 12:42:38,739 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 35
+            total number of (unweighted) sequences: 10966
+            sequence identity: 0.8
+            lambda_h: 6.800000000000001
+            lambda_J: 6.800000000000001
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-08-19 12:42:38,740 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 3402.260010, xnorm = 16.277988, gnorm = 341.194031, step = 0.003239
+
+Iteration 2:
+fx = 3076.244141, xnorm = 14.625411, gnorm = 483.278564, step = 1.000000
+
+Iteration 3:
+fx = 2242.491455, xnorm = 10.270346, gnorm = 562.016357, step = 1.000000
+
+Iteration 4:
+fx = 1931.583862, xnorm = 8.749249, gnorm = 515.647949, step = 0.346891
+
+Iteration 5:
+fx = 1591.619629, xnorm = 8.447046, gnorm = 232.699295, step = 1.000000
+
+Iteration 6:
+fx = 1497.189453, xnorm = 8.288717, gnorm = 105.888512, step = 1.000000
+
+Iteration 7:
+fx = 1458.783325, xnorm = 7.998885, gnorm = 102.728172, step = 1.000000
+
+Iteration 8:
+fx = 1415.725098, xnorm = 7.457110, gnorm = 129.576752, step = 1.000000
+
+Iteration 9:
+fx = 1380.748901, xnorm = 6.697532, gnorm = 157.848831, step = 1.000000
+
+Iteration 10:
+fx = 1357.838013, xnorm = 6.438593, gnorm = 137.688156, step = 1.000000
+
+Iteration 11:
+fx = 1339.429932, xnorm = 6.455780, gnorm = 52.037849, step = 1.000000
+
+Iteration 12:
+fx = 1335.687866, xnorm = 6.396485, gnorm = 33.453587, step = 1.000000
+
+Iteration 13:
+fx = 1332.449951, xnorm = 6.291940, gnorm = 33.773132, step = 1.000000
+
+Iteration 14:
+fx = 1328.484741, xnorm = 6.128357, gnorm = 37.906685, step = 1.000000
+
+Iteration 15:
+fx = 1327.173950, xnorm = 5.973870, gnorm = 46.298798, step = 1.000000
+
+Iteration 16:
+fx = 1325.023071, xnorm = 5.998024, gnorm = 15.178070, step = 1.000000
+
+Iteration 17:
+fx = 1324.560913, xnorm = 5.991269, gnorm = 11.566107, step = 1.000000
+
+Iteration 18:
+fx = 1324.038086, xnorm = 5.956203, gnorm = 10.583033, step = 1.000000
+
+Iteration 19:
+fx = 1323.828491, xnorm = 5.929545, gnorm = 12.507037, step = 0.459716
+
+Iteration 20:
+fx = 1323.551025, xnorm = 5.896262, gnorm = 6.155854, step = 1.000000
+
+Iteration 21:
+fx = 1323.444580, xnorm = 5.883165, gnorm = 5.311984, step = 1.000000
+
+Iteration 22:
+fx = 1323.356079, xnorm = 5.868849, gnorm = 4.670590, step = 1.000000
+
+Iteration 23:
+fx = 1323.284546, xnorm = 5.848418, gnorm = 4.719553, step = 1.000000
+
+Iteration 24:
+fx = 1323.271484, xnorm = 5.851635, gnorm = 2.155993, step = 1.000000
+
+Iteration 25:
+fx = 1323.262085, xnorm = 5.851691, gnorm = 1.999460, step = 1.000000
+
+Iteration 26:
+fx = 1323.236938, xnorm = 5.846349, gnorm = 2.642045, step = 1.000000
+
+Iteration 27:
+fx = 1323.220947, xnorm = 5.842739, gnorm = 2.061509, step = 0.475351
+
+Iteration 28:
+fx = 1323.206299, xnorm = 5.839687, gnorm = 1.214592, step = 1.000000
+
+Iteration 29:
+fx = 1323.198853, xnorm = 5.837078, gnorm = 1.236792, step = 1.000000
+
+Iteration 30:
+fx = 1323.195435, xnorm = 5.836242, gnorm = 1.113304, step = 1.000000
+
+Iteration 31:
+fx = 1323.194580, xnorm = 5.837242, gnorm = 0.709885, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 1323.194458
+[0;32mINFO[0;0m 2021-08-19 12:42:39,794 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 15050
+[0;32mINFO[0;0m 2021-08-19 12:42:39,794 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 15050
+[0;32mINFO[0;0m 2021-08-19 12:42:39,803 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-08-19 12:42:39,829 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-08-19 12:42:39,832 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_3ovb_C/PLMDCA_apc_fn_scores_3ovb_C.txt

@@ -1,0 +1,22 @@
+#Name: 5mga_B
+#Length: ,40,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+AAUUUCUACUGUUGUAGAUGAGAAGUCAUUUAAUAAGGCC
+........(..............(.[.(....]...).))
+EEEEEEEESBBBBBBBBBBBBBBSIIISHHHHHHHHSISS
+NNNNNNNNNNNNNNNNNNNNNNNNNKNNNNNNKNNNNNNN
+S1 9..9 "C" 40..40 "C"
+S2 24..24 "A" 39..39 "C"
+S3 28..28 "A" 37..37 "G"
+H1 29..36 "UUUAAUAA" (28,37) A:G PK{1}
+B1 10..23 "UGUUGUAGAUGAGA" (9,40) C:C (24,39) A:C 
+I1.1 25..27 "GUC" (24,39) A:C PK{1}
+I1.2 38..38 "G" (37,28) G:A 
+E1 1..8 "AAUUUCUA" 
+PK1 1bp 26..26 33..33 I1.1 25..27 H1 29..36
+PK1.1 26 U 33 A
+NCBP1 9 C 40 C S1
+NCBP2 28 A 37 G S3
+NCBP3 24 A 39 C S2
+segment1 3bp 9..28 CUGUUGUAGAUGAGAAGUCA 37..40 GGCC

@@ -1,0 +1,19 @@
+#Name: 6sy6_D
+#Length: ,39,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGCGGAGAAUGUUAUGGCCUUCGGGCAGAGAAAACCGUC
+........(...[....(...]..)............).
+EEEEEEEESIIIIIIIISHHHHHHSIIIIIIIIIIIISE
+NNNNNNNNNNNNKNNNNNNNNKNNNNNNNNNNNNNNNNN
+S1 9..9 "A" 38..38 "U"
+S2 18..18 "C" 25..25 "G"
+H1 19..24 "CUUCGG" (18,25) C:G PK{1}
+I1.1 10..17 "UGUUAUGG" (9,38) A:U PK{1}
+I1.2 26..37 "CAGAGAAAACCG" (25,18) G:C 
+E1 1..8 "GGCGGAGA" 
+E2 39..39 "C" 
+PK1 1bp 13..13 22..22 I1.1 10..17 H1 19..24
+PK1.1 13 U 22 C
+NCBP1 13 U 22 C PK1.1
+segment1 2bp 9..18 AUGUUAUGGC 25..38 GCAGAGAAAACCGU

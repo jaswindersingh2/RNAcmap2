@@ -1,0 +1,51 @@
+[0;32mINFO[0;0m 2021-08-03 00:59:06,964 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 88
+            total number of (unweighted) sequences: 310
+            sequence identity: 0.8
+            lambda_h: 17.400000000000002
+            lambda_J: 17.400000000000002
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-08-03 00:59:06,965 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 1875.377441, xnorm = 9.590775, gnorm = 327.584991, step = 0.009773
+
+Iteration 2:
+fx = 1159.463623, xnorm = 2.882385, gnorm = 421.445404, step = 1.000000
+
+Iteration 3:
+fx = 547.070801, xnorm = 3.774138, gnorm = 179.598526, step = 1.000000
+
+Iteration 4:
+fx = 369.915039, xnorm = 2.818663, gnorm = 49.775734, step = 1.000000
+
+Iteration 5:
+fx = 366.282623, xnorm = 2.611305, gnorm = 32.493347, step = 1.000000
+
+Iteration 6:
+fx = 360.166473, xnorm = 2.664391, gnorm = 6.020309, step = 1.000000
+
+Iteration 7:
+fx = 360.007935, xnorm = 2.659129, gnorm = 3.461378, step = 1.000000
+
+Iteration 8:
+fx = 359.954773, xnorm = 2.647771, gnorm = 2.033949, step = 1.000000
+
+Iteration 9:
+fx = 359.899109, xnorm = 2.647847, gnorm = 0.587980, step = 0.462796
+
+L-BFGS optimization terminated with status code = -1001
+fx = 359.898956
+[0;32mINFO[0;0m 2021-08-03 00:59:07,218 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 96140
+[0;32mINFO[0;0m 2021-08-03 00:59:07,218 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 96140
+[0;32mINFO[0;0m 2021-08-03 00:59:07,325 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-08-03 00:59:07,610 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-08-03 00:59:07,662 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_3zgz_B/PLMDCA_apc_fn_scores_3zgz_B.txt

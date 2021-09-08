@@ -1,0 +1,117 @@
+[0;32mINFO[0;0m 2021-05-22 19:40:37,449 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 59
+            total number of (unweighted) sequences: 201
+            sequence identity: 0.8
+            lambda_h: 11.600000000000001
+            lambda_J: 11.600000000000001
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-05-22 19:40:37,449 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 7841.429688, xnorm = 21.928207, gnorm = 602.795288, step = 0.001608
+
+Iteration 2:
+fx = 5803.673828, xnorm = 17.063894, gnorm = 1014.805359, step = 1.000000
+
+Iteration 3:
+fx = 3260.496338, xnorm = 9.980117, gnorm = 812.244019, step = 1.000000
+
+Iteration 4:
+fx = 3054.624512, xnorm = 10.045226, gnorm = 718.866882, step = 1.000000
+
+Iteration 5:
+fx = 2369.415039, xnorm = 9.268223, gnorm = 300.781219, step = 1.000000
+
+Iteration 6:
+fx = 2225.196045, xnorm = 8.788770, gnorm = 221.498459, step = 1.000000
+
+Iteration 7:
+fx = 2081.761719, xnorm = 7.851539, gnorm = 235.621292, step = 1.000000
+
+Iteration 8:
+fx = 1972.539795, xnorm = 7.172356, gnorm = 229.592896, step = 1.000000
+
+Iteration 9:
+fx = 1894.785889, xnorm = 6.978184, gnorm = 130.747131, step = 1.000000
+
+Iteration 10:
+fx = 1862.570679, xnorm = 6.629737, gnorm = 116.766266, step = 1.000000
+
+Iteration 11:
+fx = 1841.699585, xnorm = 6.285025, gnorm = 82.870903, step = 1.000000
+
+Iteration 12:
+fx = 1832.902832, xnorm = 6.211608, gnorm = 54.204693, step = 1.000000
+
+Iteration 13:
+fx = 1826.080200, xnorm = 6.124799, gnorm = 47.420788, step = 1.000000
+
+Iteration 14:
+fx = 1821.281494, xnorm = 6.019522, gnorm = 41.526131, step = 1.000000
+
+Iteration 15:
+fx = 1820.179565, xnorm = 5.954314, gnorm = 48.847820, step = 1.000000
+
+Iteration 16:
+fx = 1818.665771, xnorm = 5.981666, gnorm = 14.304542, step = 1.000000
+
+Iteration 17:
+fx = 1818.452393, xnorm = 5.988701, gnorm = 9.938088, step = 1.000000
+
+Iteration 18:
+fx = 1818.236328, xnorm = 5.992429, gnorm = 10.884851, step = 1.000000
+
+Iteration 19:
+fx = 1818.058716, xnorm = 6.004060, gnorm = 10.996121, step = 1.000000
+
+Iteration 20:
+fx = 1818.008545, xnorm = 6.004888, gnorm = 7.687833, step = 0.291299
+
+Iteration 21:
+fx = 1817.911499, xnorm = 6.005043, gnorm = 3.771132, step = 1.000000
+
+Iteration 22:
+fx = 1817.867554, xnorm = 6.003489, gnorm = 3.926650, step = 1.000000
+
+Iteration 23:
+fx = 1817.802490, xnorm = 6.000709, gnorm = 4.118043, step = 1.000000
+
+Iteration 24:
+fx = 1817.762451, xnorm = 5.999357, gnorm = 2.364326, step = 1.000000
+
+Iteration 25:
+fx = 1817.751709, xnorm = 5.998740, gnorm = 1.850915, step = 1.000000
+
+Iteration 26:
+fx = 1817.741333, xnorm = 5.997813, gnorm = 1.787027, step = 1.000000
+
+Iteration 27:
+fx = 1817.736450, xnorm = 5.997271, gnorm = 3.126254, step = 1.000000
+
+Iteration 28:
+fx = 1817.729980, xnorm = 5.997649, gnorm = 0.949636, step = 1.000000
+
+Iteration 29:
+fx = 1817.728760, xnorm = 5.997873, gnorm = 0.621310, step = 1.000000
+
+Iteration 30:
+fx = 1817.724243, xnorm = 5.998198, gnorm = 0.586123, step = 1.000000
+
+Iteration 31:
+fx = 1817.723755, xnorm = 5.998379, gnorm = 0.585402, step = 0.377901
+
+L-BFGS optimization terminated with status code = -1001
+fx = 1817.723755
+[0;32mINFO[0;0m 2021-05-22 19:40:38,053 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 43070
+[0;32mINFO[0;0m 2021-05-22 19:40:38,053 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 43070
+[0;32mINFO[0;0m 2021-05-22 19:40:38,123 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-05-22 19:40:38,265 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-05-22 19:40:38,291 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_6aay_B/PLMDCA_apc_fn_scores_6aay_B.txt

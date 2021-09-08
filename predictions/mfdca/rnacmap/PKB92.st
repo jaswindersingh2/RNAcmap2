@@ -1,0 +1,16 @@
+#Name: PKB92
+#Length:  27 
+#PageNumber: 1
+AAAGUCGCUGAAGACUUAAAAUUCAGG
+(....)..(...)..............
+SHHHHSXXSHHHSEEEEEEEEEEEEEE
+NNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 1..1 "A" 6..6 "C"
+S2 9..9 "U" 13..13 "G"
+H1 2..5 "AAGU" (1,6) A:C 
+H2 10..12 "GAA" (9,13) U:G 
+X1 7..8 "GC" (6,1) C:A (9,13) U:G 
+E1 14..27 "ACUUAAAAUUCAGG" 
+NCBP1 1 A 6 C S1
+segment1 1bp 1..1 A 6..6 C
+segment2 1bp 9..9 U 13..13 G

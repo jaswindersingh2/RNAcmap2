@@ -1,0 +1,48 @@
+[0;32mINFO[0;0m 2021-06-10 15:25:19,925 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 64
+            total number of (unweighted) sequences: 2135
+            sequence identity: 0.8
+            lambda_h: 12.600000000000001
+            lambda_J: 12.600000000000001
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-06-10 15:25:19,925 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 1715.184814, xnorm = 9.784682, gnorm = 257.655945, step = 0.012505
+
+Iteration 2:
+fx = 909.335571, xnorm = 6.435271, gnorm = 224.077560, step = 1.000000
+
+Iteration 3:
+fx = 671.791077, xnorm = 4.583921, gnorm = 150.053696, step = 1.000000
+
+Iteration 4:
+fx = 573.272522, xnorm = 4.526402, gnorm = 39.928474, step = 1.000000
+
+Iteration 5:
+fx = 565.771118, xnorm = 4.267528, gnorm = 18.552500, step = 1.000000
+
+Iteration 6:
+fx = 562.431702, xnorm = 4.108452, gnorm = 10.937240, step = 1.000000
+
+Iteration 7:
+fx = 561.022278, xnorm = 4.030087, gnorm = 6.231215, step = 1.000000
+
+Iteration 8:
+fx = 560.707214, xnorm = 4.046932, gnorm = 3.736696, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 560.707214
+[0;32mINFO[0;0m 2021-06-10 15:25:20,227 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 50720
+[0;32mINFO[0;0m 2021-06-10 15:25:20,227 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 50720
+[0;32mINFO[0;0m 2021-06-10 15:25:20,260 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-06-10 15:25:20,358 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-06-10 15:25:20,373 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_PKB367/PLMDCA_apc_fn_scores_PKB367.txt

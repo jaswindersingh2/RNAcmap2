@@ -1,0 +1,28 @@
+[0;31mERROR[0;0m 2021-06-10 14:26:29,687 fasta_reader get_alignment_from_fasta_file 
+	Error occured while reading from fasta file: /mnt/ssd1/jaswinder/deep_msa/final_msa_files/rnacmap/PKB96.a2m.
+	Error type:FileNotFoundError
+	Arguments:(2, 'No such file or directory')
+Traceback (most recent call last):
+  File "/home/spl/jaswinder/project5/programs/pydca/venv/bin/mfdca", line 8, in <module>
+    sys.exit(run_meanfield_dca())
+  File "/home/spl/jaswinder/project5/programs/pydca/venv/lib/python3.6/site-packages/pydca/mfdca_main.py", line 412, in run_meanfield_dca
+    num_site_pairs = args_dict.get('num_site_pairs'),
+  File "/home/spl/jaswinder/project5/programs/pydca/venv/lib/python3.6/site-packages/pydca/mfdca_main.py", line 167, in execute_from_command_line
+    pseudocount=pseudocount,
+  File "/home/spl/jaswinder/project5/programs/pydca/venv/lib/python3.6/site-packages/pydca/mfdca_main.py", line 125, in get_mfdca_instance
+    pseudocount=pseudocount,seqid=seqid
+  File "/home/spl/jaswinder/project5/programs/pydca/venv/lib/python3.6/site-packages/pydca/meanfield_dca/meanfield_dca.py", line 93, in __init__
+    biomolecule=biomolecule,
+  File "/home/spl/jaswinder/project5/programs/pydca/venv/lib/python3.6/site-packages/pydca/fasta_reader/fasta_reader.py", line 150, in get_alignment_int_form
+    alignment = get_alignment_from_fasta_file(file_name)
+  File "/home/spl/jaswinder/project5/programs/pydca/venv/lib/python3.6/site-packages/pydca/fasta_reader/fasta_reader.py", line 94, in get_alignment_from_fasta_file
+    record_iterator = AlignIO.read(file_name, 'fasta')
+  File "/home/spl/jaswinder/project5/programs/pydca/venv/lib/python3.6/site-packages/Bio/AlignIO/__init__.py", line 435, in read
+    first = next(iterator)
+  File "/home/spl/jaswinder/project5/programs/pydca/venv/lib/python3.6/site-packages/Bio/AlignIO/__init__.py", line 357, in parse
+    with as_handle(handle, 'rU') as fp:
+  File "/usr/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/spl/jaswinder/project5/programs/pydca/venv/lib/python3.6/site-packages/Bio/File.py", line 118, in as_handle
+    with open(handleish, mode, **kwargs) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/ssd1/jaswinder/deep_msa/final_msa_files/rnacmap/PKB96.a2m'

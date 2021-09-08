@@ -1,0 +1,15 @@
+#Name: PKB375
+#Length: ,44,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+ACACUACAUGCAGCGCUCUAGGUGUGUAGUGACAGUAAGCGCGC
+..........[.......(...............]..)......
+EEEEEEEEEEEEEEEEEESHHHHHHHHHHHHHHHHHHSEEEEEE
+NNNNNNNNNNKNNNNNNNNNNNNNNNNNNNNNNNKNNNNNNNNN
+S1 19..19 "U" 38..38 "A"
+H1 20..37 "AGGUGUGUAGUGACAGUA" (19,38) U:A PK{1}
+E1 1..18 "ACACUACAUGCAGCGCUC" PK{1}
+E2 39..44 "GCGCGC" 
+PK1 1bp 11..11 35..35 E1 1..18 H1 20..37
+PK1.1 11 C 35 G
+segment1 1bp 19..19 U 38..38 A

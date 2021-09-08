@@ -1,0 +1,21 @@
+#Name: PKB158
+#Length:  28 
+#PageNumber: 1
+CUUUAAGGGACCUUGUGAAAUUCAAGGG
+..((........).(.......)...).
+EESSHHHHHHHHSMSHHHHHHHSMMMSE
+NNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 3..3 "U" 27..27 "G"
+S2 4..4 "U" 13..13 "U"
+S3 15..15 "G" 23..23 "C"
+H1 5..12 "AAGGGACC" (4,13) U:U 
+H2 16..22 "UGAAAUU" (15,23) G:C 
+M1.1 4..3 "" (3,27) U:G (4,13) U:U 
+M1.2 14..14 "U" (13,4) U:U (15,23) G:C 
+M1.3 24..26 "AAG" (23,15) C:G (27,3) G:U 
+E1 1..2 "CU" 
+E2 28..28 "G" 
+NCBP1 4 U 13 U S2
+segment1 1bp 3..3 U 27..27 G
+segment2 1bp 4..4 U 13..13 U
+segment3 1bp 15..15 G 23..23 C

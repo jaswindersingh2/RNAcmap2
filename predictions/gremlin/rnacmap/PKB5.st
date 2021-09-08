@@ -1,0 +1,19 @@
+#Name: PKB5
+#Length: ,41,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+CGGGUGCAACUCCCGCCCCUCUUCCGAGGGUCAUCGGAACC
+................[.....(]..(......)...)...
+EEEEEEEEEEEEEEEEEEEEEESIIISHHHHHHSIIISEEE
+NNNNNNNNNNNNNNNNKNNNNNNKNNNNNNNNNNNNNNNNN
+S1 23..23 "U" 38..38 "A"
+S2 27..27 "A" 34..34 "U"
+H1 28..33 "GGGUCA" (27,34) A:U 
+I1.1 24..26 "CCG" (23,38) U:A PK{1}
+I1.2 35..37 "CGG" (34,27) U:A 
+E1 1..22 "CGGGUGCAACUCCCGCCCCUCU" PK{1}
+E2 39..41 "ACC" 
+PK1 1bp 17..17 24..24 E1 1..22 I1.1 24..26
+PK1.1 17 C 24 C
+NCBP1 17 C 24 C PK1.1
+segment1 2bp 23..27 UCCGA 34..38 UCGGA

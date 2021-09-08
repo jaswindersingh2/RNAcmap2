@@ -1,0 +1,36 @@
+[0;32mINFO[0;0m 2021-05-22 18:49:57,687 fasta_reader get_alignment_int_form 
+	Total number of sequences read from file: 2
+[0;32mINFO[0;0m 2021-05-22 18:49:57,688 meanfield_dca compute_sequences_weight 
+	Computing sequences weights
+[0;32mINFO[0;0m 2021-05-22 18:49:58,542 meanfield_dca __init__ 
+	Created a MeanFieldDCA object with the following attributes
+        	biomolecule: RNA
+        	total states at sites: 5
+        	pseudocount: 0.5
+        	sequence identity: 0.8
+        	alignment length: 37
+        	total number of unique sequences (excluding redundant sequences with 100 percent similarity): 2
+        	effective number of sequences (with sequence identity 0.8): 2.0
+        
+[0;32mINFO[0;0m 2021-05-22 18:49:58,543 meanfield_dca get_single_site_freqs 
+	Computing single site frequencies
+[0;32mINFO[0;0m 2021-05-22 18:49:58,898 meanfield_dca get_reg_single_site_freqs 
+	Regularizing single site frequencies
+[0;32mINFO[0;0m 2021-05-22 18:49:59,018 meanfield_dca get_pair_site_freqs 
+	Computing pair site frequencies
+[0;32mINFO[0;0m 2021-05-22 18:50:02,160 meanfield_dca get_reg_pair_site_freqs 
+	Regularizing pair site frequencies
+[0;32mINFO[0;0m 2021-05-22 18:50:02,481 meanfield_dca construct_corr_mat 
+	Constructing the correlation matrix
+[0;32mINFO[0;0m 2021-05-22 18:50:02,789 meanfield_dca compute_couplings 
+	Computing couplings
+[0;32mINFO[0;0m 2021-05-22 18:50:03,288 meanfield_dca compute_couplings 
+	Maximum and minimum couplings: 0.6299541093033507, -20.000000000000004
+[0;32mINFO[0;0m 2021-05-22 18:50:03,288 meanfield_dca compute_sorted_FN 
+	Computing Frobenius norm of couplings
+[0;32mINFO[0;0m 2021-05-22 18:50:03,364 meanfield_dca compute_sorted_FN_APC 
+	Performing average product correction (APC) to Frobenius norm of couplings.
+[0;32mINFO[0;0m 2021-05-22 18:50:03,372 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file MFDCA_output_4x4v_B/MFDCA_apc_fn_scores_4x4v_B.txt
+[0;32mINFO[0;0m 2021-05-22 18:50:03,376 mfdca_main run_meanfield_dca 
+	DONE

@@ -1,0 +1,33 @@
+[0;32mINFO[0;0m 2021-06-10 15:03:24,171 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 29
+            total number of (unweighted) sequences: 6
+            sequence identity: 0.8
+            lambda_h: 5.6000000000000005
+            lambda_J: 5.6000000000000005
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-06-10 15:03:24,171 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 59.307362, xnorm = 2.639810, gnorm = 28.099588, step = 0.023603
+
+Iteration 2:
+fx = 24.769314, xnorm = 1.102255, gnorm = 3.164231, step = 1.000000
+
+Iteration 3:
+fx = 24.079325, xnorm = 1.228717, gnorm = 1.499285, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 24.079323
+[0;32mINFO[0;0m 2021-06-10 15:03:24,233 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 10295
+[0;32mINFO[0;0m 2021-06-10 15:03:24,233 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 10295
+[0;32mINFO[0;0m 2021-06-10 15:03:24,245 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-06-10 15:03:24,272 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-06-10 15:03:24,275 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_PKB278/PLMDCA_apc_fn_scores_PKB278.txt

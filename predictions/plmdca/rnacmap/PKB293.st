@@ -1,0 +1,16 @@
+#Name: PKB293
+#Length:  24 
+#PageNumber: 1
+ACGUGAAGGCUACGAUAGUGCCAG
+.......(.......).(.....)
+EEEEEEESHHHHHHHSXSHHHHHS
+NNNNNNNNNNNNNNNNNNNNNNNN
+S1 8..8 "G" 16..16 "U"
+S2 18..18 "G" 24..24 "G"
+H1 9..15 "GCUACGA" (8,16) G:U 
+H2 19..23 "UGCCA" (18,24) G:G 
+X1 17..17 "A" (16,8) U:G (18,24) G:G 
+E1 1..7 "ACGUGAA" 
+NCBP1 18 G 24 G S2
+segment1 1bp 8..8 G 16..16 U
+segment2 1bp 18..18 G 24..24 G

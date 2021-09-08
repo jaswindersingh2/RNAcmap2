@@ -1,0 +1,27 @@
+#Name: PKB273
+#Length:  48 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+UUCCAGGACAUACUGCUGAGGAUGUCAAAAAUGCAGUUGGAGUCCUCA
+.....(......)..[.(..](...(.........[..)...)...])
+EEEEESHHHHHHSXXXXSIIISIIISHHHHHHHHHHHHSIIISIIIIS
+NNNNNNNNNNNNNNNKNNNNKNNNNNNNNNNNNNNKNNNNNNNNNNKN
+S1 6..6 "G" 13..13 "C"
+S2 18..18 "G" 48..48 "A"
+S3 22..22 "A" 43..43 "U"
+S4 26..26 "C" 39..39 "G"
+H1 7..12 "GACAUA" (6,13) G:C 
+H2 27..38 "AAAAAUGCAGUU" (26,39) C:G PK{2}
+I1.1 19..21 "AGG" (18,48) G:A PK{1}
+I1.2 44..47 "CCUC" (43,22) U:A PK{2}
+I2.1 23..25 "UGU" (22,43) A:U 
+I2.2 40..42 "GAG" (39,26) G:C 
+X1 14..17 "UGCU" (13,6) C:G (18,48) G:A PK{1}
+E1 1..5 "UUCCA" 
+PK1 1bp 16..16 21..21 X1 14..17 I1.1 19..21
+PK2 1bp 36..36 47..47 H2 27..38 I1.2 44..47
+PK1.1 16 C 21 G
+PK2.1 36 G 47 C
+NCBP1 18 G 48 A S2
+segment1 1bp 6..6 G 13..13 C
+segment2 3bp 18..26 GAGGAUGUC 39..48 GGAGUCCUCA

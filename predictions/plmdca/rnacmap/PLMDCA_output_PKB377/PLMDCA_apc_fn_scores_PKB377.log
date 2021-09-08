@@ -1,0 +1,48 @@
+[0;32mINFO[0;0m 2021-06-10 15:04:40,717 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 102
+            total number of (unweighted) sequences: 25
+            sequence identity: 0.8
+            lambda_h: 20.200000000000003
+            lambda_J: 20.200000000000003
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-06-10 15:04:40,717 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 2988.772705, xnorm = 10.756979, gnorm = 437.098145, step = 0.007531
+
+Iteration 2:
+fx = 1321.555176, xnorm = 4.823457, gnorm = 357.262909, step = 1.000000
+
+Iteration 3:
+fx = 1085.903198, xnorm = 4.705077, gnorm = 280.978821, step = 1.000000
+
+Iteration 4:
+fx = 738.374573, xnorm = 3.998164, gnorm = 64.570396, step = 1.000000
+
+Iteration 5:
+fx = 727.449463, xnorm = 3.828623, gnorm = 35.524971, step = 1.000000
+
+Iteration 6:
+fx = 721.518921, xnorm = 3.830540, gnorm = 10.019839, step = 1.000000
+
+Iteration 7:
+fx = 720.772644, xnorm = 3.798729, gnorm = 5.656270, step = 1.000000
+
+Iteration 8:
+fx = 720.332458, xnorm = 3.761888, gnorm = 3.458373, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 720.332275
+[0;32mINFO[0;0m 2021-06-10 15:04:40,885 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 129285
+[0;32mINFO[0;0m 2021-06-10 15:04:40,885 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 129285
+[0;32mINFO[0;0m 2021-06-10 15:04:41,002 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-06-10 15:04:41,291 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-06-10 15:04:41,351 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_PKB377/PLMDCA_apc_fn_scores_PKB377.txt

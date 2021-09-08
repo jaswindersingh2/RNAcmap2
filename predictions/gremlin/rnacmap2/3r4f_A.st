@@ -1,0 +1,28 @@
+#Name: 3r4f_A
+#Length:  66 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGCGUGUAUGUGGGGAAACCCUGAUUGAGUUCAGCCCACAUACUUUGUUGAUGGUUGUCAAUCGCC
+((...[{(................................)(]..}.)(..........)....))
+SSMMMMMSHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHSSHHHHHSSHHHHHHHHHHSMMMMSS
+NNNNNKKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKNNKNNNNNNNNNNNNNNNNNNNN
+S1 1..2 "GG" 65..66 "CC"
+S2 8..8 "A" 41..41 "U"
+S3 42..42 "A" 48..48 "U"
+S4 49..49 "U" 60..60 "A"
+H1 9..40 "UGUGGGGAAACCCUGAUUGAGUUCAGCCCACA" (8,41) A:U 
+H2 43..47 "CUUUG" (42,48) A:U PK{1,2}
+H3 50..59 "GAUGGUUGUC" (49,60) U:A 
+M1.1 3..7 "CGUGU" (2,65) G:C (8,41) A:U PK{1,2}
+M1.2 42..41 "" (41,8) U:A (42,48) A:U 
+M1.3 49..48 "" (48,42) U:A (49,60) U:A 
+M1.4 61..64 "AUCG" (60,49) A:U (65,2) C:G 
+PK1 1bp 6..6 43..43 M1.1 3..7 H2 43..47
+PK2 1bp 7..7 46..46 M1.1 3..7 H2 43..47
+PK1.1 6 G 43 C
+PK2.1 7 U 46 U
+NCBP1 7 U 46 U PK2.1
+segment1 2bp 1..2 GG 65..66 CC
+segment2 1bp 8..8 A 41..41 U
+segment3 1bp 42..42 A 48..48 U
+segment4 1bp 49..49 U 60..60 A

@@ -1,0 +1,56 @@
+#Name: PKB395
+#Length:  109 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+AGUAAGUUUCUCCUAUCGCCAUCUGGAUGGGAUUUAAGAGACUUAUGCCAAACUCUUUGAGUUUGAUGCCAAUUCAGUUUUCGUCUGAAUUGAUGCCCGAAAGGAUGGC
+..(((((..((.(..((.[.(..]))).)..).....)..))))).....(..((...))..)......[....(...........)(...].)...[..(.]....).
+EESSSSSIISSISIISSBBBSHHHSSSISIISBBBBBSIISSSSSMMMMMSIISSHHHSSIISMMMMMMMMMMMSHHHHHHHHHHHSSHHHHHSMMMMMMSHHHHHHSE
+NNNNNNNNNNNNNNNNNNKNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKNNNNNNNNNNNNNNNNNNNNNKNNNNNKNNNNKNNNNNN
+S1 3..7 "UAAGU" 41..45 "ACUUA"
+S2 10..10 "C" 38..38 "G"
+S3 11..11 "U" 32..32 "A"
+S4 13..13 "C" 29..29 "G"
+S5 16..17 "UC" 26..27 "GA"
+S6 21..21 "A" 25..25 "G"
+S7 51..51 "A" 63..63 "U"
+S8 54..55 "UC" 59..60 "GA"
+S9 75..75 "C" 87..87 "G"
+S10 88..88 "A" 94..94 "U"
+S11 101..101 "A" 108..108 "G"
+H1 22..24 "UCU" (21,25) A:G PK{1}
+H2 56..58 "UUU" (55,59) C:G 
+H3 76..86 "AGUUUUCGUCU" (75,87) C:G 
+H4 89..93 "AUUGA" (88,94) A:U PK{2}
+H5 102..107 "AGGAUG" (101,108) A:G PK{3}
+B1 18..20 "GCC" (17,26) C:G (21,25) A:G PK{1}
+B2 33..37 "UUUAA" (32,11) A:U (38,10) G:C 
+I1.1 8..9 "UU" (7,41) U:A 
+I1.2 39..40 "AG" (38,10) G:C 
+I2.1 12..12 "C" (11,32) U:A 
+I2.2 30..31 "GG" (29,13) G:C 
+I3.1 14..15 "UA" (13,29) C:G 
+I3.2 28..28 "U" (27,16) A:U 
+I4.1 52..53 "AC" (51,63) A:U 
+I4.2 61..62 "GU" (60,54) A:U 
+M1.1 46..50 "UGCCA" (45,3) A:U (51,63) A:U 
+M1.2 64..74 "UGAUGCCAAUU" (63,51) U:A (75,87) C:G PK{2}
+M1.3 88..87 "" (87,75) G:C (88,94) A:U 
+M1.4 95..100 "GCCCGA" (94,88) U:A (101,108) A:G PK{3}
+E1 1..2 "AG" 
+E2 109..109 "C" 
+PK1 1bp 19..19 24..24 B1 18..20 H1 22..24
+PK2 1bp 70..70 92..92 M1.2 64..74 H4 89..93
+PK3 1bp 98..98 103..103 M1.4 95..100 H5 102..107
+PK1.1 19 C 24 U
+PK2.1 70 C 92 G
+PK3.1 98 C 103 G
+NCBP1 21 A 25 G S6
+NCBP2 101 A 108 G S11
+NCBP3 19 C 24 U PK1.1
+segment1 11bp 3..21 UAAGUUUCUCCUAUCGCCA 25..45 GGAUGGGAUUUAAGAGACUUA
+segment2 3bp 51..55 AACUC 59..63 GAGUU
+segment3 1bp 75..75 C 87..87 G
+segment4 1bp 88..88 A 94..94 U
+segment5 1bp 101..101 A 108..108 G

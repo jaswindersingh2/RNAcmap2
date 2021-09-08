@@ -1,0 +1,21 @@
+#Name: PKB204
+#Length:  29 
+#PageNumber: 1
+CAGAGUUAUCAUACUCUAUAAACUAUGAC
+.((...).(.....).............)
+ESSHHHSMSHHHHHSMMMMMMMMMMMMMS
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 2..2 "A" 29..29 "C"
+S2 3..3 "G" 7..7 "U"
+S3 9..9 "U" 15..15 "U"
+H1 4..6 "AGU" (3,7) G:U 
+H2 10..14 "CAUAC" (9,15) U:U 
+M1.1 3..2 "" (2,29) A:C (3,7) G:U 
+M1.2 8..8 "A" (7,3) U:G (9,15) U:U 
+M1.3 16..28 "CUAUAAACUAUGA" (15,9) U:U (29,2) C:A 
+E1 1..1 "C" 
+NCBP1 2 A 29 C S1
+NCBP2 9 U 15 U S3
+segment1 1bp 2..2 A 29..29 C
+segment2 1bp 3..3 G 7..7 U
+segment3 1bp 9..9 U 15..15 U

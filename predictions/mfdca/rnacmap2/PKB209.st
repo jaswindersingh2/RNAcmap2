@@ -1,0 +1,41 @@
+#Name: PKB209
+#Length:  76 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GACUAGCCGUAGUGGCGAACGACCUGAUAGGGUGCUGCAGAGGCCCACUAUUAGGCUAGUAUAAAAAUCUCUGCUG
+.(........(.......(.....)...[.....({...]..)....)[(..}{]...)).}..............
+ESMMMMMMMMSMMMMMMMSHHHHHSMMMMMMMMMSHHHHHHHSMMMMSMSHHHHHHHHSSEEEEEEEEEEEEEEEE
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNKNNNNNNKNNNKNNNNNNNNKNNNKKKNNNNNNKNNNNNNNNNNNNNN
+S1 2..2 "A" 60..60 "U"
+S2 11..11 "A" 48..48 "C"
+S3 19..19 "A" 25..25 "U"
+S4 35..35 "C" 43..43 "G"
+S5 50..50 "A" 59..59 "G"
+H1 20..24 "CGACC" (19,25) A:U 
+H2 36..42 "UGCAGAG" (35,43) C:G PK{1,2}
+H3 51..58 "UUAGGCUA" (50,59) A:G PK{2,3,4}
+M1.1 3..10 "CUAGCCGU" (2,60) A:U (11,48) A:C 
+M1.2 49..49 "U" (48,11) C:A (50,59) A:G PK{3}
+M1.3 60..59 "" (59,50) G:A (60,2) U:A 
+M2.1 12..18 "GUGGCGA" (11,48) A:C (19,25) A:U 
+M2.2 26..34 "GAUAGGGUG" (25,19) U:A (35,43) C:G PK{1}
+M2.3 44..47 "CCCA" (43,35) G:C (48,11) C:A 
+E1 1..1 "G" 
+E2 61..76 "AUAAAAAUCUCUGCUG" PK{4}
+PK1 1bp 29..29 40..40 M2.2 26..34 H2 36..42
+PK2 1bp 36..36 53..53 H2 36..42 H3 51..58
+PK3 1bp 49..49 55..55 M1.2 49..49 H3 51..58
+PK4 1bp 54..54 62..62 H3 51..58 E2 61..76
+PK1.1 29 A 40 G
+PK2.1 36 U 53 A
+PK3.1 49 U 55 G
+PK4.1 54 G 62 U
+NCBP1 11 A 48 C S2
+NCBP2 50 A 59 G S5
+NCBP3 29 A 40 G PK1.1
+segment1 1bp 2..2 A 60..60 U
+segment2 1bp 11..11 A 48..48 C
+segment3 1bp 19..19 A 25..25 U
+segment4 1bp 35..35 C 43..43 G
+segment5 1bp 50..50 A 59..59 G

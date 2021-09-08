@@ -1,0 +1,21 @@
+#Name: 3zd4_A
+#Length: ,43,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGAUGUACUACCAGCUGAUGAGUCCCAAAUAGGACAAAACGCC
+.......[(....]....(...(((......))).)......)
+EEEEEEEESIIIIIIIIISIIISSSHHHHHHSSSISIIIIIIS
+NNNNNNNKNNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 9..9 "U" 43..43 "C"
+S2 19..19 "U" 36..36 "A"
+S3 23..25 "UCC" 32..34 "GGA"
+H1 26..31 "CAAAUA" (25,32) C:G 
+I1.1 10..18 "ACCAGCUGA" (9,43) U:C PK{1}
+I1.2 37..42 "AAACGC" (36,19) A:U 
+I2.1 20..22 "GAG" (19,36) U:A 
+I2.2 35..35 "C" (34,23) A:U 
+E1 1..8 "GGAUGUAC" PK{1}
+PK1 1bp 8..8 14..14 E1 1..8 I1.1 10..18
+PK1.1 8 C 14 G
+NCBP1 9 U 43 C S1
+segment1 5bp 9..25 UACCAGCUGAUGAGUCC 32..43 GGACAAAACGCC

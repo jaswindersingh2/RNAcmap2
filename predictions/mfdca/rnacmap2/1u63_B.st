@@ -1,0 +1,26 @@
+#Name: 1u63_B
+#Length:  49 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGGAGUGAAGGAGGCUCGCGAACUCGCGAAGCCGAGAAACUUCACUCCC
+((.((((([.........((....))..(]........)..))))).))
+SSISSSSSMMMMMMMMMMSSHHHHSSMMSHHHHHHHHHSMMSSSSSISS
+NNNNNNNNKNNNNNNNNNNNNNNNNNNNNKNNNNNNNNNNNNNNNNNNN
+S1 1..2 "GG" 48..49 "CC"
+S2 4..8 "AGUGA" 42..46 "UCACU"
+S3 19..20 "CG" 25..26 "CG"
+S4 29..29 "A" 39..39 "A"
+H1 21..24 "AACU" (20,25) G:C 
+H2 30..38 "AGCCGAGAA" (29,39) A:A PK{1}
+I1.1 3..3 "G" (2,48) G:C 
+I1.2 47..47 "C" (46,4) U:A 
+M1.1 9..18 "AGGAGGCUCG" (8,42) A:U (19,26) C:G PK{1}
+M1.2 27..28 "CG" (26,19) G:C (29,39) A:A 
+M1.3 40..41 "CU" (39,29) A:A (42,8) U:A 
+PK1 1bp 9..9 30..30 M1.1 9..18 H2 30..38
+PK1.1 9 A 30 A
+NCBP1 29 A 39 A S4
+NCBP2 9 A 30 A PK1.1
+segment1 7bp 1..8 GGGAGUGA 42..49 UCACUCCC
+segment2 2bp 19..20 CG 25..26 CG
+segment3 1bp 29..29 A 39..39 A

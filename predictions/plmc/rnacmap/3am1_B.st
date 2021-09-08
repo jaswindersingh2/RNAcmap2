@@ -1,0 +1,33 @@
+#Name: 3am1_B
+#Length:  81 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGCGCGGGGUACCGGGCUUGGUAGCCCGGGGCUUCGGCCGAGGGCGAGAGCCCUCGGGGUUCGAUUCCCCCCCUGCGCCGC
+(......(....[...((....)....].........[.)...{.(]....})..................)......)..
+SIIIIIISMMMMMMMMSSHHHHSBBBBBBBBBBBBBBBBSMMMMMSHHHHHHSMMMMMMMMMMMMMMMMMMSIIIIIISEE
+NNNNNNNNNNNNKNNNNNNNNNNNNNNKNNNNNNNNNKNNNNNKNNKNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 1..1 "G" 79..79 "C"
+S2 8..8 "G" 72..72 "C"
+S3 17..17 "C" 40..40 "G"
+S4 18..18 "U" 23..23 "A"
+S5 46..46 "G" 53..53 "C"
+H1 19..22 "UGGU" (18,23) U:A 
+H2 47..52 "AGAGCC" (46,53) G:C PK{2,3}
+B1 24..39 "GCCCGGGGCUUCGGCC" (23,18) A:U (40,17) G:C PK{1,2}
+I1.1 2..7 "GCGCGG" (1,79) G:C 
+I1.2 73..78 "CUGCGC" (72,8) C:G 
+M1.1 9..16 "GUACCGGG" (8,72) G:C (17,40) C:G PK{1}
+M1.2 41..45 "AGGGC" (40,17) G:C (46,53) G:C PK{3}
+M1.3 54..71 "UCGGGGUUCGAUUCCCCC" (53,46) C:G (72,8) C:G 
+E1 80..81 "GC" 
+PK1 1bp 13..13 28..28 M1.1 9..16 B1 24..39
+PK2 1bp 38..38 47..47 B1 24..39 H2 47..52
+PK3 1bp 44..44 52..52 M1.2 41..45 H2 47..52
+PK1.1 13 C 28 G
+PK2.1 38 C 47 A
+PK3.1 44 G 52 C
+NCBP1 38 C 47 A PK2.1
+segment1 2bp 1..8 GGCGCGGG 72..79 CCUGCGCC
+segment2 2bp 17..18 CU 23..40 AGCCCGGGGCUUCGGCCG
+segment3 1bp 46..46 G 53..53 C

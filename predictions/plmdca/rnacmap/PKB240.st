@@ -1,0 +1,24 @@
+#Name: PKB240
+#Length:  41 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGGAAAUGGACUGAGCGGCGCCGACCGCCAAACAACCGGCA
+[.....(......).............({]..).......}
+EEEEEESHHHHHHSXXXXXXXXXXXXXSHHHHSEEEEEEEE
+KNNNNNNNNNNNNNNNNNNNNNNNNNNNKKNNNNNNNNNNK
+S1 7..7 "U" 14..14 "A"
+S2 28..28 "C" 33..33 "C"
+H1 8..13 "GGACUG" (7,14) U:A 
+H2 29..32 "CAAA" (28,33) C:C PK{1,2}
+X1 15..27 "GCGGCGCCGACCG" (14,7) A:U (28,33) C:C 
+E1 1..6 "GGGAAA" PK{1}
+E2 34..41 "AACCGGCA" PK{2}
+PK1 1bp 1..1 30..30 E1 1..6 H2 29..32
+PK2 1bp 29..29 41..41 H2 29..32 E2 34..41
+PK1.1 1 G 30 A
+PK2.1 29 C 41 A
+NCBP1 28 C 33 C S2
+NCBP2 1 G 30 A PK1.1
+NCBP3 29 C 41 A PK2.1
+segment1 1bp 7..7 U 14..14 A
+segment2 1bp 28..28 C 33..33 C

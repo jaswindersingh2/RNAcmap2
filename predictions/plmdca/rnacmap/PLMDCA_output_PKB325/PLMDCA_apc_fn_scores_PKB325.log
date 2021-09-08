@@ -1,0 +1,51 @@
+[0;32mINFO[0;0m 2021-06-10 15:03:51,150 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 78
+            total number of (unweighted) sequences: 16
+            sequence identity: 0.8
+            lambda_h: 15.4
+            lambda_J: 15.4
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-06-10 15:03:51,150 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 969.525879, xnorm = 7.202365, gnorm = 217.453140, step = 0.013403
+
+Iteration 2:
+fx = 840.954468, xnorm = 3.011862, gnorm = 327.426666, step = 1.000000
+
+Iteration 3:
+fx = 264.069885, xnorm = 2.900228, gnorm = 61.550880, step = 1.000000
+
+Iteration 4:
+fx = 239.938171, xnorm = 2.483931, gnorm = 21.794256, step = 1.000000
+
+Iteration 5:
+fx = 238.434296, xnorm = 2.322597, gnorm = 9.672083, step = 1.000000
+
+Iteration 6:
+fx = 237.726013, xnorm = 2.337213, gnorm = 2.969461, step = 1.000000
+
+Iteration 7:
+fx = 237.598419, xnorm = 2.341207, gnorm = 0.896820, step = 1.000000
+
+Iteration 8:
+fx = 237.592651, xnorm = 2.338791, gnorm = 0.464425, step = 1.000000
+
+Iteration 9:
+fx = 237.587723, xnorm = 2.337219, gnorm = 0.116669, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 237.587753
+[0;32mINFO[0;0m 2021-06-10 15:03:51,271 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 75465
+[0;32mINFO[0;0m 2021-06-10 15:03:51,271 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 75465
+[0;32mINFO[0;0m 2021-06-10 15:03:51,322 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-06-10 15:03:51,473 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-06-10 15:03:51,497 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_PKB325/PLMDCA_apc_fn_scores_PKB325.txt

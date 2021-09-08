@@ -1,0 +1,224 @@
+# ---------------------------------------------------------------------------------------------
+#                                GREMLIN_CPP v1.0                                              
+# ---------------------------------------------------------------------------------------------
+#   -i           /mnt/ssd1/jaswinder/deep_msa/final_msa_files/rnacmap_meta/PKB242.a2m
+#   -o           /mnt/ssd1/jaswinder/deep_msa/predictions/gremlin/rnacmap_meta/PKB242.dca
+# ---------------------------------------------------------------------------------------------
+#   -only_neff   0
+#   -only_v      0
+#   -gap_cutoff  0.5
+#   -alphabet    rna
+#   -eff_cutoff  0.8
+#   -lambda      0.01
+# ---------------------------------------------------------------------------------------------
+#   -min_type    lbfgs
+#   -max_iter    100
+# ---------------------------------------------------------------------------------------------
+# removing 4 out of 34 positions with >= 50% gaps!
+# SEQ UGAGGUUUUUCCCCUCCCUCAUGAUGAGGGGAAG
+# CUT UGAGGUUUUUCCCCUCCCUCA----GAGGGGAAG
+# NC 30
+# NEFF 1
+# learning MRF ...
+# lbfgs::iter S_S fx: 48.2831 gnorm: 4.76095
+# lbfgs::iter 0_1 fx: 47.8081 gnorm: 4.73883
+# lbfgs::iter 1_1 fx: 8.22908 gnorm: 0.379972
+# lbfgs::iter 2_1 fx: 7.97383 gnorm: 0.237728
+# lbfgs::iter 3_1 fx: 7.8701 gnorm: 0.113966
+# lbfgs::iter 4_1 fx: 7.80896 gnorm: 0.0239743
+# lbfgs::iter 5_1 fx: 7.80628 gnorm: 0.00924025
+# lbfgs::iter 6_1 fx: 7.80592 gnorm: 0.00233718
+# lbfgs::iter 7_1 fx: 7.80591 gnorm: 2.67066e-05
+# lbfgs::iter 8_1 fx: 7.80591 gnorm: 2.20331e-06
+# lbfgs::iter 9_1 fx: 7.80591 gnorm: 1.80542e-06
+# lbfgs::iter 10_1 fx: 7.80591 gnorm: 2.04681e-08
+# lbfgs::iter 11_1 fx: 7.80591 gnorm: 1.45656e-09
+# lbfgs::iter 12_1 fx: 7.80591 gnorm: 5.02565e-13
+# lbfgs::iter 13_1 fx: 7.80591 gnorm: 3.24958e-15
+# lbfgs::iter 14_1 fx: 7.80591 gnorm: 1.34761e-15
+# lbfgs::iter 15_1 fx: 7.80591 gnorm: 1.10695e-15
+# lbfgs::iter 16_1 fx: 7.80591 gnorm: 1.18128e-15
+# lbfgs::iter 17_1 fx: 7.80591 gnorm: 8.96891e-16
+# lbfgs::iter 18_1 fx: 7.80591 gnorm: 8.84729e-16
+# lbfgs::iter 19_1 fx: 7.80591 gnorm: 8.76439e-16
+# lbfgs::iter 20_1 fx: 7.80591 gnorm: 1.00289e-15
+# lbfgs::iter 21_1 fx: 7.80591 gnorm: 8.18157e-16
+# lbfgs::iter 22_1 fx: 7.80591 gnorm: 9.80651e-16
+# lbfgs::iter 23_1 fx: 7.80591 gnorm: 1.17971e-15
+# lbfgs::iter 24_1 fx: 7.80591 gnorm: 8.62023e-16
+# lbfgs::iter 25_1 fx: 7.80591 gnorm: 8.18738e-16
+# lbfgs::iter 26_1 fx: 7.80591 gnorm: 7.60252e-16
+# lbfgs::iter 27_1 fx: 7.80591 gnorm: 7.65066e-16
+# lbfgs::iter 28_1 fx: 7.80591 gnorm: 1.04791e-15
+# lbfgs::iter 29_1 fx: 7.80591 gnorm: 7.66677e-16
+# lbfgs::iter 30_1 fx: 7.80591 gnorm: 1.20668e-15
+# lbfgs::iter 31_1 fx: 7.80591 gnorm: 1.10836e-15
+# lbfgs::iter 32_1 fx: 7.80591 gnorm: 4.12191e-15
+# lbfgs::iter 33_1 fx: 7.80591 gnorm: 9.64463e-16
+# lbfgs::iter 34_1 fx: 7.80591 gnorm: 1.64037e-15
+# lbfgs::iter 35_1 fx: 7.80591 gnorm: 1.02112e-15
+# lbfgs::iter 36_1 fx: 7.80591 gnorm: 1.63493e-15
+# lbfgs::iter 37_1 fx: 7.80591 gnorm: 1.03405e-15
+# lbfgs::iter 38_1 fx: 7.80591 gnorm: 2.85027e-15
+# lbfgs::iter 39_1 fx: 7.80591 gnorm: 1.1932e-15
+# lbfgs::iter 40_1 fx: 7.80591 gnorm: 4.79561e-15
+# lbfgs::iter 41_1 fx: 7.80591 gnorm: 8.76576e-16
+# lbfgs::iter 42_1 fx: 7.80591 gnorm: 1.47696e-15
+# lbfgs::iter 43_1 fx: 7.80591 gnorm: 8.48193e-16
+# lbfgs::iter 44_1 fx: 7.80591 gnorm: 7.46197e-16
+# lbfgs::iter 45_1 fx: 7.80591 gnorm: 4.13144e-15
+# lbfgs::iter 46_1 fx: 7.80591 gnorm: 1.2075e-15
+# lbfgs::iter 47_1 fx: 7.80591 gnorm: 1.11574e-15
+# lbfgs::iter 48_1 fx: 7.80591 gnorm: 7.64027e-16
+# lbfgs::iter 49_1 fx: 7.80591 gnorm: 3.75538e-15
+# lbfgs::iter 50_1 fx: 7.80591 gnorm: 1.17658e-15
+# lbfgs::iter 51_1 fx: 7.80591 gnorm: 1.09147e-15
+# lbfgs::iter 52_1 fx: 7.80591 gnorm: 1.07537e-15
+# lbfgs::iter 53_1 fx: 7.80591 gnorm: 9.29287e-16
+# lbfgs::iter 54_1 fx: 7.80591 gnorm: 8.79435e-16
+# lbfgs::iter 55_1 fx: 7.80591 gnorm: 1.19151e-15
+# lbfgs::iter 56_1 fx: 7.80591 gnorm: 9.33307e-16
+# lbfgs::iter 57_1 fx: 7.80591 gnorm: 1.0686e-15
+# lbfgs::iter 58_1 fx: 7.80591 gnorm: 9.46797e-16
+# lbfgs::iter 59_1 fx: 7.80591 gnorm: 1.05456e-15
+# lbfgs::iter 60_1 fx: 7.80591 gnorm: 9.8528e-16
+# lbfgs::iter 61_1 fx: 7.80591 gnorm: 8.887e-16
+# lbfgs::iter 62_1 fx: 7.80591 gnorm: 8.79989e-16
+# lbfgs::iter 63_10 fx: nan gnorm: inf
+# lbfgs::iter 64_10 fx: -nan gnorm: nan
+# lbfgs::iter 65_10 fx: nan gnorm: -nan
+# lbfgs::iter 66_10 fx: -nan gnorm: nan
+# lbfgs::iter 67_10 fx: nan gnorm: -nan
+# lbfgs::iter 68_10 fx: -nan gnorm: nan
+# lbfgs::iter 69_10 fx: nan gnorm: -nan
+# lbfgs::iter 70_10 fx: -nan gnorm: nan
+# lbfgs::iter 71_10 fx: nan gnorm: -nan
+# lbfgs::iter 72_10 fx: -nan gnorm: nan
+# lbfgs::iter 73_10 fx: nan gnorm: -nan
+# lbfgs::iter 74_10 fx: -nan gnorm: nan
+# lbfgs::iter 75_10 fx: nan gnorm: -nan
+# lbfgs::iter 76_10 fx: -nan gnorm: nan
+# lbfgs::iter 77_10 fx: nan gnorm: -nan
+# lbfgs::iter 78_10 fx: -nan gnorm: nan
+# lbfgs::iter 79_10 fx: nan gnorm: -nan
+# lbfgs::iter 80_10 fx: -nan gnorm: nan
+# lbfgs::iter 81_10 fx: nan gnorm: -nan
+# lbfgs::iter 82_10 fx: -nan gnorm: nan
+# lbfgs::iter 83_10 fx: nan gnorm: -nan
+# lbfgs::iter 84_10 fx: -nan gnorm: nan
+# lbfgs::iter 85_10 fx: nan gnorm: -nan
+# lbfgs::iter 86_10 fx: -nan gnorm: nan
+# lbfgs::iter 87_10 fx: nan gnorm: -nan
+# lbfgs::iter 88_10 fx: -nan gnorm: nan
+# lbfgs::iter 89_10 fx: nan gnorm: -nan
+# lbfgs::iter 90_10 fx: -nan gnorm: nan
+# lbfgs::iter 91_10 fx: nan gnorm: -nan
+# lbfgs::iter 92_10 fx: -nan gnorm: nan
+# lbfgs::iter 93_10 fx: nan gnorm: -nan
+# lbfgs::iter 94_10 fx: -nan gnorm: nan
+# lbfgs::iter 95_10 fx: nan gnorm: -nan
+# lbfgs::iter 96_10 fx: -nan gnorm: nan
+# lbfgs::iter 97_10 fx: nan gnorm: -nan
+# lbfgs::iter 98_10 fx: -nan gnorm: nan
+# lbfgs::iter 99_10 fx: nan gnorm: -nan
+# lbfgs::iter S_S fx: nan gnorm: -nan
+# lbfgs::iter 0_10 fx: nan gnorm: nan
+# lbfgs::iter 1_10 fx: -nan gnorm: -nan
+# lbfgs::iter 2_10 fx: nan gnorm: nan
+# lbfgs::iter 3_10 fx: -nan gnorm: -nan
+# lbfgs::iter 4_10 fx: nan gnorm: nan
+# lbfgs::iter 5_10 fx: -nan gnorm: -nan
+# lbfgs::iter 6_10 fx: nan gnorm: nan
+# lbfgs::iter 7_10 fx: -nan gnorm: -nan
+# lbfgs::iter 8_10 fx: nan gnorm: nan
+# lbfgs::iter 9_10 fx: -nan gnorm: -nan
+# lbfgs::iter 10_10 fx: nan gnorm: nan
+# lbfgs::iter 11_10 fx: -nan gnorm: -nan
+# lbfgs::iter 12_10 fx: nan gnorm: nan
+# lbfgs::iter 13_10 fx: -nan gnorm: -nan
+# lbfgs::iter 14_10 fx: nan gnorm: nan
+# lbfgs::iter 15_10 fx: -nan gnorm: -nan
+# lbfgs::iter 16_10 fx: nan gnorm: nan
+# lbfgs::iter 17_10 fx: -nan gnorm: -nan
+# lbfgs::iter 18_10 fx: nan gnorm: nan
+# lbfgs::iter 19_10 fx: -nan gnorm: -nan
+# lbfgs::iter 20_10 fx: nan gnorm: nan
+# lbfgs::iter 21_10 fx: -nan gnorm: -nan
+# lbfgs::iter 22_10 fx: nan gnorm: nan
+# lbfgs::iter 23_10 fx: -nan gnorm: -nan
+# lbfgs::iter 24_10 fx: nan gnorm: nan
+# lbfgs::iter 25_10 fx: -nan gnorm: -nan
+# lbfgs::iter 26_10 fx: nan gnorm: nan
+# lbfgs::iter 27_10 fx: -nan gnorm: -nan
+# lbfgs::iter 28_10 fx: nan gnorm: nan
+# lbfgs::iter 29_10 fx: -nan gnorm: -nan
+# lbfgs::iter 30_10 fx: nan gnorm: nan
+# lbfgs::iter 31_10 fx: -nan gnorm: -nan
+# lbfgs::iter 32_10 fx: nan gnorm: nan
+# lbfgs::iter 33_10 fx: -nan gnorm: -nan
+# lbfgs::iter 34_10 fx: nan gnorm: nan
+# lbfgs::iter 35_10 fx: -nan gnorm: -nan
+# lbfgs::iter 36_10 fx: nan gnorm: nan
+# lbfgs::iter 37_10 fx: -nan gnorm: -nan
+# lbfgs::iter 38_10 fx: nan gnorm: nan
+# lbfgs::iter 39_10 fx: -nan gnorm: -nan
+# lbfgs::iter 40_10 fx: nan gnorm: nan
+# lbfgs::iter 41_10 fx: -nan gnorm: -nan
+# lbfgs::iter 42_10 fx: nan gnorm: nan
+# lbfgs::iter 43_10 fx: -nan gnorm: -nan
+# lbfgs::iter 44_10 fx: nan gnorm: nan
+# lbfgs::iter 45_10 fx: -nan gnorm: -nan
+# lbfgs::iter 46_10 fx: nan gnorm: nan
+# lbfgs::iter 47_10 fx: -nan gnorm: -nan
+# lbfgs::iter 48_10 fx: nan gnorm: nan
+# lbfgs::iter 49_10 fx: -nan gnorm: -nan
+# lbfgs::iter 50_10 fx: nan gnorm: nan
+# lbfgs::iter 51_10 fx: -nan gnorm: -nan
+# lbfgs::iter 52_10 fx: nan gnorm: nan
+# lbfgs::iter 53_10 fx: -nan gnorm: -nan
+# lbfgs::iter 54_10 fx: nan gnorm: nan
+# lbfgs::iter 55_10 fx: -nan gnorm: -nan
+# lbfgs::iter 56_10 fx: nan gnorm: nan
+# lbfgs::iter 57_10 fx: -nan gnorm: -nan
+# lbfgs::iter 58_10 fx: nan gnorm: nan
+# lbfgs::iter 59_10 fx: -nan gnorm: -nan
+# lbfgs::iter 60_10 fx: nan gnorm: nan
+# lbfgs::iter 61_10 fx: -nan gnorm: -nan
+# lbfgs::iter 62_10 fx: nan gnorm: nan
+# lbfgs::iter 63_10 fx: -nan gnorm: -nan
+# lbfgs::iter 64_10 fx: nan gnorm: nan
+# lbfgs::iter 65_10 fx: -nan gnorm: -nan
+# lbfgs::iter 66_10 fx: nan gnorm: nan
+# lbfgs::iter 67_10 fx: -nan gnorm: -nan
+# lbfgs::iter 68_10 fx: nan gnorm: nan
+# lbfgs::iter 69_10 fx: -nan gnorm: -nan
+# lbfgs::iter 70_10 fx: nan gnorm: nan
+# lbfgs::iter 71_10 fx: -nan gnorm: -nan
+# lbfgs::iter 72_10 fx: nan gnorm: nan
+# lbfgs::iter 73_10 fx: -nan gnorm: -nan
+# lbfgs::iter 74_10 fx: nan gnorm: nan
+# lbfgs::iter 75_10 fx: -nan gnorm: -nan
+# lbfgs::iter 76_10 fx: nan gnorm: nan
+# lbfgs::iter 77_10 fx: -nan gnorm: -nan
+# lbfgs::iter 78_10 fx: nan gnorm: nan
+# lbfgs::iter 79_10 fx: -nan gnorm: -nan
+# lbfgs::iter 80_10 fx: nan gnorm: nan
+# lbfgs::iter 81_10 fx: -nan gnorm: -nan
+# lbfgs::iter 82_10 fx: nan gnorm: nan
+# lbfgs::iter 83_10 fx: -nan gnorm: -nan
+# lbfgs::iter 84_10 fx: nan gnorm: nan
+# lbfgs::iter 85_10 fx: -nan gnorm: -nan
+# lbfgs::iter 86_10 fx: nan gnorm: nan
+# lbfgs::iter 87_10 fx: -nan gnorm: -nan
+# lbfgs::iter 88_10 fx: nan gnorm: nan
+# lbfgs::iter 89_10 fx: -nan gnorm: -nan
+# lbfgs::iter 90_10 fx: nan gnorm: nan
+# lbfgs::iter 91_10 fx: -nan gnorm: -nan
+# lbfgs::iter 92_10 fx: nan gnorm: nan
+# lbfgs::iter 93_10 fx: -nan gnorm: -nan
+# lbfgs::iter 94_10 fx: nan gnorm: nan
+# lbfgs::iter 95_10 fx: -nan gnorm: -nan
+# lbfgs::iter 96_10 fx: nan gnorm: nan
+# lbfgs::iter 97_10 fx: -nan gnorm: -nan
+# lbfgs::iter 98_10 fx: nan gnorm: nan
+# lbfgs::iter 99_10 fx: -nan gnorm: -nan

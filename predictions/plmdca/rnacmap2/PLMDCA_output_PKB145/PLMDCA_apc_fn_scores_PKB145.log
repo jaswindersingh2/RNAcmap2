@@ -1,0 +1,54 @@
+[0;32mINFO[0;0m 2021-06-10 15:21:09,396 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 58
+            total number of (unweighted) sequences: 6
+            sequence identity: 0.8
+            lambda_h: 11.4
+            lambda_J: 11.4
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-06-10 15:21:09,397 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 997.916504, xnorm = 8.510971, gnorm = 201.099594, step = 0.004396
+
+Iteration 2:
+fx = 391.697418, xnorm = 2.822539, gnorm = 171.185669, step = 1.000000
+
+Iteration 3:
+fx = 238.937424, xnorm = 3.632939, gnorm = 87.552101, step = 1.000000
+
+Iteration 4:
+fx = 161.863190, xnorm = 2.689310, gnorm = 26.176975, step = 1.000000
+
+Iteration 5:
+fx = 158.529892, xnorm = 2.314385, gnorm = 14.479553, step = 1.000000
+
+Iteration 6:
+fx = 156.023483, xnorm = 2.403073, gnorm = 2.473720, step = 1.000000
+
+Iteration 7:
+fx = 155.989395, xnorm = 2.387844, gnorm = 1.007838, step = 1.000000
+
+Iteration 8:
+fx = 155.940125, xnorm = 2.380716, gnorm = 0.218784, step = 1.000000
+
+Iteration 9:
+fx = 155.922165, xnorm = 2.380367, gnorm = 0.068766, step = 1.000000
+
+Iteration 10:
+fx = 155.921997, xnorm = 2.380558, gnorm = 0.026463, step = 0.508061
+
+L-BFGS optimization terminated with status code = -1001
+fx = 155.922028
+[0;32mINFO[0;0m 2021-06-10 15:21:09,518 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 41615
+[0;32mINFO[0;0m 2021-06-10 15:21:09,518 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 41615
+[0;32mINFO[0;0m 2021-06-10 15:21:09,547 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-06-10 15:21:09,635 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-06-10 15:21:09,646 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_PKB145/PLMDCA_apc_fn_scores_PKB145.txt

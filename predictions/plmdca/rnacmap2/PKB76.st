@@ -1,0 +1,41 @@
+#Name: PKB76
+#Length:  89 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGGUCGGCAUGGCAUCUCCACCUCCUCGCGGUCCGACCUGGGCAUCCGAAGGAGGACGCACGUCCACUCGGAUGGCUAAGGGAGAGCCA
+...[..(..]....).............(......).............[{...(]....}.....(...)......(...)..)....
+EEEEEESHHHHHHHSMMMMMMMMMMMMMSHHHHHHSMMMMMMMMMMMMMMMMMMSMMMMMMMMMMMSHHHSMMMMMMSHHHSMMSEEEE
+NNNKNNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKKNNNNKNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 7..7 "G" 15..15 "U"
+S2 29..29 "C" 36..36 "A"
+S3 55..55 "G" 85..85 "A"
+S4 67..67 "C" 71..71 "G"
+S5 78..78 "A" 82..82 "G"
+H1 8..14 "CAUGGCA" (7,15) G:U PK{1}
+H2 30..35 "GGUCCG" (29,36) C:A 
+H3 68..70 "UCG" (67,71) C:G 
+H4 79..81 "AGG" (78,82) A:G 
+M1.1 16..28 "CUCCACCUCCUCG" (15,7) U:G (29,36) C:A 
+M1.2 37..54 "CCUGGGCAUCCGAAGGAG" (36,29) A:C (55,85) G:A PK{2,3}
+M2.1 56..66 "ACGCACGUCCA" (55,85) G:A (67,71) C:G PK{2,3}
+M2.2 72..77 "AUGGCU" (71,67) G:C (78,82) A:G 
+M2.3 83..84 "AG" (82,78) G:A (85,55) A:G 
+E1 1..6 "GGGUCG" PK{1}
+E2 86..89 "GCCA" 
+PK1 1bp 4..4 10..10 E1 1..6 H1 8..14
+PK2 1bp 50..50 56..56 M1.2 37..54 M2.1 56..66
+PK3 1bp 51..51 61..61 M1.2 37..54 M2.1 56..66
+PK1.1 4 U 10 U
+PK2.1 50 A 56 A
+PK3.1 51 G 61 C
+NCBP1 55 G 85 A S3
+NCBP2 78 A 82 G S5
+NCBP3 29 C 36 A S2
+NCBP4 4 U 10 U PK1.1
+NCBP5 50 A 56 A PK2.1
+segment1 1bp 7..7 G 15..15 U
+segment2 1bp 29..29 C 36..36 A
+segment3 1bp 55..55 G 85..85 A
+segment4 1bp 67..67 C 71..71 G
+segment5 1bp 78..78 A 82..82 G

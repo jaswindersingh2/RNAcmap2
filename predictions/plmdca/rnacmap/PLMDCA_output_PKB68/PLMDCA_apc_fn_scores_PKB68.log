@@ -1,0 +1,51 @@
+[0;32mINFO[0;0m 2021-06-10 15:06:25,891 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 68
+            total number of (unweighted) sequences: 21
+            sequence identity: 0.8
+            lambda_h: 13.4
+            lambda_J: 13.4
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-06-10 15:06:25,891 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 997.877380, xnorm = 7.826892, gnorm = 207.224670, step = 0.014661
+
+Iteration 2:
+fx = 512.744812, xnorm = 3.687513, gnorm = 208.228439, step = 0.453506
+
+Iteration 3:
+fx = 267.143341, xnorm = 2.983259, gnorm = 68.625610, step = 1.000000
+
+Iteration 4:
+fx = 237.729874, xnorm = 2.567970, gnorm = 23.613047, step = 1.000000
+
+Iteration 5:
+fx = 236.364044, xnorm = 2.407151, gnorm = 13.287539, step = 1.000000
+
+Iteration 6:
+fx = 235.421051, xnorm = 2.405316, gnorm = 3.246801, step = 1.000000
+
+Iteration 7:
+fx = 235.326920, xnorm = 2.397940, gnorm = 1.808439, step = 1.000000
+
+Iteration 8:
+fx = 235.307861, xnorm = 2.383716, gnorm = 1.585865, step = 1.000000
+
+Iteration 9:
+fx = 235.286011, xnorm = 2.383967, gnorm = 0.722405, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 235.286087
+[0;32mINFO[0;0m 2021-06-10 15:06:26,021 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 57290
+[0;32mINFO[0;0m 2021-06-10 15:06:26,021 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 57290
+[0;32mINFO[0;0m 2021-06-10 15:06:26,071 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-06-10 15:06:26,185 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-06-10 15:06:26,202 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_PKB68/PLMDCA_apc_fn_scores_PKB68.txt

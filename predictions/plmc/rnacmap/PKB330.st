@@ -1,0 +1,36 @@
+#Name: PKB330
+#Length:  64 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGGGGCCAUUGAAGGAGCGUUCACGUCGCGGUCCCUGUCAGAUGAAAAUCUGCGAAUCCUUCAA
+.(.(.(.(...[)..[..(......])...).).)...(((((....)))))........]...
+ESISISMSHHHHSMMMMMSHHHHHHHSMMMSISISXXXSSSSSHHHHSSSSSEEEEEEEEEEEE
+NNNNNNNNNNNKNNNKNNNNNNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKNNN
+S1 2..2 "G" 35..35 "C"
+S2 4..4 "G" 33..33 "C"
+S3 6..6 "C" 31..31 "G"
+S4 8..8 "A" 13..13 "A"
+S5 19..19 "G" 27..27 "C"
+S6 39..43 "CAGAU" 48..52 "AUCUG"
+H1 9..12 "UUGA" (8,13) A:A PK{1}
+H2 20..26 "UUCACGU" (19,27) G:C PK{2}
+H3 44..47 "GAAA" (43,48) U:A 
+I1.1 3..3 "G" (2,35) G:C 
+I1.2 34..34 "C" (33,4) C:G 
+I2.1 5..5 "G" (4,33) G:C 
+I2.2 32..32 "U" (31,6) G:C 
+M1.1 7..7 "C" (6,31) C:G (8,13) A:A 
+M1.2 14..18 "GGAGC" (13,8) A:A (19,27) G:C PK{2}
+M1.3 28..30 "GCG" (27,19) C:G (31,6) G:C 
+X1 36..38 "UGU" (35,2) C:G (39,52) C:G 
+E1 1..1 "G" 
+E2 53..64 "CGAAUCCUUCAA" PK{1}
+PK1 1bp 12..12 61..61 H1 9..12 E2 53..64
+PK2 1bp 16..16 26..26 M1.2 14..18 H2 20..26
+PK1.1 12 A 61 U
+PK2.1 16 A 26 U
+NCBP1 8 A 13 A S4
+segment1 3bp 2..6 GGGGC 31..35 GUCCC
+segment2 1bp 8..8 A 13..13 A
+segment3 1bp 19..19 G 27..27 C
+segment4 5bp 39..43 CAGAU 48..52 AUCUG

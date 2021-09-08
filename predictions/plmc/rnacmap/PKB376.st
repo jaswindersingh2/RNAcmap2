@@ -1,0 +1,28 @@
+#Name: PKB376
+#Length: ,41,
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGCACGAUCGGGCUCGCUGCCUUUUCGUCCGAGAGCUCGAA
+[.((.((....(.(....))...{)).).].......)..}
+EESSISSIIIISBSHHHHSSIIIISSISBBBBBBBBBSEEE
+KNNNNNNNNNNNNNNNNNNNNNNKNNNNNKNNNNNNNNNNK
+S1 3..3 "C" 38..38 "C"
+S2 4..4 "A" 28..28 "U"
+S3 6..7 "GA" 25..26 "UC"
+S4 12..12 "G" 20..20 "C"
+S5 14..14 "U" 19..19 "G"
+H1 15..18 "CGCU" (14,19) U:G 
+B1 13..13 "C" (12,20) G:C (14,19) U:G 
+B2 29..37 "CCGAGAGCU" (28,4) U:A (38,3) C:C PK{1}
+I1.1 5..5 "C" (4,28) A:U 
+I1.2 27..27 "G" (26,6) C:G 
+I2.1 8..11 "UCGG" (7,25) A:U 
+I2.2 21..24 "CUUU" (20,12) C:G PK{2}
+E1 1..2 "GG" PK{1}
+E2 39..41 "GAA" PK{2}
+PK1 1bp 1..1 30..30 E1 1..2 B2 29..37
+PK2 1bp 24..24 41..41 I2.2 21..24 E2 39..41
+PK1.1 1 G 30 C
+PK2.1 24 U 41 A
+NCBP1 3 C 38 C S1
+segment1 6bp 3..14 CACGAUCGGGCU 19..38 GCCUUUUCGUCCGAGAGCUC

@@ -1,0 +1,25 @@
+#Name: 4rge_A
+#Length:  56 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+UUUUUAAUGAAGCCACAGGCCUGUGAGGGUCCUAAGCCCCUAAUUCAGAAGGGAAA
+................(..(........)...)...[(.(..........)])...
+EEEEEEEEEEEEEEEESIISHHHHHHHHSIIISXXXXSISHHHHHHHHHHSISEEE
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKNNNNNNNNNNNNNNKNNNN
+S1 17..17 "A" 33..33 "U"
+S2 20..20 "C" 29..29 "G"
+S3 38..38 "C" 53..53 "G"
+S4 40..40 "C" 51..51 "G"
+H1 21..28 "CUGUGAGG" (20,29) C:G 
+H2 41..50 "UAAUUCAGAA" (40,51) C:G 
+I1.1 18..19 "GG" (17,33) A:U 
+I1.2 30..32 "UCC" (29,20) G:C 
+I2.1 39..39 "C" (38,53) C:G 
+I2.2 52..52 "G" (51,40) G:C PK{1}
+X1 34..37 "AAGC" (33,17) U:A (38,53) C:G PK{1}
+E1 1..16 "UUUUUAAUGAAGCCAC" 
+E2 54..56 "AAA" 
+PK1 1bp 37..37 52..52 X1 34..37 I2.2 52..52
+PK1.1 37 C 52 G
+segment1 2bp 17..20 AGGC 29..33 GUCCU
+segment2 2bp 38..40 CCC 51..53 GGG

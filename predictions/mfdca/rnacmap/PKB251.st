@@ -1,0 +1,18 @@
+#Name: PKB251
+#Length:  26 
+#PageNumber: 1
+CAGCCUCUCACAGCUUCCUCGUGAGG
+.(....).(....)............
+ESHHHHSXSHHHHSEEEEEEEEEEEE
+NNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 2..2 "A" 7..7 "C"
+S2 9..9 "C" 14..14 "C"
+H1 3..6 "GCCU" (2,7) A:C 
+H2 10..13 "ACAG" (9,14) C:C 
+X1 8..8 "U" (7,2) C:A (9,14) C:C 
+E1 1..1 "C" 
+E2 15..26 "UUCCUCGUGAGG" 
+NCBP1 2 A 7 C S1
+NCBP2 9 C 14 C S2
+segment1 1bp 2..2 A 7..7 C
+segment2 1bp 9..9 C 14..14 C

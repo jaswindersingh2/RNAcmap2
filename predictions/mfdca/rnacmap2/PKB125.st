@@ -1,0 +1,19 @@
+#Name: PKB125
+#Length:  25 
+#PageNumber: 1
+CCAUUCCCACUAGUGUAUUAGUGGA
+.(.....)(.....(......))..
+ESHHHHHSSBBBBBSHHHHHHSSEE
+NNNNNNNNNNNNNNNNNNNNNNNNN
+S1 2..2 "C" 8..8 "C"
+S2 9..9 "A" 23..23 "G"
+S3 15..15 "G" 22..22 "U"
+H1 3..7 "AUUCC" (2,8) C:C 
+H2 16..21 "UAUUAG" (15,22) G:U 
+B1 10..14 "CUAGU" (9,23) A:G (15,22) G:U 
+E1 1..1 "C" 
+E2 24..25 "GA" 
+NCBP1 9 A 23 G S2
+NCBP2 2 C 8 C S1
+segment1 1bp 2..2 C 8..8 C
+segment2 2bp 9..15 ACUAGUG 22..23 UG

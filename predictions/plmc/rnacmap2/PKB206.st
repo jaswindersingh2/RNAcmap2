@@ -1,0 +1,22 @@
+#Name: PKB206
+#Length:  45 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GCCUCAUGGUGGUGGCUGGGGGCAGCCUCAUGGUGGUGGCUGGGG
+.(...)...[.(.....................].).........
+ESHHHSXXXXXSHHHHHHHHHHHHHHHHHHHHHHHSEEEEEEEEE
+NNNNNNNNNKNNNNNNNNNNNNNNNNNNNNNNNKNNNNNNNNNNN
+S1 2..2 "C" 6..6 "A"
+S2 12..12 "G" 36..36 "G"
+H1 3..5 "CUC" (2,6) C:A 
+H2 13..35 "UGGCUGGGGGCAGCCUCAUGGUG" (12,36) G:G PK{1}
+X1 7..11 "UGGUG" (6,2) A:C (12,36) G:G PK{1}
+E1 1..1 "G" 
+E2 37..45 "UGGCUGGGG" 
+PK1 1bp 10..10 34..34 X1 7..11 H2 13..35
+PK1.1 10 U 34 U
+NCBP1 12 G 36 G S2
+NCBP2 2 C 6 A S1
+NCBP3 10 U 34 U PK1.1
+segment1 1bp 2..2 C 6..6 A
+segment2 1bp 12..12 G 36..36 G

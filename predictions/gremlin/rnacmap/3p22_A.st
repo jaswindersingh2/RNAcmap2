@@ -1,0 +1,16 @@
+#Name: 3p22_A
+#Length: ,40,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGCUGGGUUUUUCCUUCGAAAGAAGGUUUUUAUCCCAGUC
+...............[.(.............]....)...
+EEEEEEEEEEEEEEEEESHHHHHHHHHHHHHHHHHHSEEE
+NNNNNNNNNNNNNNNKNNNNNNNNNNNNNNNKNNNNNNNN
+S1 18..18 "G" 37..37 "A"
+H1 19..36 "AAAGAAGGUUUUUAUCCC" (18,37) G:A PK{1}
+E1 1..17 "GGCUGGGUUUUUCCUUC" PK{1}
+E2 38..40 "GUC" 
+PK1 1bp 16..16 32..32 E1 1..17 H1 19..36
+PK1.1 16 U 32 A
+NCBP1 18 G 37 A S1
+segment1 1bp 18..18 G 37..37 A

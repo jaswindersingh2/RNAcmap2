@@ -1,0 +1,51 @@
+[0;32mINFO[0;0m 2021-08-19 12:45:43,293 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 55
+            total number of (unweighted) sequences: 24
+            sequence identity: 0.8
+            lambda_h: 10.8
+            lambda_J: 10.8
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-08-19 12:45:43,293 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 1183.777588, xnorm = 8.697134, gnorm = 188.011597, step = 0.016208
+
+Iteration 2:
+fx = 813.442749, xnorm = 5.811498, gnorm = 220.156158, step = 1.000000
+
+Iteration 3:
+fx = 537.545166, xnorm = 4.339913, gnorm = 141.117065, step = 1.000000
+
+Iteration 4:
+fx = 433.118195, xnorm = 4.185759, gnorm = 35.446930, step = 1.000000
+
+Iteration 5:
+fx = 428.400360, xnorm = 4.039461, gnorm = 12.997612, step = 1.000000
+
+Iteration 6:
+fx = 427.201447, xnorm = 3.984843, gnorm = 7.853447, step = 1.000000
+
+Iteration 7:
+fx = 426.129974, xnorm = 3.906389, gnorm = 3.800465, step = 1.000000
+
+Iteration 8:
+fx = 425.867584, xnorm = 3.883654, gnorm = 3.242337, step = 1.000000
+
+Iteration 9:
+fx = 425.840576, xnorm = 3.891432, gnorm = 0.615955, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 425.840485
+[0;32mINFO[0;0m 2021-08-19 12:45:43,342 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 37400
+[0;32mINFO[0;0m 2021-08-19 12:45:43,342 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 37400
+[0;32mINFO[0;0m 2021-08-19 12:45:43,366 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-08-19 12:45:43,435 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-08-19 12:45:43,444 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_6las_A/PLMDCA_apc_fn_scores_6las_A.txt

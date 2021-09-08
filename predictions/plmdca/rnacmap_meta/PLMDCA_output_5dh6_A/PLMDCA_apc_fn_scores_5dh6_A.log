@@ -1,0 +1,63 @@
+[0;32mINFO[0;0m 2021-08-19 11:44:45,732 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 48
+            total number of (unweighted) sequences: 388
+            sequence identity: 0.8
+            lambda_h: 9.4
+            lambda_J: 9.4
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-08-19 11:44:45,732 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 2152.212891, xnorm = 11.807246, gnorm = 367.615601, step = 0.014958
+
+Iteration 2:
+fx = 1023.561707, xnorm = 8.230411, gnorm = 175.576172, step = 1.000000
+
+Iteration 3:
+fx = 817.930054, xnorm = 6.115296, gnorm = 157.874329, step = 1.000000
+
+Iteration 4:
+fx = 774.304199, xnorm = 5.064962, gnorm = 121.427452, step = 1.000000
+
+Iteration 5:
+fx = 731.881653, xnorm = 5.267779, gnorm = 37.646809, step = 1.000000
+
+Iteration 6:
+fx = 723.826355, xnorm = 5.124368, gnorm = 29.672821, step = 1.000000
+
+Iteration 7:
+fx = 717.793396, xnorm = 4.914240, gnorm = 22.976816, step = 1.000000
+
+Iteration 8:
+fx = 716.260681, xnorm = 4.876630, gnorm = 13.802273, step = 0.417045
+
+Iteration 9:
+fx = 715.562927, xnorm = 4.831499, gnorm = 7.998357, step = 1.000000
+
+Iteration 10:
+fx = 715.131714, xnorm = 4.801597, gnorm = 5.371264, step = 1.000000
+
+Iteration 11:
+fx = 715.004700, xnorm = 4.786775, gnorm = 6.797107, step = 1.000000
+
+Iteration 12:
+fx = 714.942566, xnorm = 4.790015, gnorm = 2.732708, step = 1.000000
+
+Iteration 13:
+fx = 714.939209, xnorm = 4.795143, gnorm = 1.266675, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 714.939270
+[0;32mINFO[0;0m 2021-08-19 11:44:45,819 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 28440
+[0;32mINFO[0;0m 2021-08-19 11:44:45,819 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 28440
+[0;32mINFO[0;0m 2021-08-19 11:44:45,844 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-08-19 11:44:45,906 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-08-19 11:44:45,912 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_5dh6_A/PLMDCA_apc_fn_scores_5dh6_A.txt

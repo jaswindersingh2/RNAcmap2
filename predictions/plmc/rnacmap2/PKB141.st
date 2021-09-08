@@ -1,0 +1,25 @@
+#Name: PKB141
+#Length:  70 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+UUGUCAUAUCUGGAUCCAACAGUUAAACCAUGUGAUGGUGUAUACUGUGGUAUGGCGUAAAACAUCGGAG
+.....[........[...{..........(..]..)......(..............]......}..)..
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEESHHHHHSXXXXXXSHHHHHHHHHHHHHHHHHHHHHHHHSEE
+NNNNNKNNNNNNNNKNNNKNNNNNNNNNNNNNKNNNNNNNNNNNNNNNNNNNNNNNNKNNNNNNKNNNNN
+S1 30..30 "A" 36..36 "U"
+S2 43..43 "U" 68..68 "G"
+H1 31..35 "UGUGA" (30,36) A:U PK{2}
+H2 44..67 "ACUGUGGUAUGGCGUAAAACAUCG" (43,68) U:G PK{1,3}
+X1 37..42 "GGUGUA" (36,30) U:A (43,68) U:G 
+E1 1..29 "UUGUCAUAUCUGGAUCCAACAGUUAAACC" PK{1,2,3}
+E2 69..70 "AG" 
+PK1 1bp 6..6 58..58 E1 1..29 H2 44..67
+PK2 1bp 15..15 33..33 E1 1..29 H1 31..35
+PK3 1bp 19..19 65..65 E1 1..29 H2 44..67
+PK1.1 6 A 58 U
+PK2.1 15 U 33 U
+PK3.1 19 A 65 U
+NCBP1 15 U 33 U PK2.1
+segment1 1bp 30..30 A 36..36 U
+segment2 1bp 43..43 U 68..68 G

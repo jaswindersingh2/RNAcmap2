@@ -1,0 +1,16 @@
+#Name: PKB293
+#Length:  24 
+#PageNumber: 1
+ACGUGAAGGCUACGAUAGUGCCAG
+....(....)............()
+EEEESHHHHSXXXXXXXXXXXXSS
+NNNNNNNNNNNNNNNNNNNNNNNN
+S1 5..5 "G" 10..10 "C"
+S2 23..23 "A" 24..24 "G"
+H1 6..9 "AAGG" (5,10) G:C 
+H2 24..23 "" (23,24) A:G 
+X1 11..22 "UACGAUAGUGCC" (10,5) C:G (23,24) A:G 
+E1 1..4 "ACGU" 
+NCBP1 23 A 24 G S2
+segment1 1bp 5..5 G 10..10 C
+segment2 1bp 23..23 A 24..24 G

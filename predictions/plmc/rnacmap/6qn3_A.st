@@ -1,0 +1,29 @@
+#Name: 6qn3_A
+#Length:  50 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+CGUUCACCCUUCGGGGCGCAUGAAAUGGGAGUAGGGAACGGGAUUCUCAU
+[.....(.]......)(........(..(..(.[........)..).]))
+EEEEEESHHHHHHHHSSBBBBBBBBSIISIISHHHHHHHHHHSIISIISS
+KNNNNNNNKNNNNNNNNNNNNNNNNNNNNNNNNKNNNNNNNNNNNNNKNN
+S1 7..7 "C" 16..16 "G"
+S2 17..17 "C" 50..50 "U"
+S3 26..26 "U" 49..49 "A"
+S4 29..29 "G" 46..46 "C"
+S5 32..32 "U" 43..43 "A"
+H1 8..15 "CCUUCGGG" (7,16) C:G PK{1}
+H2 33..42 "AGGGAACGGG" (32,43) U:A PK{2}
+B1 18..25 "GCAUGAAA" (17,50) C:U (26,49) U:A 
+I1.1 27..28 "GG" (26,49) U:A 
+I1.2 47..48 "UC" (46,29) C:G PK{2}
+I2.1 30..31 "AG" (29,46) G:C 
+I2.2 44..45 "UU" (43,32) A:U 
+E1 1..6 "CGUUCA" PK{1}
+PK1 1bp 1..1 9..9 E1 1..6 H1 8..15
+PK2 1bp 34..34 48..48 H2 33..42 I1.2 47..48
+PK1.1 1 C 9 C
+PK2.1 34 G 48 C
+NCBP1 17 C 50 U S2
+NCBP2 1 C 9 C PK1.1
+segment1 1bp 7..7 C 16..16 G
+segment2 4bp 17..32 CGCAUGAAAUGGGAGU 43..50 AUUCUCAU
