@@ -45,7 +45,8 @@ with open(base_path + '/datasets/median_neff_ids') as f:
 	median_neff_ids = f.read().splitlines()
 with open(base_path + '/datasets/low_neff_ids') as f:
 	low_neff_ids = f.read().splitlines()
-
+with open(base_path + '/datasets/no_hit_ids') as f:
+    no_hit_ids = f.read().splitlines()
 
 if args.neff == 'high':
 	ids = high_neff_ids
@@ -53,14 +54,13 @@ elif args.neff == 'median':
 	ids = median_neff_ids
 elif args.neff == 'low':
 	ids = low_neff_ids
+elif args.neff == 'no_hit':
+	ids = no_hit_ids
 elif args.neff == 'all':
-	ids = low_neff_ids + median_neff_ids + high_neff_ids
+	ids = no_hit_ids + low_neff_ids + median_neff_ids + high_neff_ids
 
-neff_1_ids = ['1ddy_A', '1dk1_B', '1s03_A', '1ykq_B', '2gje_R', '2oiu_P', '2qwy_A', '2zy6_A', '3iab_R', '3nmu_D', '3npn_A', '3x1l_I', '4frn_A', '4k4w_B', '4pjo_1', '4q9q_R', '4r4v_A', '4rzd_A', '4ts0_X', '5bjp_E', '5de5_A', '5gip_G', '5ng6_B', '5ob3_A', '5vof_A', '5wlh_B', '5wti_B', '5xuz_B', '5y85_B', '6d12_C', '6d3p_A', '6e8u_B', '6g7z_B', '6ifn_N', '6iv8_D', '6vff_C', '6wpi_B']
 
-#ids = low_neff_ids + median_neff_ids #+ high_neff_ids
-
-msa_list = ['blastn', 'direct_infernal', 'RNAcmap', 'RNAcmap2', 'RNAcmap_meta', 'RNAcmap2_meta'] 
+msa_list = ['blastn', 'direct_infernal', 'RNAcmap', 'RNAcmap_meta', 'RNAcmap2_meta'] 
 
 #print(len(ids))
 
@@ -89,76 +89,56 @@ for msa_no, msa_type in enumerate(msa_list[0:]):
 		true_pairs = watson_pairs_dic[k] + wobble_pairs_dic[k] + other_pairs_dic[k]
 		true_pairs = [i for i in true_pairs if abs(i[0]-i[1]) > 3]  # non-local base-pairs
 
+
 		if msa_type == 'blastn':
 			try: 
 				pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/blastn/')   
-
 				with open(base_path + '/predictions/gremlin/' + msa_type.lower() + '/' + str(k) + '.neff') as f:
 					temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
 				neff = temp_2[0][2]   
 			except: pred_pair = []; neff = 0
+
+
 		elif msa_type == 'direct_infernal':
 			try: 
 				pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/direct_infernal/')   
-
 				with open(base_path + '/predictions/gremlin/' + msa_type.lower() + '/' + str(k) + '.neff') as f:
 					temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
 				neff = temp_2[0][2]   
 			except: pred_pair = []; neff = 0
-		elif msa_type == 'RFAM':
-			pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/RFAM/')   
-			with open(base_path + '/predictions/gremlin/' + msa_type + '/' + str(k) + '.neff') as f:
-				temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
-			neff = temp_2[0][2]  
+
 
 		elif msa_type == 'RNAcmap':
-			pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/rnacmap/')
-			with open(base_path + '/predictions/gremlin/' + msa_type.lower() + '/' + str(k) + '.neff') as f:
-				temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
-			neff = temp_2[0][2]  
-		elif msa_type == 'RNAcmap2':
-			if k in neff_1_ids + low_neff_ids + median_neff_ids:
-				pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/rnacmap2/')
-
+			try:
+				pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/rnacmap/')
 				with open(base_path + '/predictions/gremlin/' + msa_type.lower() + '/' + str(k) + '.neff') as f:
 					temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
 				neff = temp_2[0][2]  
-			elif k in high_neff_ids:
-				pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/rnacmap/')
-				with open(base_path + '/predictions/gremlin/rnacmap/' + str(k) + '.neff') as f:
-					temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
-				neff = temp_2[0][2]  
+			except: pred_pair = []; neff = 0
+
 
 		elif msa_type == 'RNAcmap_meta':
-			if k not in ['5m0h_A']: # 5m0h no hit for rnacmap_meta but msa exits for rnacmap
+			try:
 				pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/rnacmap_meta/')
-
 				with open(base_path + '/predictions/gremlin/' + msa_type.lower() + '/' + str(k) + '.neff') as f:
 					temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
 				neff = temp_2[0][2]  
-			else: pred_pair = []; neff = 0
+			except: pred_pair = [];	neff = 0
+
 
 		elif msa_type == 'RNAcmap2_meta':
-			if k not in ['5m0h_A']: # 5m0h no hit for rnacmap_meta but msa exits for rnacmap
-				if k in neff_1_ids + low_neff_ids + median_neff_ids:
-					try:
-						pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/rnacmap2_meta/')
-						with open(base_path + '/predictions/gremlin/' + msa_type.lower() + '/' + str(k) + '.neff') as f:
-							temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
-						neff = temp_2[0][2]  
-					except:
-						pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/rnacmap_meta/')
-						with open(base_path + '/predictions/gremlin/rnacmap_meta/' + str(k) + '.neff') as f:
-							temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
-						neff = temp_2[0][2]  
-
-				elif k in high_neff_ids:
-				    pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/rnacmap_meta/')
-
-				    with open(base_path + '/predictions/gremlin/rnacmap_meta/' + str(k) + '.neff') as f:
-					    temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
-				    neff = temp_2[0][2]  
-			else: pred_pair = []
+			try:
+				pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/rnacmap2_meta/')
+				with open(base_path + '/predictions/gremlin/' + msa_type.lower() + '/' + str(k) + '.neff') as f:
+					temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
+				neff = temp_2[0][2]  
+			except:
+				try:
+					pred_pair, dca = dca_pred(k, seq, path=base_path + '/predictions/' + args.dca_method + '/rnacmap_meta/')
+					with open(base_path + '/predictions/gremlin/rnacmap_meta' + '/' + str(k) + '.neff') as f:
+						temp_2 = pd.read_csv(f, delim_whitespace=True, header=None).values  
+					neff = temp_2[0][2]  
+				except:	pred_pair = [];	neff = 0
 
 		missing_nts =  save_missing_nts_all[k]
 
