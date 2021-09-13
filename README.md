@@ -10,6 +10,7 @@ It is recommended that your system should have 32 GB RAM, 500 GB disk space to s
 * [Python3.6](https://docs.python-guide.org/starting/install3/linux/)
 * [Perl-5.4 or later](https://www.perl.org/get.html)
 * [Anaconda or Miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+* [gawk 4.1 or later](https://www.gnu.org/software/gawk)
 
 RNAcmap2 has been tested on Ubuntu 14.04, 16.04, and 18.04 operating systems.
 
@@ -38,13 +39,20 @@ To install **BLAST-N** and **INFERNAL** tools for mulitple-sequence-alignment se
 7. `conda install -c bioconda easel`
 8. `conda install -c bioconda seqkit`
 
+To setup `utils` scripts
+
+9. link seqkit executable (`$conda_dir/envs/venv_rnacmap2/bin/seqkit`) to `RNAcmap2/utils/seqkit`
+10. install [HHsuite-github-repo](https://github.com/soedinglab/hh-suite/tree/master/scripts) and link `$hh-suite_dir/scripts/reformat.pl` to `RNAcmap2/utils/reformat.pl`
+11. install [RNAsol standalone program](https://yanglab.nankai.edu.cn/RNAsol/) and link `$RNAsol_dir/package/bin/getpssm.pl` to `RNAcmap2/utils/getpssm.pl`, link `parse_blastn_local.pl` in the same way.
+12. install PLMC ([plmc-github-repo](https://github.com/debbiemarkslab/plmc)) and make sure you can find plmc executable  at `RNAcmap2/plmc/bin/plmc`
+
 
 ## Usage
 
 
 ### To run RNAcmap2:
 
-9. `./run_rnacmap2.sh sample_input/1eiy_C`
+`./run_rnacmap2.sh sample_input/1eiy_C`
 
 ## Reproduce results of RNAcmap pipeline:
 

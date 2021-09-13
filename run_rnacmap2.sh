@@ -7,8 +7,8 @@ input_dir=$(dirname $input)
 seq_id=$(basename $(basename $input) | cut -d. -f1)
 program_dir=$(dirname $(readlink -f $0))
 
-path_blastn_database=/home/jaswinder/Documents/project4/database/nt 
-path_infernal_database=/home/jaswinder/Documents/project4/database/nt
+path_blastn_database=/home/jaswinder/Documents/project4/database/nt
+path_infernal_database=/home/jaswinder/Documents/project4/database/nt.fasta
 
 #path_blastn_database=$program_dir/nt_database/nt      				# set path to the formatted NCBI's database file without extension 
 #path_infernal_database=$program_dir/nt_database/nt					# set path to the NCBI's database database file
@@ -24,10 +24,10 @@ output_dir=$input_dir/${seq_id}_outputs
 
 #exit 1
 
-if [ ! -f $path_blastn_database ];  then
+if [ ! -f $path_infernal_database ];  then
     echo ""
     echo "========================================================================================"
-    echo "            Looks like nt database doesn't exists in the path $path_blastn_database.    "
+    echo "            Looks like nt database doesn't exists in the path $path_infernal_database.  "
     echo "            If you want to download the database now, please make sure you have enough  "
     echo "            space in mounted directory and internet connection have enough bandwidth as "
     echo "            file is of size 270 GBs after unzip. It may take forever to download if     "
