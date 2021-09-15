@@ -30,7 +30,7 @@ if [ ! -f $path_infernal_database ];  then
     echo "            Looks like nt database doesn't exists in the path $path_infernal_database.  "
     echo "            If you want to download the database now, please make sure you have enough  "
     echo "            space in mounted directory and internet connection have enough bandwidth as "
-    echo "            file is of size 270 GBs after unzip. It may take forever to download if     "
+    echo "            file is of size 490 GBs after unzip. It may take forever to download if     "
     echo "                                internet is slow!                                       "
     echo "========================================================================================"
     echo ""
@@ -46,7 +46,7 @@ if [ ! -f $path_infernal_database ];  then
 		echo "                                 May take few hours to download.                              "
 		echo "=============================================================================================="
 		echo ""
-		wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz" -O $program_dir/nt_database/nt.gz
+		wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz" -O "$(dirname "$path_infernal_database")/nt.gz"
 
 
 		if [[ $? -eq 0 ]]; then 
@@ -73,7 +73,7 @@ if [ ! -f $path_infernal_database ];  then
 		echo ""
 		
 	############ unzip the nt data base file ############
-		gunzip $program_dir/nt_database/nt.gz
+		gunzip "$(dirname "$path_infernal_database")/nt.gz"
 
 		if [[ $? -eq 0 ]]; then 
 	        echo ""
@@ -120,13 +120,13 @@ else
     if [[ ! -f "$path_blastn_database.nal" ]]; then
         echo ""
         echo "====================================================================="
-        echo "    Nucleotide database file $path_database/nt need to formated      "
+        echo "    Nucleotide database file $path_blastn_database/nt need to formated      "
         echo "    formated to use with 'makeblastdb' program in BLAST-N program.   "  
         echo ""          
-		echo "    Formatting may take 2-3 hours as size of file is around 270 GBs. "
+		echo "    Formatting may take several hours as size of file is around 490 GBs. "
         echo "====================================================================="
         echo ""
-        makeblastdb -in $path_database/nt -dbtype nucl
+        makeblastdb -in "$path_infernal_database" -dbtype nucl -out "$path_blastn_database"
         
         if [[ $? -eq 0 ]]; then
                 echo ""

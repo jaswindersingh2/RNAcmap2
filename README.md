@@ -41,10 +41,18 @@ To install **BLAST-N** and **INFERNAL** tools for mulitple-sequence-alignment se
 
 To setup `utils` scripts
 
-9. link seqkit executable (`$conda_dir/envs/venv_rnacmap2/bin/seqkit`) to `RNAcmap2/utils/seqkit`
-10. install [HHsuite-github-repo](https://github.com/soedinglab/hh-suite/tree/master/scripts) and link `$hh-suite_dir/scripts/reformat.pl` to `RNAcmap2/utils/reformat.pl`
-11. install [RNAsol standalone program](https://yanglab.nankai.edu.cn/RNAsol/) and link `$RNAsol_dir/package/bin/getpssm.pl` to `RNAcmap2/utils/getpssm.pl`, link `parse_blastn_local.pl` in the same way.
-12. install PLMC ([plmc-github-repo](https://github.com/debbiemarkslab/plmc)) and make sure you can find plmc executable  at `RNAcmap2/plmc/bin/plmc`
+9. In RNAcmap2 directory, `makedir utils`
+10. Link seqkit executable (`$conda_dir/envs/venv_rnacmap2/bin/seqkit`) to `utils/seqkit`
+11. Install [HHsuite-github-repo](https://github.com/soedinglab/hh-suite/tree/master/scripts) and link `$hh-suite_dir/scripts/reformat.pl` to `utils/reformat.pl`
+12. Install [RNAsol standalone program](https://yanglab.nankai.edu.cn/RNAsol/) and link `$RNAsol_dir/package/bin/getpssm.pl` to `utils/getpssm.pl`, link `parse_blastn_local.pl` in the same way.
+
+To setup PLMC
+
+13. Install PLMC ([plmc-github-repo](https://github.com/debbiemarkslab/plmc)) and make sure you can find plmc executable  at `RNAcamp2/plmc/bin/plmc`
+
+To setup database path
+
+14. In run_rnacmap2.sh, Modify `$path_blastn_database` and `$path_infernal_database` to point to the location of your nucleotide sequence database.
 
 
 ## Usage
@@ -52,7 +60,7 @@ To setup `utils` scripts
 
 ### To run RNAcmap2:
 
-`./run_rnacmap2.sh sample_input/1eiy_C`
+15. `./run_rnacmap2.sh sample_input/1eiy_C`
 
 ## Reproduce results of RNAcmap pipeline:
 
