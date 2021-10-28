@@ -13,7 +13,7 @@ It is recommended that your system should have 32 GB RAM, 500 GB disk space to s
 
 RNAcmap2 has been tested on Ubuntu 14.04, 16.04, and 18.04 operating systems.
 
-## Installation of RNAcmap and its dependencies
+## Installation of RNAcmap2 and its dependencies
 
 Clone RNAcmap2 github repo:
 
@@ -39,12 +39,17 @@ To install **BLAST-N** and **INFERNAL** tools for mulitple-sequence-alignment se
 8. `conda install -c bioconda seqkit`
 
 
+## Download the reference database used by RNAcmap2 using following command:
+
+9. `./db_download.sh`
+
+
 ## Usage
 
 
 ### To run RNAcmap2:
 
-9. `./run_rnacmap2.sh sample_input/1eiy_C`
+10. `./run_rnacmap2.sh sample_input/1eiy_C`
 
 ## Reproduce results of RNAcmap pipeline:
 

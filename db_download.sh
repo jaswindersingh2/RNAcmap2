@@ -4,7 +4,7 @@
 
 
 ####### environment samples database download ###########
-mkdir -p ./database/env_nt_database
+mkdir -p database/env_nt_database
 
 echo ""
 echo "==========================================" 
