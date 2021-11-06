@@ -28,7 +28,7 @@ Just run the following command to create **Conda** virtual environment and insta
 3. `conda activate venv_rnacmap2`
 
 
-## Install DCA predictor using following commands:
+## Install DCA predictor using following commands
 
 For mfDCA and plmDCA:
 
@@ -43,12 +43,12 @@ For GREMLIN:
 6. `git clone "https://github.com/sokrypton/GREMLIN_CPP" && cd GREMLIN_CPP && g++ -O3 -std=c++0x -o gremlin_cpp gremlin_cpp.cpp -fopenmp && cd ../`
 
 
-## Download the reference database used by RNAcmap2 using following command:
+## Download the reference database used by RNAcmap2 using following command
 
 7. `./db_download.sh`
 
 
-## To format the database to use with **blastn**, the following command can be used.
+## To format the database to use with **BLAST-N**, the following command can be used
 
 8. `makeblastdb -in ./database/nt_metagenomics_database/nt_metagenomics2 -dbtype nucl`
 
@@ -56,11 +56,11 @@ For GREMLIN:
 ## Usage
 
 
-### To run RNAcmap2:
+To run RNAcmap2:
 
 9. `./run_rnacmap2.sh 6p2h_A mfdca`
 
-## Reproduce results of RNAcmap pipeline:
+## Reproduce results of RNAcmap pipeline
 
 Refer to [benchmarking](https://github.com/jaswindersingh2/RNAcmap2/tree/main/benchmarking) folder of this repo.
 
