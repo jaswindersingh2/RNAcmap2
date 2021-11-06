@@ -30,15 +30,15 @@ Just run the following command to create **Conda** virtual environment and insta
 
 ## Install DCA predictor using following commands:
 
-# For mfDCA and plmDCA:
+For mfDCA and plmDCA:
 
 4. `pip install pydca`
 
-# For PLMC:
+For PLMC:
 
 5. `git clone https://github.com/debbiemarkslab/plmc && cd plmc && make all-openmp && cd -`
 
-# For GREMLIN:
+For GREMLIN:
 
 6. `git clone "https://github.com/sokrypton/GREMLIN_CPP" && cd GREMLIN_CPP && g++ -O3 -std=c++0x -o gremlin_cpp gremlin_cpp.cpp -fopenmp && cd ../`
 
