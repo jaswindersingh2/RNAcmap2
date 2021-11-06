@@ -130,7 +130,7 @@ SeqKit:
 [10] Shen, W., Le, S., Li, Y. and Hu, F., 2016. SeqKit: a cross-platform and ultrafast toolkit for FASTA/Q file manipulation. PloS one, 11(10), p.e0163962.
 
 
-**If use SPOT-RNA-2D datasets, please consider citing the following papers:**
+**If use RNAcmap2 datasets, please consider citing the following papers:**
 
 Protein Data Bank (PDB):
 
