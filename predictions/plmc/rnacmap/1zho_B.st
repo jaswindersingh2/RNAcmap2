@@ -1,27 +1,18 @@
 #Name: 1zho_B
-#Length:  38 
-#PageNumber: 3
-#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
-#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Length: ,38,
+#PageNumber: 2
 GGGAGUGAAGGAGGCUUCGGCCGCGAAACUUCACUCCC
-...[{......[..(....]..)......(..]})...
-EEEEEEEEEEEEEESHHHHHHHSXXXXXXSHHHHSEEE
-NNNKKNNNNNNKNNNNNNNKNNNNNNNNNNNNKKNNNN
-S1 15..15 "C" 23..23 "G"
-S2 30..30 "U" 35..35 "U"
-H1 16..22 "UUCGGCC" (15,23) C:G PK{3}
-H2 31..34 "UCAC" (30,35) U:U PK{1,2}
-X1 24..29 "CGAAAC" (23,15) G:C (30,35) U:U 
-E1 1..14 "GGGAGUGAAGGAGG" PK{1,2,3}
-E2 36..38 "CCC" 
-PK1 1bp 4..4 33..33 E1 1..14 H2 31..34
-PK2 1bp 5..5 34..34 E1 1..14 H2 31..34
-PK3 1bp 12..12 20..20 E1 1..14 H1 16..22
-PK1.1 4 A 33 A
-PK2.1 5 G 34 C
-PK3.1 12 A 20 G
-NCBP1 30 U 35 U S2
-NCBP2 4 A 33 A PK1.1
-NCBP3 12 A 20 G PK3.1
-segment1 1bp 15..15 C 23..23 G
-segment2 1bp 30..30 U 35..35 U
+....((.....(.......)..[.........))]...
+EEEESSIIIIISHHHHHHHSIIIIIIIIIIIISSEEEE
+NNNNNNNNNNNNNNNNNNNNNNKNNNNNNNNNNNKNNN
+S1 5..6 "GU" 33..34 "AC"
+S2 12..12 "A" 20..20 "G"
+H1 13..19 "GGCUUCG" (12,20) A:G 
+I1.1 7..11 "GAAGG" (6,33) U:A 
+I1.2 21..32 "CCGCGAAACUUC" (20,12) G:A PK{1}
+E1 1..4 "GGGA" 
+E2 35..38 "UCCC" PK{1}
+PK1 1bp 23..23 35..35 I1.2 21..32 E2 35..38
+PK1.1 23 G 35 U
+NCBP1 12 A 20 G S2
+segment1 3bp 5..12 GUGAAGGA 20..34 GCCGCGAAACUUCAC

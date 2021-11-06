@@ -1,0 +1,51 @@
+[0;32mINFO[0;0m 2021-10-28 10:07:31,743 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 43
+            total number of (unweighted) sequences: 1292
+            sequence identity: 0.8
+            lambda_h: 8.4
+            lambda_J: 8.4
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-10-28 10:07:31,744 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 520.867188, xnorm = 7.049893, gnorm = 118.443871, step = 0.007225
+
+Iteration 2:
+fx = 247.834549, xnorm = 2.211615, gnorm = 120.753067, step = 1.000000
+
+Iteration 3:
+fx = 143.173340, xnorm = 2.691237, gnorm = 53.668274, step = 1.000000
+
+Iteration 4:
+fx = 111.181824, xnorm = 2.020864, gnorm = 17.496834, step = 1.000000
+
+Iteration 5:
+fx = 110.065575, xnorm = 1.734678, gnorm = 8.765989, step = 1.000000
+
+Iteration 6:
+fx = 108.765968, xnorm = 1.798996, gnorm = 1.641189, step = 1.000000
+
+Iteration 7:
+fx = 108.758217, xnorm = 1.791607, gnorm = 0.762076, step = 1.000000
+
+Iteration 8:
+fx = 108.756790, xnorm = 1.789807, gnorm = 0.582810, step = 0.260788
+
+Iteration 9:
+fx = 108.741806, xnorm = 1.785738, gnorm = 0.314374, step = 1.000000
+
+L-BFGS optimization terminated with status code = -1001
+fx = 108.741814
+[0;32mINFO[0;0m 2021-10-28 10:07:31,852 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 22790
+[0;32mINFO[0;0m 2021-10-28 10:07:31,853 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 22790
+[0;32mINFO[0;0m 2021-10-28 10:07:31,872 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-10-28 10:07:31,918 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-10-28 10:07:31,923 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_3zd4_A/PLMDCA_apc_fn_scores_3zd4_A.txt

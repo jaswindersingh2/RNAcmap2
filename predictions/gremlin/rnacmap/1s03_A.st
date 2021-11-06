@@ -1,0 +1,14 @@
+#Name: 1s03_A
+#Length: ,47,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGACGAUGGCGAAACUGCAUGAGGCAAUUCAUGCAAGUCCCUCGUCC
+[.....................(.....................].)
+EEEEEEEEEEEEEEEEEEEEEESHHHHHHHHHHHHHHHHHHHHHHHS
+KNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKNN
+S1 23..23 "G" 47..47 "C"
+H1 24..46 "GCAAUUCAUGCAAGUCCCUCGUC" (23,47) G:C PK{1}
+E1 1..22 "GGACGAUGGCGAAACUGCAUGA" PK{1}
+PK1 1bp 1..1 45..45 E1 1..22 H1 24..46
+PK1.1 1 G 45 U
+segment1 1bp 23..23 G 47..47 C

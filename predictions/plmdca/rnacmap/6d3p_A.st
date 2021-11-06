@@ -1,0 +1,17 @@
+#Name: 6d3p_A
+#Length: ,45,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGGCGUAACCUCCAUCCGAGUUGCAAGAGAGGGAAACGCAGUCUC
+...[...(.....................]..)............
+EEEEEEESHHHHHHHHHHHHHHHHHHHHHHHHSEEEEEEEEEEEE
+NNNKNNNNNNNNNNNNNNNNNNNNNNNNNKNNNNNNNNNNNNNNN
+S1 8..8 "A" 33..33 "G"
+H1 9..32 "CCUCCAUCCGAGUUGCAAGAGAGG" (8,33) A:G PK{1}
+E1 1..7 "GGGCGUA" PK{1}
+E2 34..45 "AAACGCAGUCUC" 
+PK1 1bp 4..4 30..30 E1 1..7 H1 9..32
+PK1.1 4 C 30 A
+NCBP1 8 A 33 G S1
+NCBP2 4 C 30 A PK1.1
+segment1 1bp 8..8 A 33..33 G

@@ -1,0 +1,16 @@
+#Name: 5ng6_B
+#Length: ,43,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+AAUUUCUACUGUUGUAGAUAGAUUAAAAGGUAAUUCUAUCUUG
+..[.......(.].)............................
+EEEEEEEEEESHHHSEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+NNKNNNNNNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 11..11 "G" 15..15 "U"
+H1 12..14 "UUG" (11,15) G:U PK{1}
+E1 1..10 "AAUUUCUACU" PK{1}
+E2 16..43 "AGAUAGAUUAAAAGGUAAUUCUAUCUUG" 
+PK1 1bp 3..3 13..13 E1 1..10 H1 12..14
+PK1.1 3 U 13 U
+NCBP1 3 U 13 U PK1.1
+segment1 1bp 11..11 G 15..15 U

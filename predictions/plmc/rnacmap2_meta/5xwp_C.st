@@ -1,0 +1,44 @@
+#Name: 5xwp_C
+#Length:  59 
+#PageNumber: 5
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGACCACCCCAAAAAUGAAGGGGACUAAAACACAAAUCUAUCUGAAUAAACUCUUCUUC
+.[{({(.<].....[}..)A.>.......})]....(...)..........(a..)...
+EEESISHHHHHHHHHHHHSIIIIIIIIIIISMMMMMSHHHSMMMMMMMMMMSHHHSEEE
+NKKNKNNKKNNNNNKKNNNKNKNNNNNNNKNKNNNNNNNNNNNNNNNNNNNNKNNNNNN
+S1 4..4 "C" 31..31 "C"
+S2 6..6 "A" 19..19 "A"
+S3 37..37 "U" 41..41 "U"
+S4 52..52 "U" 56..56 "C"
+H1 7..18 "CCCCAAAAAUGA" (6,19) A:A PK{1,3,4,5}
+H2 38..40 "CUA" (37,41) U:U 
+H3 53..55 "CUU" (52,56) U:C PK{6}
+I1.1 5..5 "C" (4,31) C:C PK{3}
+I1.2 20..30 "GGGGACUAAAA" (19,6) A:A PK{2,4,6}
+M1.1 32..36 "ACAAA" (31,4) C:C (37,41) U:U PK{5}
+M1.2 42..51 "CUGAAUAAAC" (41,37) U:U (52,56) U:C 
+E1 1..3 "GGA" PK{1,2}
+E2 57..59 "UUC" 
+PK1 1bp 2..2 9..9 E1 1..3 H1 7..18
+PK2 1bp 3..3 30..30 E1 1..3 I1.2 20..30
+PK3 1bp 5..5 16..16 I1.1 5..5 H1 7..18
+PK4 1bp 8..8 22..22 H1 7..18 I1.2 20..30
+PK5 1bp 15..15 32..32 H1 7..18 M1.1 32..36
+PK6 1bp 20..20 53..53 I1.2 20..30 H3 53..55
+PK1.1 2 G 9 C
+PK2.1 3 A 30 A
+PK3.1 5 C 16 U
+PK4.1 8 C 22 G
+PK5.1 15 A 32 A
+PK6.1 20 G 53 C
+NCBP1 6 A 19 A S2
+NCBP2 37 U 41 U S3
+NCBP3 4 C 31 C S1
+NCBP4 52 U 56 C S4
+NCBP5 3 A 30 A PK2.1
+NCBP6 5 C 16 U PK3.1
+NCBP7 15 A 32 A PK5.1
+segment1 2bp 4..6 CCA 19..31 AGGGGACUAAAAC
+segment2 1bp 37..37 U 41..41 U
+segment3 1bp 52..52 U 56..56 C

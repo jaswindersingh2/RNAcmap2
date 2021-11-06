@@ -1,0 +1,20 @@
+#Name: 4ts0_X
+#Length: ,44,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GACGCGACCGAAUGAAAUGGUGAAGGACGGGUCCAGCCGGCUGC
+..[..(.].....(.........)............).......
+EEEEESIIIIIIISHHHHHHHHHSIIIIIIIIIIIISEEEEEEE
+NNKNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 6..6 "G" 37..37 "C"
+S2 14..14 "G" 24..24 "A"
+H1 15..23 "AAAUGGUGA" (14,24) G:A 
+I1.1 7..13 "ACCGAAU" (6,37) G:C PK{1}
+I1.2 25..36 "GGACGGGUCCAG" (24,14) A:G 
+E1 1..5 "GACGC" PK{1}
+E2 38..44 "CGGCUGC" 
+PK1 1bp 3..3 8..8 E1 1..5 I1.1 7..13
+PK1.1 3 C 8 C
+NCBP1 14 G 24 A S2
+NCBP2 3 C 8 C PK1.1
+segment1 2bp 6..14 GACCGAAUG 24..37 AGGACGGGUCCAGC

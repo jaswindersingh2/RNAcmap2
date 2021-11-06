@@ -1,0 +1,43 @@
+#Name: 4n0t_B
+#Length:  72 
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGUCAAUUUGAAACAAUACAGAGAUGAUCAGCGGUUCCCCUGCAUAAGGAUGAACCGUUUUACAAAGAGACC
+([(...[.((].......)).....]).)(.((((...((.......))....)))).)...[(.{..])}.
+SISIIIIISSHHHHHHHHSSIIIIIISISSISSSSIIISSHHHHHHHSSIIIISSSSISXXXXSHHHHHSEE
+NKNNNNKNNNKNNNNNNNNNNNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKNNKNNKNKN
+S1 1..1 "G" 29..29 "C"
+S2 3..3 "U" 27..27 "A"
+S3 9..10 "UG" 19..20 "CA"
+S4 30..30 "A" 59..59 "U"
+S5 32..35 "CGGU" 54..57 "ACCG"
+S6 39..40 "CC" 48..49 "GG"
+S7 64..64 "A" 70..70 "A"
+H1 11..18 "AAACAAUA" (10,19) G:C PK{2}
+H2 41..47 "UGCAUAA" (40,48) C:G 
+H3 65..69 "AAGAG" (64,70) A:A PK{3,4}
+I1.1 2..2 "G" (1,29) G:C PK{1}
+I1.2 28..28 "U" (27,3) A:U 
+I2.1 4..8 "CAAUU" (3,27) U:A PK{2}
+I2.2 21..26 "GAGAUG" (20,9) A:U PK{1}
+I3.1 31..31 "G" (30,59) A:U 
+I3.2 58..58 "U" (57,32) G:C 
+I4.1 36..38 "UCC" (35,54) U:A 
+I4.2 50..53 "AUGA" (49,39) G:C 
+X2 60..63 "UUAC" (59,30) U:A (64,70) A:A PK{3}
+E1 71..72 "CC" PK{4}
+PK1 1bp 2..2 26..26 I1.1 2..2 I2.2 21..26
+PK2 1bp 7..7 11..11 I2.1 4..8 H1 11..18
+PK3 1bp 63..63 69..69 X2 60..63 H3 65..69
+PK4 1bp 66..66 71..71 H3 65..69 E1 71..72
+PK1.1 2 G 26 G
+PK2.1 7 U 11 A
+PK3.1 63 C 69 G
+PK4.1 66 A 71 C
+NCBP1 64 A 70 A S7
+NCBP2 2 G 26 G PK1.1
+NCBP3 66 A 71 C PK4.1
+segment1 4bp 1..10 GGUCAAUUUG 19..29 CAGAGAUGAUC
+segment2 7bp 30..40 AGCGGUUCCCC 48..59 GGAUGAACCGUU
+segment3 1bp 64..64 A 70..70 A

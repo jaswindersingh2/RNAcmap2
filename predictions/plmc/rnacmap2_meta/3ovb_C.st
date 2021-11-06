@@ -1,0 +1,20 @@
+#Name: 3ovb_C
+#Length:  35 
+#PageNumber: 1
+GGAAGUAGAUGGUUCAAGUCCAUUUACUUCCACCA
+(((...)(((((.......))))).....))....
+SSSHHHSSSSSSHHHHHHHSSSSSMMMMMSSEEEE
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 1..2 "GG" 30..31 "CC"
+S2 3..3 "A" 7..7 "A"
+S3 8..12 "GAUGG" 20..24 "CCAUU"
+H1 4..6 "AGU" (3,7) A:A 
+H2 13..19 "UUCAAGU" (12,20) G:C 
+M1.1 3..2 "" (2,30) G:C (3,7) A:A 
+M1.2 8..7 "" (7,3) A:A (8,24) G:U 
+M1.3 25..29 "UACUU" (24,8) U:G (30,2) C:G 
+E1 32..35 "ACCA" 
+NCBP1 3 A 7 A S2
+segment1 2bp 1..2 GG 30..31 CC
+segment2 1bp 3..3 A 7..7 A
+segment3 5bp 8..12 GAUGG 20..24 CCAUU

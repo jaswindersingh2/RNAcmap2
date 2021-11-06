@@ -1,0 +1,37 @@
+#Name: 6las_A
+#Length:  55 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGCAUUGUGCCUCGCAUUGCACUCCGCGGGGCGAUAAGUCCUGAAAAGGGAUGUC
+.(...[(.(.(..(...[........).[).)]...]..(........)]..)).
+ESBBBBSMSISIISHHHHHHHHHHHHSIISISMMMMMMMSHHHHHHHHSMMMSSE
+NNNNNKNNNNNNNNNNNKNNNNNNNNNNKNNNKNNNKNNNNNNNNNNNNKNNNNN
+S1 2..2 "G" 54..54 "U"
+S2 7..7 "G" 53..53 "G"
+S3 9..9 "G" 32..32 "C"
+S4 11..11 "C" 30..30 "G"
+S5 14..14 "G" 27..27 "C"
+S6 40..40 "C" 49..49 "G"
+H1 15..26 "CAUUGCACUCCG" (14,27) G:C PK{2}
+H2 41..48 "CUGAAAAG" (40,49) C:G 
+B1 3..6 "CAUU" (2,54) G:U (7,53) G:G PK{1}
+I1.1 10..10 "C" (9,32) G:C 
+I1.2 31..31 "G" (30,11) G:C 
+I2.1 12..13 "UC" (11,30) C:G 
+I2.2 28..29 "GG" (27,14) C:G PK{3}
+M1.1 8..8 "U" (7,53) G:G (9,32) G:C 
+M1.2 33..39 "GAUAAGU" (32,9) C:G (40,49) C:G PK{2,3}
+M1.3 50..52 "GAU" (49,40) G:C (53,7) G:G PK{1}
+E1 1..1 "G" 
+E2 55..55 "C" 
+PK1 1bp 6..6 50..50 B1 3..6 M1.3 50..52
+PK2 1bp 18..18 37..37 H1 15..26 M1.2 33..39
+PK3 1bp 29..29 33..33 I2.2 28..29 M1.2 33..39
+PK1.1 6 U 50 G
+PK2.1 18 U 37 A
+PK3.1 29 G 33 G
+NCBP1 7 G 53 G S2
+NCBP2 29 G 33 G PK3.1
+segment1 2bp 2..7 GCAUUG 53..54 GU
+segment2 3bp 9..14 GCCUCG 27..32 CGGGGC
+segment3 1bp 40..40 C 49..49 G

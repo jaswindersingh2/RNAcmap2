@@ -1,0 +1,36 @@
+#Name: 2xdb_G
+#Length: ,40,
+#PageNumber: 4
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+AUUCAGGUGAUUUGCUACCUUUAAGUGCAGCUAGAAAUUC
+..(..([.((.({(.......).)<)])})...>).....
+EESIISIISSISISHHHHHHHSISISBSISIIIISEEEEE
+NNNNNNKNNNNNKNNNNNNNNNNNKNKNKNNNNKNNNNNN
+S1 3..3 "U" 35..35 "A"
+S2 6..6 "G" 30..30 "G"
+S3 9..9 "G" 28..28 "C"
+S4 10..10 "A" 26..26 "U"
+S5 12..12 "U" 24..24 "A"
+S6 14..14 "G" 22..22 "U"
+H1 15..21 "CUACCUU" (14,22) G:U 
+B1 27..27 "G" (26,10) U:A (28,9) C:G PK{1}
+I1.1 4..5 "CA" (3,35) U:A 
+I1.2 31..34 "CUAG" (30,6) G:G PK{3}
+I2.1 7..8 "GU" (6,30) G:G PK{1}
+I2.2 29..29 "A" (28,9) C:G PK{2}
+I3.1 11..11 "U" (10,26) A:U 
+I3.2 25..25 "G" (24,12) A:U PK{3}
+I4.1 13..13 "U" (12,24) U:A PK{2}
+I4.2 23..23 "A" (22,14) U:G 
+E1 1..2 "AU" 
+E2 36..40 "AAUUC" 
+PK1 1bp 7..7 27..27 I2.1 7..8 B1 27..27
+PK2 1bp 13..13 29..29 I4.1 13..13 I2.2 29..29
+PK3 1bp 25..25 34..34 I3.2 25..25 I1.2 31..34
+PK1.1 7 G 27 G
+PK2.1 13 U 29 A
+PK3.1 25 G 34 G
+NCBP1 6 G 30 G S2
+NCBP2 7 G 27 G PK1.1
+NCBP3 25 G 34 G PK3.1
+segment1 6bp 3..14 UCAGGUGAUUUG 22..35 UAAGUGCAGCUAGA

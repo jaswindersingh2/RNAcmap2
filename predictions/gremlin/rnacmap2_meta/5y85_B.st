@@ -1,0 +1,29 @@
+#Name: 5y85_B
+#Length:  50 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GCCGCCGCUGGUGCAAGUCCAGCCACGCUUCGGCGUGGGCGCUCAUGGGU
+.....(..(....[......).).[.((....)].).........]....
+EEEEESIISHHHHHHHHHHHSISXXXSSHHHHSBBSEEEEEEEEEEEEEE
+NNNNNNNNNNNNNKNNNNNNNNNNKNNNNNNNNKNNNNNNNNNNNKNNNN
+S1 6..6 "C" 23..23 "C"
+S2 9..9 "U" 21..21 "A"
+S3 27..27 "G" 36..36 "U"
+S4 28..28 "C" 33..33 "G"
+H1 10..20 "GGUGCAAGUCC" (9,21) U:A PK{1}
+H2 29..32 "UUCG" (28,33) C:G 
+B1 34..35 "CG" (33,28) G:C (36,27) U:G PK{2}
+I1.1 7..8 "GC" (6,23) C:C 
+I1.2 22..22 "G" (21,9) A:U 
+X1 24..26 "CAC" (23,6) C:C (27,36) G:U PK{2}
+E1 1..5 "GCCGC" 
+E2 37..50 "GGGCGCUCAUGGGU" PK{1}
+PK1 1bp 14..14 46..46 H1 10..20 E2 37..50
+PK2 1bp 25..25 34..34 X1 24..26 B1 34..35
+PK1.1 14 C 46 U
+PK2.1 25 A 34 C
+NCBP1 6 C 23 C S1
+NCBP2 14 C 46 U PK1.1
+NCBP3 25 A 34 C PK2.1
+segment1 2bp 6..9 CGCU 21..23 AGC
+segment2 2bp 27..28 GC 33..36 GCGU

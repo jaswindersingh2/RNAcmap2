@@ -1,0 +1,36 @@
+[0;32mINFO[0;0m 2021-09-18 14:45:27,474 fasta_reader get_alignment_int_form 
+	Total number of sequences read from file: 2
+[0;32mINFO[0;0m 2021-09-18 14:45:27,474 meanfield_dca compute_sequences_weight 
+	Computing sequences weights
+[0;32mINFO[0;0m 2021-09-18 14:45:28,355 meanfield_dca __init__ 
+	Created a MeanFieldDCA object with the following attributes
+        	biomolecule: RNA
+        	total states at sites: 5
+        	pseudocount: 0.5
+        	sequence identity: 0.8
+        	alignment length: 25
+        	total number of unique sequences (excluding redundant sequences with 100 percent similarity): 1
+        	effective number of sequences (with sequence identity 0.8): 1.0
+        
+[0;32mINFO[0;0m 2021-09-18 14:45:28,356 meanfield_dca get_single_site_freqs 
+	Computing single site frequencies
+[0;32mINFO[0;0m 2021-09-18 14:45:28,716 meanfield_dca get_reg_single_site_freqs 
+	Regularizing single site frequencies
+[0;32mINFO[0;0m 2021-09-18 14:45:28,845 meanfield_dca get_pair_site_freqs 
+	Computing pair site frequencies
+[0;32mINFO[0;0m 2021-09-18 14:45:32,084 meanfield_dca get_reg_pair_site_freqs 
+	Regularizing pair site frequencies
+[0;32mINFO[0;0m 2021-09-18 14:45:32,285 meanfield_dca construct_corr_mat 
+	Constructing the correlation matrix
+[0;32mINFO[0;0m 2021-09-18 14:45:32,601 meanfield_dca compute_couplings 
+	Computing couplings
+[0;32mINFO[0;0m 2021-09-18 14:45:33,054 meanfield_dca compute_couplings 
+	Maximum and minimum couplings: 0.4901960784313872, -20.0
+[0;32mINFO[0;0m 2021-09-18 14:45:33,054 meanfield_dca compute_sorted_FN 
+	Computing Frobenius norm of couplings
+[0;32mINFO[0;0m 2021-09-18 14:45:33,087 meanfield_dca compute_sorted_FN_APC 
+	Performing average product correction (APC) to Frobenius norm of couplings.
+[0;32mINFO[0;0m 2021-09-18 14:45:33,089 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file MFDCA_output_PKB294/MFDCA_apc_fn_scores_PKB294.txt
+[0;32mINFO[0;0m 2021-09-18 14:45:33,092 mfdca_main run_meanfield_dca 
+	DONE

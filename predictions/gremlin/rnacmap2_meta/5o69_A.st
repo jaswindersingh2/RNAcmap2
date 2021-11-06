@@ -1,0 +1,24 @@
+#Name: 5o69_A
+#Length: ,41,
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+CCGGACGAGGUGCGCCGUACCCGGUCAGGACAAGACGGCGC
+..[.......{((..(.........(...)].....)).})
+EEEEEEEEEEESSBBSIIIIIIIIISHHHSIIIIIISSBBS
+NNKNNNNNNNKNNNNNNNNNNNNNNNNNNNKNNNNNNNNKN
+S1 12..12 "G" 41..41 "C"
+S2 13..13 "C" 38..38 "G"
+S3 16..16 "C" 37..37 "G"
+S4 26..26 "C" 30..30 "A"
+H1 27..29 "AGG" (26,30) C:A 
+B1 14..15 "GC" (13,38) C:G (16,37) C:G 
+B2 39..40 "CG" (38,13) G:C (41,12) C:G PK{2}
+I1.1 17..25 "GUACCCGGU" (16,37) C:G 
+I1.2 31..36 "CAAGAC" (30,26) A:C PK{1}
+E1 1..11 "CCGGACGAGGU" PK{1,2}
+PK1 1bp 3..3 31..31 E1 1..11 I1.2 31..36
+PK2 1bp 11..11 40..40 E1 1..11 B2 39..40
+PK1.1 3 G 31 C
+PK2.1 11 U 40 G
+NCBP1 26 C 30 A S4
+segment1 4bp 12..26 GCGCCGUACCCGGUC 30..41 ACAAGACGGCGC

@@ -1,0 +1,39 @@
+#Name: 4ts0_X
+#Length:  44 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GACGCGACCGAAUGAAAUGGUGAAGGACGGGUCCAGCCGGCUGC
+..(...).....[(.....(.....).[).(..])(].....).
+EESHHHSMMMMMMSIIIIISHHHHHSIISMSHHHSSHHHHHHSE
+NNNNNNNNNNNNKNNNNNNNNNNNNNNKNNNNNKNNKNNNNNNN
+S1 3..3 "C" 7..7 "A"
+S2 14..14 "G" 29..29 "G"
+S3 20..20 "G" 26..26 "G"
+S4 31..31 "G" 35..35 "A"
+S5 36..36 "G" 43..43 "G"
+H1 4..6 "GCG" (3,7) C:A 
+H2 21..25 "UGAAG" (20,26) G:G 
+H3 32..34 "UCC" (31,35) G:A PK{2}
+H4 37..42 "CCGGCU" (36,43) G:G PK{1}
+I1.1 15..19 "AAAUG" (14,29) G:G 
+I1.2 27..28 "AC" (26,20) G:G PK{2}
+M1.1 8..13 "CCGAAU" (7,3) A:C (14,29) G:G PK{1}
+M1.2 30..30 "G" (29,14) G:G (31,35) G:A 
+M1.3 36..35 "" (35,31) A:G (36,43) G:G 
+E1 1..2 "GA" 
+E2 44..44 "C" 
+PK1 1bp 13..13 37..37 M1.1 8..13 H4 37..42
+PK2 1bp 28..28 34..34 I1.2 27..28 H3 32..34
+PK1.1 13 U 37 C
+PK2.1 28 C 34 C
+NCBP1 20 G 26 G S3
+NCBP2 31 G 35 A S4
+NCBP3 3 C 7 A S1
+NCBP4 36 G 43 G S5
+NCBP5 14 G 29 G S2
+NCBP6 13 U 37 C PK1.1
+NCBP7 28 C 34 C PK2.1
+segment1 1bp 3..3 C 7..7 A
+segment2 2bp 14..20 GAAAUGG 26..29 GACG
+segment3 1bp 31..31 G 35..35 A
+segment4 1bp 36..36 G 43..43 G

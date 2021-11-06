@@ -1,0 +1,38 @@
+[0;32mINFO[0;0m 2021-09-18 15:03:57,552 fasta_reader get_alignment_int_form 
+	Found 1 non-standard residues in 1 sequences
+[0;32mINFO[0;0m 2021-09-18 15:03:57,552 fasta_reader get_alignment_int_form 
+	Total number of sequences read from file: 49
+[0;32mINFO[0;0m 2021-09-18 15:03:57,552 meanfield_dca compute_sequences_weight 
+	Computing sequences weights
+[0;32mINFO[0;0m 2021-09-18 15:03:58,400 meanfield_dca __init__ 
+	Created a MeanFieldDCA object with the following attributes
+        	biomolecule: RNA
+        	total states at sites: 5
+        	pseudocount: 0.5
+        	sequence identity: 0.8
+        	alignment length: 116
+        	total number of unique sequences (excluding redundant sequences with 100 percent similarity): 48
+        	effective number of sequences (with sequence identity 0.8): 15.0
+        
+[0;32mINFO[0;0m 2021-09-18 15:03:58,401 meanfield_dca get_single_site_freqs 
+	Computing single site frequencies
+[0;32mINFO[0;0m 2021-09-18 15:03:58,757 meanfield_dca get_reg_single_site_freqs 
+	Regularizing single site frequencies
+[0;32mINFO[0;0m 2021-09-18 15:03:58,878 meanfield_dca get_pair_site_freqs 
+	Computing pair site frequencies
+[0;32mINFO[0;0m 2021-09-18 15:04:02,041 meanfield_dca get_reg_pair_site_freqs 
+	Regularizing pair site frequencies
+[0;32mINFO[0;0m 2021-09-18 15:04:02,239 meanfield_dca construct_corr_mat 
+	Constructing the correlation matrix
+[0;32mINFO[0;0m 2021-09-18 15:04:02,552 meanfield_dca compute_couplings 
+	Computing couplings
+[0;32mINFO[0;0m 2021-09-18 15:04:03,214 meanfield_dca compute_couplings 
+	Maximum and minimum couplings: 2.053499715555941, -20.000000000000043
+[0;32mINFO[0;0m 2021-09-18 15:04:03,214 meanfield_dca compute_sorted_FN 
+	Computing Frobenius norm of couplings
+[0;32mINFO[0;0m 2021-09-18 15:04:03,573 meanfield_dca compute_sorted_FN_APC 
+	Performing average product correction (APC) to Frobenius norm of couplings.
+[0;32mINFO[0;0m 2021-09-18 15:04:03,634 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file MFDCA_output_PKB135/MFDCA_apc_fn_scores_PKB135.txt
+[0;32mINFO[0;0m 2021-09-18 15:04:03,648 mfdca_main run_meanfield_dca 
+	DONE

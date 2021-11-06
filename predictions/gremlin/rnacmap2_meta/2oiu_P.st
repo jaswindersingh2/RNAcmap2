@@ -1,0 +1,26 @@
+#Name: 2oiu_P
+#Length:  71 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+GGACCUCGGCGAAAGCCGUUCGACCAGCGAAAGCUCUUAGACAGGAGGUUAGGUGCUCCGAAAGGAGCACU
+.........[(..])..........[.(....]...................................)..
+EEEEEEEEEESHHHSXXXXXXXXXXXXSHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHSEE
+NNNNNNNNNKNNNKNNNNNNNNNNNKNNNNNNKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 11..11 "G" 15..15 "G"
+S2 28..28 "C" 69..69 "A"
+H1 12..14 "AAA" (11,15) G:G PK{1}
+H2 29..68 "GAAAGCUCUUAGACAGGAGGUUAGGUGCUCCGAAAGGAGC" (28,69) C:A PK{2}
+X1 16..27 "CCGUUCGACCAG" (15,11) G:G (28,69) C:A PK{2}
+E1 1..10 "GGACCUCGGC" PK{1}
+E2 70..71 "CU" 
+PK1 1bp 10..10 14..14 E1 1..10 H1 12..14
+PK2 1bp 26..26 33..33 X1 16..27 H2 29..68
+PK1.1 10 C 14 A
+PK2.1 26 A 33 G
+NCBP1 28 C 69 A S2
+NCBP2 11 G 15 G S1
+NCBP3 10 C 14 A PK1.1
+NCBP4 26 A 33 G PK2.1
+segment1 1bp 11..11 G 15..15 G
+segment2 1bp 28..28 C 69..69 A

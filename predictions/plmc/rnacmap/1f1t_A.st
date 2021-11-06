@@ -1,23 +1,19 @@
 #Name: 1f1t_A
-#Length:  38 
-#PageNumber: 1
+#Length: ,38,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
 GGAUCCCGACUGGCGAGAGCCAGGUAACGAAUGGAUCC
-(..(((....)..........(..........)))..)
-SIISSSHHHHSMMMMMMMMMMSHHHHHHHHHHSSSIIS
-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+(..(([....(..........]..........)))..)
+SIISSBBBBBSHHHHHHHHHHHHHHHHHHHHHSSSIIS
+NNNNNKNNNNNNNNNNNNNNNKNNNNNNNNNNNNNNNN
 S1 1..1 "G" 38..38 "C"
 S2 4..5 "UC" 34..35 "GA"
-S3 6..6 "C" 11..11 "U"
-S4 22..22 "A" 33..33 "G"
-H1 7..10 "CGAC" (6,11) C:U 
-H2 23..32 "GGUAACGAAU" (22,33) A:G 
+S3 11..11 "U" 33..33 "G"
+H1 12..32 "GGCGAGAGCCAGGUAACGAAU" (11,33) U:G PK{1}
+B1 6..10 "CCGAC" (5,34) C:G (11,33) U:G PK{1}
 I1.1 2..3 "GA" (1,38) G:C 
 I1.2 36..37 "UC" (35,4) A:U 
-M1.1 6..5 "" (5,34) C:G (6,11) C:U 
-M1.2 12..21 "GGCGAGAGCC" (11,6) U:C (22,33) A:G 
-M1.3 34..33 "" (33,22) G:A (34,5) G:C 
-NCBP1 6 C 11 U S3
-NCBP2 22 A 33 G S4
-segment1 3bp 1..5 GGAUC 34..38 GAUCC
-segment2 1bp 6..6 C 11..11 U
-segment3 1bp 22..22 A 33..33 G
+PK1 1bp 6..6 22..22 B1 6..10 H1 12..32
+PK1.1 6 C 22 A
+NCBP1 6 C 22 A PK1.1
+segment1 4bp 1..11 GGAUCCCGACU 33..38 GGAUCC

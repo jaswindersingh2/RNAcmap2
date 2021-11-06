@@ -1,0 +1,27 @@
+#Name: 6cf2_G
+#Length:  35 
+#PageNumber: 2
+GGCUGGACUCGUACUUCGGUACUGGAGAAACAGCC
+..(...(...[)((....))(].......)..)..
+EESMMMSHHHHSSSHHHHSSSHHHHHHHHSMMSEE
+NNNNNNNNNNKNNNNNNNNNNKNNNNNNNNNNNNN
+S1 3..3 "C" 33..33 "G"
+S2 7..7 "A" 12..12 "U"
+S3 13..14 "AC" 19..20 "GU"
+S4 21..21 "A" 30..30 "A"
+H1 8..11 "CUCG" (7,12) A:U PK{1}
+H2 15..18 "UUCG" (14,19) C:G 
+H3 22..29 "CUGGAGAA" (21,30) A:A PK{1}
+M1.1 4..6 "UGG" (3,33) C:G (7,12) A:U 
+M1.2 13..12 "" (12,7) U:A (13,20) A:U 
+M1.3 21..20 "" (20,13) U:A (21,30) A:A 
+M1.4 31..32 "CA" (30,21) A:A (33,3) G:C 
+E1 1..2 "GG" 
+E2 34..35 "CC" 
+PK1 1bp 11..11 22..22 H1 8..11 H3 22..29
+PK1.1 11 G 22 C
+NCBP1 21 A 30 A S4
+segment1 1bp 3..3 C 33..33 G
+segment2 1bp 7..7 A 12..12 U
+segment3 2bp 13..14 AC 19..20 GU
+segment4 1bp 21..21 A 30..30 A

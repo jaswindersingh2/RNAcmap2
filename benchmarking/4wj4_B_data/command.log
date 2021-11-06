@@ -1,0 +1,32 @@
+4wj4_B:
+
+#228B22 => green
+#FFA500 => orange
+#FF00FF => magneta
+
+For true structure:
+
+java -cp VARNAv3-93.jar fr.orsay.lri.varna.applications.VARNAcmd -i 4wj4_B_true.ct -o 4wj4_B_true.png -algorithm radiate -resolution "8.0" -bpStyle ls -auxBPs "(26,44):color=#FFA500;(32,38):color=#FFA500;(8,14):color=#228B22;(10,45):color=#FFA500;(22,46):color=#FFA500;(9,23):color=#FFA500;(15,48):color=#228B22;(8,21):color=#228B22;(18,55):color=#228B22;(19,56):color=#228B22"
+
+
+For mfDCA (RNAcmap) structure:
+
+java -cp VARNAv3-93.jar fr.orsay.lri.varna.applications.VARNAcmd -i 4wj4_B_RNAcmap_mfdca.ct -o 4wj4_B_RNAcmap_mfdca.png -algorithm radiate -resolution "8.0" -bpStyle ls -auxBPs "(16,41):color=#FF00FF;(31,39):color=#0000FF;(20,38):color=#FF00FF;(19,39):color=#FF00FF;(22,46):color=#FFA500;(15,48):color=#228B22"
+
+
+For mfDCA (RNAcmap2_meta) structure:
+
+java -cp VARNAv3-93.jar fr.orsay.lri.varna.applications.VARNAcmd -i 4wj4_B_RNAcmap2_meta_mfdca.ct -o 4wj4_B_RNAcmap2_meta_mfdca.png -algorithm radiate -resolution "8.0" -bpStyle ls -auxBPs "(22,46):color=#FFA500;(19,35):color=#FF00FF;(20,38):color=#FF00FF;(15,48):color=#228B22"
+
+
+For SPOT-RNA2 (RNAcmap) structure:
+
+java -cp VARNAv3-93.jar fr.orsay.lri.varna.applications.VARNAcmd -i 4wj4_B_RNAcmap_spotrna2.ct -o 4wj4_B_RNAcmap_spotrna2.png -algorithm radiate -resolution "8.0" -bpStyle ls -auxBPs "(32,38):color=#FFA500;(31,39):color=#0000FF;(30,40):color=#0000FF;(29,41):color=#0000FF;(28,42):color=#0000FF;(27,43):color=#0000FF;(8,14):color=#228B22;(10,47):color=#FF00FF;(11,46):color=#FF00FF;(12,45):color=#FF00FF;(13,44):color=#FF00FF;(15,48):color=#228B22;(18,55):color=#228B22;(19,56):color=#228B22;(22,46):color=#FFA500;(9,23):color=#FFA500;(24,35):color=#FF00FF;(25,34):color=#FF00FF;(26,33):color=#FF00FF;(14,43):color=#FF00FF;(15,42):color=#FF00FF;(16,41):color=#FF00FF;(18,40):color=#FF00FF;(19,39):color=#FF00FF;(20,38):color=#FF00FF"
+
+;(15,48):color=#228B22;(18,55):color=#228B22;(26,44):color=#FFA500
+
+For SPOT-RNA2 (RNAcmap2_meta) structure:
+
+java -cp VARNAv3-93.jar fr.orsay.lri.varna.applications.VARNAcmd -i 4wj4_B_RNAcmap2_meta_spotrna2.ct -o 4wj4_B_RNAcmap2_meta_spotrna2.png -algorithm radiate -resolution "8.0" -bpStyle ls -auxBPs "(8,14):color=#228B22;(8,21):color=#228B22;(10,45):color=#FFA500;(10,47):color=#FF00FF;(11,46):color=#FF00FF;(19,56):color=#228B22;(22,46):color=#FFA500;(9,23):color=#FFA500;(32,38):color=#FFA500;(31,39):color=#0000FF;(19,39):color=#FF00FF;(20,38):color=#FF00FF;(21,47):color=#FF00FF;(15,48):color=#228B22;(18,55):color=#228B22;(26,44):color=#FFA500"
+
+

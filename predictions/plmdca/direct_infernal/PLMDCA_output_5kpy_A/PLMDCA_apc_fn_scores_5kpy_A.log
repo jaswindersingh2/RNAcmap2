@@ -1,0 +1,51 @@
+[0;32mINFO[0;0m 2021-10-28 10:08:05,656 plmdca __init__ Created plmDCA instance with:
+            biomolecule: RNA
+            MSA sequence length: 71
+            total number of (unweighted) sequences: 50
+            sequence identity: 0.8
+            lambda_h: 14.0
+            lambda_J: 14.0
+            gradient decent iterations: 500
+            number of threads: 40
+        
+[0;32mINFO[0;0m 2021-10-28 10:08:05,657 plmdca get_fields_and_couplings_from_backend 
+	Computing fields and couplings using gradient decent
+Iteration 1:
+fx = 1307.899780, xnorm = 8.557279, gnorm = 234.176956, step = 0.012976
+
+Iteration 2:
+fx = 845.340576, xnorm = 3.528276, gnorm = 310.469818, step = 1.000000
+
+Iteration 3:
+fx = 516.246887, xnorm = 4.241813, gnorm = 148.083649, step = 1.000000
+
+Iteration 4:
+fx = 377.068115, xnorm = 3.385278, gnorm = 51.578377, step = 1.000000
+
+Iteration 5:
+fx = 366.301392, xnorm = 3.095524, gnorm = 27.564709, step = 1.000000
+
+Iteration 6:
+fx = 362.074646, xnorm = 3.139632, gnorm = 5.806416, step = 1.000000
+
+Iteration 7:
+fx = 361.821320, xnorm = 3.117907, gnorm = 3.221369, step = 1.000000
+
+Iteration 8:
+fx = 361.649261, xnorm = 3.088411, gnorm = 1.522608, step = 1.000000
+
+Iteration 9:
+fx = 361.614624, xnorm = 3.088480, gnorm = 0.492873, step = 0.483904
+
+L-BFGS optimization terminated with status code = -1001
+fx = 361.614471
+[0;32mINFO[0;0m 2021-10-28 10:08:05,723 plmdca get_fields_and_couplings_from_backend 
+	Data size expected from plmDCA backend: 62480
+[0;32mINFO[0;0m 2021-10-28 10:08:05,723 plmdca get_fields_and_couplings_from_backend 
+	Data size obtained from plmDCA backend to Python: 62480
+[0;32mINFO[0;0m 2021-10-28 10:08:05,763 plmdca compute_sorted_FN 
+	Computing non-APC sorted DCA score
+[0;32mINFO[0;0m 2021-10-28 10:08:05,869 plmdca compute_sorted_FN_APC 
+	Performing average product correction (APC) of FN  of DCA scores
+[0;32mINFO[0;0m 2021-10-28 10:08:05,887 dca_utilities write_sorted_dca_scores 
+	Writing DCA scores to file PLMDCA_output_5kpy_A/PLMDCA_apc_fn_scores_5kpy_A.txt

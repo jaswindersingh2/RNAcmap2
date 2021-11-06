@@ -1,27 +1,24 @@
 #Name: 4rmo_B
-#Length:  45 
+#Length: ,45,
 #PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
 AAGUUUACCACUGACCGAUAUGUGGUAUAUAAAUGGUCGGGUUGA
-.....[(..(.....({]...))......(....).......).}
-EEEEEESMMSBBBBBSHHHHHSSMMMMMMSHHHHSMMMMMMMSEE
-NNNNNKNNNNNNNNNNKKNNNNNNNNNNNNNNNNNNNNNNNNNNK
+..[..{(........[(..........].].......)}...)..
+EEEEEESIIIIIIIIISHHHHHHHHHHHHHHHHHHHHSIIIISEE
+NNKNNKNNNNNNNNNKNNNNNNNNNNNKNKNNNNNNNNKNNNNNN
 S1 7..7 "A" 43..43 "U"
-S2 10..10 "A" 23..23 "U"
-S3 16..16 "C" 22..22 "G"
-S4 30..30 "U" 35..35 "G"
-H1 17..21 "GAUAU" (16,22) C:G PK{1,2}
-H2 31..34 "AAAU" (30,35) U:G 
-B1 11..15 "CUGAC" (10,23) A:U (16,22) C:G 
-M1.1 8..9 "CC" (7,43) A:U (10,23) A:U 
-M1.2 24..29 "GGUAUA" (23,10) U:A (30,35) U:G 
-M1.3 36..42 "GUCGGGU" (35,30) G:U (43,7) U:A 
-E1 1..6 "AAGUUU" PK{1}
-E2 44..45 "GA" PK{2}
-PK1 1bp 6..6 18..18 E1 1..6 H1 17..21
-PK2 1bp 17..17 45..45 H1 17..21 E2 44..45
-PK1.1 6 U 18 A
-PK2.1 17 G 45 A
-NCBP1 17 G 45 A PK2.1
-segment1 1bp 7..7 A 43..43 U
-segment2 2bp 10..16 ACUGACC 22..23 GU
-segment3 1bp 30..30 U 35..35 G
+S2 17..17 "G" 38..38 "C"
+H1 18..37 "AUAUGUGGUAUAUAAAUGGU" (17,38) G:C PK{1,3}
+I1.1 8..16 "CCACUGACC" (7,43) A:U PK{3}
+I1.2 39..42 "GGGU" (38,17) C:G PK{2}
+E1 1..6 "AAGUUU" PK{1,2}
+E2 44..45 "GA" 
+PK1 1bp 3..3 30..30 E1 1..6 H1 18..37
+PK2 1bp 6..6 39..39 E1 1..6 I1.2 39..42
+PK3 1bp 16..16 28..28 I1.1 8..16 H1 18..37
+PK1.1 3 G 30 U
+PK2.1 6 U 39 G
+PK3.1 16 C 28 U
+NCBP1 16 C 28 U PK3.1
+segment1 2bp 7..17 ACCACUGACCG 38..43 CGGGUU

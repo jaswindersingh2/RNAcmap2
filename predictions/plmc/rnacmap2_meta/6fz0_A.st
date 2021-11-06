@@ -1,0 +1,30 @@
+#Name: 6fz0_A
+#Length:  53 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 3 and 3. Using PK brackets for the more 5' segment
+AGGCGCAUUUGAACUGUAUUGUACGCCUUGCAUAAAGCAAAAGUACUAAAAAA
+[[.[...........(...)(.((].]](((.....)))...)).)..(...)
+EEEEEEEEEEEEEEESHHHSSISSIIIISSSHHHHHSSSIIISSISXXSHHHS
+KKNKNNNNNNNNNNNNNNNNNNNNKNKKNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 16..16 "G" 20..20 "U"
+S2 21..21 "G" 46..46 "C"
+S3 23..24 "AC" 43..44 "GU"
+S4 29..31 "UGC" 37..39 "GCA"
+S5 49..49 "A" 53..53 "A"
+H1 17..19 "UAU" (16,20) G:U 
+H2 32..36 "AUAAA" (31,37) C:G 
+H3 50..52 "AAA" (49,53) A:A 
+I1.1 22..22 "U" (21,46) G:C 
+I1.2 45..45 "A" (44,23) U:A 
+I2.1 25..28 "GCCU" (24,43) C:G PK{1}
+I2.2 40..42 "AAA" (39,29) A:U 
+X2 47..48 "UA" (46,21) C:G (49,53) A:A 
+E1 1..15 "AGGCGCAUUUGAACU" PK{1}
+PK1 3bp 1..4 25..28 E1 1..15 I2.1 25..28
+PK1.1 1 A 28 U
+PK1.2 2 G 27 C
+PK1.3 4 C 25 G
+NCBP1 49 A 53 A S5
+segment1 1bp 16..16 G 20..20 U
+segment2 6bp 21..31 GUACGCCUUGC 37..46 GCAAAAGUAC
+segment3 1bp 49..49 A 53..53 A

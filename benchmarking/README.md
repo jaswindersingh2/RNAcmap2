@@ -6,100 +6,141 @@ An improved fully automatic pipeline for predicting contact maps of RNAs by evol
 |----|
 | <p align="center"> <b>Figure 1:</b> The architecture of the RNAcmap2 pipeline. CSS: Consensus Secondary Structure. CM: Covariance Model. L: Length of the input RNA sequence.|
 
+Activate the conda virtual environment
+
 1. `conda activate venv_rnacmap2`
 
-2. `./run.py --neff no_hit --dca_method gremlin`
 
+To obtain results in Table-2:
+
+2. `./run.py --neff all --dca_method gremlin`
 
 ```
+ 	 	 	 	 	 No-hit RNAs
+
 		       F1	Precision	Sensitivity	No. of RNAs	Median Neff
-blastn              0.000 	 0.000 		 0.000		    19		  0.0    
-direct_infernal     0.000 	 0.000 		 0.000		    19		  0.0    
-RNAcmap             0.000 	 0.000 		 0.000		    19		  0.0    
-RNAcmap_meta        0.112 	 0.145 		 0.097		    19		  1.0    
-RNAcmap2_meta       0.132 	 0.180 		 0.110		    19		  1.4
-```
-
-3. `./run.py --neff low --dca_method gremlin`
+blastn              0.000 	 0.000 		 0.000		    21		  0.0    
+direct_infernal     0.000 	 0.000 		 0.000		    21		  0.0    
+RNAcmap             0.000 	 0.000 		 0.000		    21		  0.0    
+RNAcmap_meta        0.115 	 0.121 		 0.118		    21		  1.0    
+RNAcmap2_meta       0.133 	 0.145 		 0.137		    21		  1.4    
 
 
-```
+ 	 	 	 	 	 Low Neff RNAs
+
 		       F1	Precision	Sensitivity	No. of RNAs	Median Neff
-blastn              0.006 	 0.007 		 0.006		    85		  0.0    
-direct_infernal     0.153 	 0.196 		 0.127		    85		  2.0    
-RNAcmap             0.169 	 0.218 		 0.140		    85		  2.1    
-RNAcmap_meta        0.214 	 0.274 		 0.181		    85		  4.1    
-RNAcmap2_meta       0.386 	 0.499 		 0.322		    85		  13.0
-```
-
-4. `./run.py --neff median --dca_method gremlin`
+blastn              0.006 	 0.007 		 0.007		    83		  0.0    
+direct_infernal     0.150 	 0.163 		 0.141		    83		  2.0    
+RNAcmap             0.165 	 0.180 		 0.156		    83		  2.3    
+RNAcmap_meta        0.213 	 0.231 		 0.204		    83		  4.1    
+RNAcmap2_meta       0.380 	 0.418 		 0.357		    83		  13.0    
 
 
-```
+ 	 	 	 	 	 Medium Neff RNAs
+
 		       F1	Precision	Sensitivity	No. of RNAs	Median Neff
-blastn              0.036 	 0.047 		 0.029		    31		  1.0    
-direct_infernal     0.357 	 0.486 		 0.284		    31		  17.0    
-RNAcmap             0.411 	 0.554 		 0.334		    31		  26.5    
-RNAcmap_meta        0.461 	 0.617 		 0.383		    31		  31.6    
-RNAcmap2_meta       0.532 	 0.708 		 0.436		    31		  96.1
-```
-
-5. `./run.py --neff high --dca_method gremlin`
+blastn              0.035 	 0.040 		 0.032		    31		  1.0    
+direct_infernal     0.343 	 0.395 		 0.307		    31		  17.0    
+RNAcmap             0.404 	 0.460 		 0.368		    31		  26.5    
+RNAcmap_meta        0.457 	 0.518 		 0.426		    31		  31.6    
+RNAcmap2_meta       0.531 	 0.598 		 0.487		    31		  123.2    
 
 
-```
+ 	 	 	 	 	 High Neff RNAs
+
 		       F1	Precision	Sensitivity	No. of RNAs	Median Neff
-blastn              0.074 	 0.104 		 0.058		    114		  2.2    
-direct_infernal     0.589 	 0.805 		 0.467		    114		  321.4    
-RNAcmap             0.633 	 0.862 		 0.502		    114		  636.5    
-RNAcmap_meta        0.630 	 0.857 		 0.501		    114		  605.1    
-RNAcmap2_meta       0.630 	 0.858 		 0.501		    114		  605.1
+blastn              0.074 	 0.087 		 0.066		    110		  2.1    
+direct_infernal     0.607 	 0.698 		 0.540		    110		  335.1    
+RNAcmap             0.663 	 0.760 		 0.591		    110		  636.5    
+RNAcmap_meta        0.663 	 0.761 		 0.591		    110		  605.1    
+RNAcmap2_meta       0.663 	 0.761 		 0.591		    110		  605.1
 ```
 
-6. `./run.py --neff all --dca_method gremlin`
 
+To obtain Figure-2 in the paper:
+
+3. `./run.py --neff all --dca_method gremlin --figure 2`
+
+Above command save performance metrics (in csv) for different MSA pipelines in `figure\_2\_data` folder. Following MATLAB script can be used to plot Figure-2:
+
+4. `cat figure_2.m | path\_to\_matlab\_bin\_directory/matlab -nodesktop -nosplash`
+
+Above command generate figure as shown below:
+
+|![](../docs/figure_2.png)
+|----|
+| <p align="center"> <b>Figure 2:</b> Violin plot of F1-score of predicted top L/3 contacts by GREMLIN DCA predictor using BLAST-N, INFERNAL, RNAcmap, RNAcmap*, and RNAcmap2 supplied aligned homologous sequences for No-hit RNAs (21 RNAs), Low Neff RNAs (83 RNAs), Medium Neff RNAs (31 RNAs) and high Neff RNAs (110 RNAs).|
+
+
+
+To obtain Figure-3 results:
+
+5. `./figure_3.py --neff all --dca_method mfdca`
+
+Above progrmas save `csv` files for top L/n contacts in `figure\_3\_data` folder. Next, run the following matlab program to obtain Figure-3 plot:
+
+6. `cat figure_3.m | path\_to\_matlab\_bin\_directory/matlab -nodesktop -nosplash`
+
+
+Above command generate figure as shown below:
+
+|![](../docs/figure_3.png)
+|----|
+| <p align="center"> <b>Figure 3:</b> Boxplot of F1-score (A), Precision (B), and Sensitivity (C) as a function of predicted top L/n base pairs by mfDCA from RNAcmap (in green) and RNAcmap2 (in red) supplied alignment for 245 PDB RNAs. The distribution is shown in terms of median, 25th and 75th percentile with outlier shown by dots.|
+
+
+
+To obtain Table-3 results, the followning commands can be used:
+
+7. `./run.py --neff all_combined --dca_method gremlin`
 
 ```
+ 	 	 	 	 	 All Neff RNAs
+
 		       F1	Precision	Sensitivity	No. of RNAs	Median Neff
-blastn              0.040 	 0.056 		 0.032		    249		  1.0    
-direct_infernal     0.366 	 0.496 		 0.293		    249		  15.6    
-RNAcmap             0.398 	 0.538 		 0.319		    249		  27.5    
-RNAcmap_meta        0.427 	 0.574 		 0.346		    249		  35.3    
-RNAcmap2_meta       0.497 	 0.665 		 0.402		    249		  100.6
+blastn              0.040 	 0.046 		 0.036		    245		  1.0    
+direct_infernal     0.367 	 0.419 		 0.329		    245		  14.0    
+RNAcmap             0.404 	 0.460 		 0.365		    245		  27.1    
+RNAcmap_meta        0.437 	 0.495 		 0.399		    245		  31.9    
+RNAcmap2_meta       0.505 	 0.571 		 0.460		    245		  96.1
 ```
 
-7. `./run.py --neff all --dca_method plmc`
-
+8. `./run.py --neff all_combined --dca_method plmc`
 
 ```
+ 	 	 	 	 	 All Neff RNAs
+
 		       F1	Precision	Sensitivity	No. of RNAs	Median Neff
-blastn              0.008 	 0.011 		 0.007		    249		  1.0    
-direct_infernal     0.000 	 0.000 		 0.000		    249		  0.0    
-RNAcmap             0.398 	 0.538 		 0.320		    249		  27.5    
-RNAcmap_meta        0.436 	 0.586 		 0.354		    249		  35.3    
-RNAcmap2_meta       0.506 	 0.676 		 0.412		    249		  100.6
+blastn              0.010 	 0.011 		 0.009		    245		  1.0    
+direct_infernal     0.382 	 0.434 		 0.344		    245		  14.0    
+RNAcmap             0.417 	 0.474 		 0.378		    245		  27.1    
+RNAcmap_meta        0.455 	 0.516 		 0.416		    245		  31.9    
+RNAcmap2_meta       0.531 	 0.598 		 0.487		    245		  96.1
 ```
 
-8. `./run.py --neff all --dca_method mfdca`
-
+9. `./run.py --neff all_combined --dca_method mfdca`
 
 ```
+ 	 	 	 	 	 All Neff RNAs
+
 		       F1	Precision	Sensitivity	No. of RNAs	Median Neff
-blastn              0.054 	 0.074 		 0.043		    249		  1.0    
-direct_infernal     0.000 	 0.000 		 0.000		    249		  0.0    
-RNAcmap             0.416 	 0.559 		 0.337		    249		  27.5    
-RNAcmap_meta        0.452 	 0.606 		 0.368		    249		  35.3    
-RNAcmap2_meta       0.525 	 0.700 		 0.427		    249		  100.6
+blastn              0.053 	 0.061 		 0.048		    245		  1.0    
+direct_infernal     0.397 	 0.453 		 0.359		    245		  14.0    
+RNAcmap             0.436 	 0.494 		 0.397		    245		  27.1    
+RNAcmap_meta        0.474 	 0.536 		 0.434		    245		  31.9    
+RNAcmap2_meta       0.549 	 0.618 		 0.505		    245		  96.1
 ```
 
-9. `./run.py --neff all --dca_method plmdca`
-
+10. `./run.py --neff all_combined --dca_method plmdca`
 
 ```
+ 	 	 	 	 	 All Neff RNAs
+
 		       F1	Precision	Sensitivity	No. of RNAs	Median Neff
-blastn              0.025 	 0.034 		 0.020		    249		  1.0    
-direct_infernal     0.000 	 0.000 		 0.000		    249		  0.0    
-RNAcmap             0.408 	 0.549 		 0.330		    249		  27.5    
-RNAcmap_meta        0.444 	 0.595 		 0.362		    249		  35.3    
-RNAcmap2_meta       0.518 	 0.691 		 0.423		    249		  100.6
+blastn              0.027 	 0.030 		 0.024		    245		  1.0    
+direct_infernal     0.386 	 0.443 		 0.347		    245		  14.0    
+RNAcmap             0.425 	 0.482 		 0.387		    245		  27.1    
+RNAcmap_meta        0.464 	 0.526 		 0.425		    245		  31.9    
+RNAcmap2_meta       0.542 	 0.610 		 0.497		    245		  96.1
 ```
+

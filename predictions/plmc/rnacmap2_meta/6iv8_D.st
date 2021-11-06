@@ -1,0 +1,30 @@
+#Name: 6iv8_D
+#Length:  53 
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+CACUGGUGCAAAUUUGCACUAGUCUAAAACUCCUCGAUUACAUACACAAAGCA
+(..(.(............).)........)[(...).........(]....).
+SIISISHHHHHHHHHHHHSISIIIIIIIISXSHHHSXXXXXXXXXSHHHHHSE
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKNNNNNNNNNNNNNNNKNNNNNN
+S1 1..1 "C" 30..30 "C"
+S2 4..4 "U" 21..21 "A"
+S3 6..6 "G" 19..19 "C"
+S4 32..32 "C" 36..36 "G"
+S5 46..46 "A" 52..52 "C"
+H1 7..18 "UGCAAAUUUGCA" (6,19) G:C 
+H2 33..35 "CUC" (32,36) C:G 
+H3 47..51 "CAAAG" (46,52) A:C PK{1}
+I1.1 2..3 "AC" (1,30) C:C 
+I1.2 22..29 "GUCUAAAA" (21,4) A:U 
+I2.1 5..5 "G" (4,21) U:A 
+I2.2 20..20 "U" (19,6) C:G 
+X2 37..45 "AUUACAUAC" (36,32) G:C (46,52) A:C 
+E1 53..53 "A" 
+PK1 1bp 31..31 47..47 X1 31..31 H3 47..51
+PK1.1 31 U 47 C
+NCBP1 46 A 52 C S5
+NCBP2 1 C 30 C S1
+NCBP3 31 U 47 C PK1.1
+segment1 3bp 1..6 CACUGG 19..30 CUAGUCUAAAAC
+segment2 1bp 32..32 C 36..36 G
+segment3 1bp 46..46 A 52..52 C

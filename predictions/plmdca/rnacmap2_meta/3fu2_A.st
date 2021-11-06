@@ -1,0 +1,22 @@
+#Name: 3fu2_A
+#Length:  34 
+#PageNumber: 1
+AGAGGUUCUAGCUACACCCUCUAUAAAAAACUAA
+.(.(....(......)..).)...(......)..
+ESISIIIISHHHHHHSIISISXXXSHHHHHHSEE
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+S1 2..2 "G" 21..21 "C"
+S2 4..4 "G" 19..19 "C"
+S3 9..9 "U" 16..16 "A"
+S4 25..25 "A" 32..32 "U"
+H1 10..15 "AGCUAC" (9,16) U:A 
+H2 26..31 "AAAAAC" (25,32) A:U 
+I1.1 3..3 "A" (2,21) G:C 
+I1.2 20..20 "U" (19,4) C:G 
+I2.1 5..8 "GUUC" (4,19) G:C 
+I2.2 17..18 "CC" (16,9) A:U 
+X1 22..24 "UAU" (21,2) C:G (25,32) A:U 
+E1 1..1 "A" 
+E2 33..34 "AA" 
+segment1 3bp 2..9 GAGGUUCU 16..21 ACCCUC
+segment2 1bp 25..25 A 32..32 U

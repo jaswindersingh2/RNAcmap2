@@ -1,0 +1,20 @@
+#Name: PKB120
+#Length: ,36,
+#PageNumber: 2
+#Warning: Structure contains linked PK-segments of same sizes 6 and 6. Using PK brackets for the more 5' segment
+UAGUGUUCGUGGAUAACACUUUAAUUAAGAUUCAUA
+.[[[[[[.((((((]]]]]].........)))))).
+EEEEEEEESSSSSSHHHHHHHHHHHHHHHSSSSSSE
+NKKKKKKNNNNNNNKKKKKKNNNNNNNNNNNNNNNN
+S1 9..14 "GUGGAU" 30..35 "AUUCAU"
+H1 15..29 "AACACUUUAAUUAAG" (14,30) U:A PK{1}
+E1 1..8 "UAGUGUUC" PK{1}
+E2 36..36 "A" 
+PK1 6bp 2..7 15..20 E1 1..8 H1 15..29
+PK1.1 2 A 20 U
+PK1.2 3 G 19 C
+PK1.3 4 U 18 A
+PK1.4 5 G 17 C
+PK1.5 6 U 16 A
+PK1.6 7 U 15 A
+segment1 6bp 9..14 GUGGAU 30..35 AUUCAU

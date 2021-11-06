@@ -1,0 +1,22 @@
+#Name: 4v83_AV
+#Length: ,35,
+#PageNumber: 3
+#Warning: Structure contains linked PK-segments of same sizes 1 and 1. Using PK brackets for the more 5' segment
+UCGCUCAAACAUUAAGUGGUGUUGUGCGACACUUA
+.(..[.......(....{]....)........).}
+ESIIIIIIIIIISHHHHHHHHHHSIIIIIIIISEE
+NNNNKNNNNNNNNNNNNKKNNNNNNNNNNNNNNNK
+S1 2..2 "C" 33..33 "U"
+S2 13..13 "U" 24..24 "G"
+H1 14..23 "AAGUGGUGUU" (13,24) U:G PK{1,2}
+I1.1 3..12 "GCUCAAACAU" (2,33) C:U PK{1}
+I1.2 25..32 "UGCGACAC" (24,13) G:U 
+E1 1..1 "U" 
+E2 34..35 "UA" PK{2}
+PK1 1bp 5..5 19..19 I1.1 3..12 H1 14..23
+PK2 1bp 18..18 35..35 H1 14..23 E2 34..35
+PK1.1 5 U 19 G
+PK2.1 18 G 35 A
+NCBP1 2 C 33 U S1
+NCBP2 18 G 35 A PK2.1
+segment1 2bp 2..13 CGCUCAAACAUU 24..33 GUGCGACACU
