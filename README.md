@@ -58,7 +58,7 @@ For GREMLIN:
 
 To run RNAcmap2:
 
-9. `./run_rnacmap2.sh 6p2h_A mfdca`
+9. `./run_rnacmap2.sh 6p2h_A.fasta mfdca`
 
 ## Reproduce results of RNAcmap pipeline
 
