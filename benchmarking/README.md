@@ -61,9 +61,9 @@ To obtain Figure-2 in the paper:
 
 3. `./run.py --neff all --dca_method gremlin --figure 2`
 
-Above command save performance metrics (in csv) for different MSA pipelines in `figure\_2\_data` folder. Following MATLAB script can be used to plot Figure-2:
+Above command save performance metrics (in csv) for different MSA pipelines in `figure_2_data` folder. Following MATLAB script can be used to plot Figure-2:
 
-4. `cat figure_2.m | path\_to\_matlab\_bin\_directory/matlab -nodesktop -nosplash`
+4. `cat figure_2.m | path_to_matlab_bin_directory/matlab -nodesktop -nosplash`
 
 Above command generate figure as shown below:
 
@@ -77,9 +77,9 @@ To obtain Figure-3 results:
 
 5. `./figure_3.py --neff all --dca_method mfdca`
 
-Above progrmas save `csv` files for top L/n contacts in `figure\_3\_data` folder. Next, run the following matlab program to obtain Figure-3 plot:
+Above progrmas save `csv` files for top L/n contacts in `figure_3_data` folder. Next, run the following matlab program to obtain Figure-3 plot:
 
-6. `cat figure_3.m | path\_to\_matlab\_bin\_directory/matlab -nodesktop -nosplash`
+6. `cat figure_3.m | path_to_matlab_bin_directory/matlab -nodesktop -nosplash`
 
 
 Above command generate figure as shown below:
