@@ -259,7 +259,7 @@ else
     echo "          Removing duplicates from the alignment.                      "
     echo "======================================================================="
     echo ""
-	$program_dir/utils/seqkit rmdup -s $feature_dir/temp.a2m_msa2 > $feature_dir/$seq_id.a2m_msa2
+	$program_dir/utils/seqkit rmdup -s --only-positive-strand $feature_dir/temp.a2m_msa2 > $feature_dir/$seq_id.a2m_msa2
 	$program_dir/utils/seqkit rmdup -n $feature_dir/$seq_id.a2m_msa2 > $feature_dir/temp.a2m_msa2
 	cp $feature_dir/temp.a2m_msa2 $feature_dir/$seq_id.a2m_msa2
 
@@ -460,7 +460,7 @@ else
     echo "          Removing duplicates from the alignment.                      "
     echo "======================================================================="
     echo ""
-	$program_dir/utils/seqkit rmdup -s $feature_dir/temp.a2m_msa3 > $feature_dir/$seq_id.a2m_msa3
+	$program_dir/utils/seqkit rmdup -s --only-positive-strand $feature_dir/temp.a2m_msa3 > $feature_dir/$seq_id.a2m_msa3
 
 	if [ $? -eq 0 ]; then
 	    echo ""
