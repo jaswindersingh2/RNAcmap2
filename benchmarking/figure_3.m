@@ -159,4 +159,4 @@ annotation('textbox', [0.54 0.92 0.04 0.02], 'String',{'RNAcmap2'}, 'FontSize',1
     'BackgroundColor',[1  1 1], 'Color', [0 0 0]);
 
 set(gcf, 'Position', [800, 600, 1600, 800]);
-saveas(gcf, 'figure_3', 'png');
+% saveas(gcf, 'figure_3', 'png');

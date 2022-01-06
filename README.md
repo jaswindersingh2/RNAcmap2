@@ -1,5 +1,5 @@
 # RNAcmap2
-An improved fully automatic pipeline for predicting contact maps of RNAs by evolutionary coupling analysis
+Improved RNA homology detection and alignment by automatic iterative search in an expanded database
 
 
 ## System Requirments
@@ -82,7 +82,7 @@ Refer to [benchmarking](https://github.com/jaswindersingh2/RNAcmap2/tree/main/be
 
 **If use RNAcmap2 for your research, please cite the following papers:**
 
-Jaswinder Singh, Thomas Litfin, Kuldip Paliwal, Jaspreet Singh, and Yaoqi Zhou. "An improved fully automatic pipeline for predicting contact maps of RNAs by evolutionary coupling analysis."
+Jaswinder Singh, Kuldip Paliwal, Jaspreet Singh, Thomas Litfin, and Yaoqi Zhou. "Improved RNA homology detection and alignment by automatic iterative search in an expanded database."
 
 **If use RNAcmap2 pipeline, please consider citing the following papers:**
 
