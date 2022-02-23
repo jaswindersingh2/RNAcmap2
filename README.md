@@ -5,7 +5,7 @@ Improved RNA homology detection and alignment by automatic iterative search in a
 ## System Requirments
 
 **Hardware Requirments:**
-It is recommended that your system should have 32 GB RAM, 500 GB disk space to support the in-memory operations for RNA sequence length less than 500. Multiple CPU threads are also recommended as the MSA generating process is computationally expensive.
+It is recommended that your system should have 64 GB RAM, 1.5 TB disk space to support the in-memory operations for RNA sequence length less than 500. Multiple CPU threads are also recommended as the MSA generating process is computationally expensive.
 
 **Software Requirments:**
 * [Python3.6](https://docs.python-guide.org/starting/install3/linux/)
